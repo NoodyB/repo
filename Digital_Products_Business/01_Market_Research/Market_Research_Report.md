@@ -58,7 +58,7 @@ This is not one of the eight listed niches on its own. It is the overlap of four
 | **Gumroad** (your profile or direct link) | **10% + $0.50** per transaction, **plus** card processing **2.9% + $0.30** (or PayPal fees) | No monthly fee. Sales that come through Gumroad's **Discover marketplace** are charged a **flat 30%** (processing included). When a sale is refunded, Gumroad returns its own fee on the refunded portion but keeps the processing portion. Above $20k/month in paid sales, direct-sale fees drop to 5% + $0.50. [S1] |
 | **Etsy** | **$0.20** listing fee + **6.5%** transaction fee + **~3% + $0.25** payment processing (US) | Offsite Ads fee of 15% (optional under $10k/yr in sales; 12% and mandatory above). Typical total take: ~20–30%+ once ads are included. [S2] |
 
-**Implication:** Gumroad is the lowest-effort storefront for our launch: no monthly cost, instant digital delivery, simple affiliate and discount tools. A direct Gumroad sale of a **$24** product nets about **$20.40** (see pricing workbook). Etsy is a possible **second channel** later, mainly for Product B (spreadsheets are a proven Etsy category).
+**Implication:** Gumroad is the lowest-effort storefront for our launch: no monthly cost, instant digital delivery, simple affiliate and discount tools. A direct Gumroad sale of a **$24** product nets about **$20.10** after Gumroad and card-processing fees (see `07_Gumroad_Storefront/BandOfOne_Pricing_Calculator.xlsx`). Etsy is a possible **second channel** later, mainly for Product B (spreadsheets are a proven Etsy category).
 
 ### 3.2 AI adoption among small businesses is still low, and flat for the smallest firms
 
