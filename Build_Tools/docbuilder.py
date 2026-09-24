@@ -227,10 +227,17 @@ def _find_pages(pdf_path: Path, toc, toc_pages: int, include_h2=True):
             continue
         key = _norm(text)[:60]
         found = None
+        # Prefer a page that opens with the heading (chapters start on a new page), so a
+        # mention in an earlier index or table isn't mistaken for the heading itself.
         for i in range(start, len(texts)):
-            if key and key in texts[i]:
+            if key and key in texts[i][: len(key) + 20]:
                 found = i
                 break
+        if found is None:
+            for i in range(start, len(texts)):
+                if key and key in texts[i]:
+                    found = i
+                    break
         if found is None:
             numbers.append("")
         else:
@@ -277,7 +284,8 @@ h1{{font-family:Fraunces,serif;font-weight:700;font-size:44pt;line-height:1.02;l
 
 def build_pdf(md_text: str, out_pdf: Path, meta: dict, cover_html: str | None = None,
               toc: bool = True, include_h2: bool = True, number_chapters: bool = True,
-              extra_css: str = "", front_matter_html: str = "", back_matter_html: str = "") -> Path:
+              extra_css: str = "", front_matter_html: str = "", back_matter_html: str = "",
+              no_cover: bool = False) -> Path:
     """Render markdown to a branded PDF. meta: title, subtitle, kicker, footer_left."""
     out_pdf = Path(out_pdf)
     out_pdf.parent.mkdir(parents=True, exist_ok=True)
@@ -311,13 +319,16 @@ def build_pdf(md_text: str, out_pdf: Path, meta: dict, cover_html: str | None = 
         numbers = _find_pages(body_pdf, toc_entries, toc_pages, include_h2)
         body_pdf = render_body(numbers)
 
-    cover = cover_html or default_cover(meta)
-    cover_path = write_html(f"{stem}-cover.html", cover)
-    cover_pdf = tmp / f"{stem}-cover.pdf"
-    run([{"html": cover_path, "out": cover_pdf, "type": "pdf", "width": 816, "height": 1056}])
+    sources = [body_pdf]
+    if not no_cover:
+        cover = cover_html or default_cover(meta)
+        cover_path = write_html(f"{stem}-cover.html", cover)
+        cover_pdf = tmp / f"{stem}-cover.pdf"
+        run([{"html": cover_path, "out": cover_pdf, "type": "pdf", "width": 816, "height": 1056}])
+        sources.insert(0, cover_pdf)
 
     writer = PdfWriter()
-    for src in (cover_pdf, body_pdf):
+    for src in sources:
         for page in PdfReader(str(src)).pages:
             writer.add_page(page)
     writer.add_metadata({"/Title": meta["title"], "/Author": BRAND_NAME, "/Subject": meta.get("subtitle", "")})

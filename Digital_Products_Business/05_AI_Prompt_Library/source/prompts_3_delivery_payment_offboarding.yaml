@@ -1,0 +1,430 @@
+# Band of One Prompt Library: Delivery, Getting Paid, Offboarding
+
+- id: DEL-01
+  category: Delivery & Client Communication
+  title: Weekly client update
+  objective: Turn rough notes into a clear five-minute weekly update.
+  use_case: Every week for each active client.
+  inputs:
+    - "[NOTES]: bullets you jotted during the week (redacted)"
+    - "[VOICE PROFILE]"
+  prompt: |
+    Turn my rough notes into a weekly client update using this structure: Done this week / Next week / Needed from you (with dates) / Risks or decisions. Notes (redacted): """[NOTES]""". Keep it under 150 words, in my voice [VOICE PROFILE]. If my notes mention a delay, state it plainly with the new expected date. Don't soften it into vagueness, and don't invent reasons.
+  output_format: A four-part update email under 150 words.
+  tips: Keep a running notes file per client during the week, since it makes this a two-minute job.
+  pairs_with: [DEL-04, DEL-02]
+
+- id: DEL-02
+  category: Delivery & Client Communication
+  title: Delay notification
+  objective: Tell a client about a delay early, honestly and with a plan.
+  use_case: As soon as you know a milestone will slip.
+  inputs:
+    - "[MILESTONE]"
+    - "[ORIGINAL DATE] and [NEW DATE]"
+    - "[REASON]"
+    - "[WHAT I'M DOING ABOUT IT]"
+  prompt: |
+    Write an email telling a client that [MILESTONE] will move from [ORIGINAL DATE] to [NEW DATE]. Reason (share appropriately): [REASON]. What I'm doing about it: [WHAT I'M DOING ABOUT IT]. Structure: the news first, one sentence of context, the plan, the impact on later milestones, and whether they need to do anything. Take responsibility where it's mine, no excessive apology, under 150 words, in my voice [VOICE PROFILE].
+  output_format: One email.
+  tips: Delays reported early damage trust far less than delays discovered late.
+  pairs_with: [DEL-01]
+
+- id: DEL-03
+  category: Delivery & Client Communication
+  title: Consolidated feedback request
+  objective: Get one clear, consolidated round of feedback instead of scattered comments.
+  use_case: When sharing a draft or milestone for review.
+  inputs:
+    - "[DELIVERABLE]"
+    - "[REVIEW LINK]"
+    - "[FEEDBACK DEADLINE]"
+    - "[QUESTIONS I NEED ANSWERED]"
+  prompt: |
+    Write an email sharing [DELIVERABLE] for review ([REVIEW LINK]). Ask for one consolidated set of feedback by [FEEDBACK DEADLINE], gathered from everyone on their side. Guide their review with these questions: [QUESTIONS I NEED ANSWERED]. Explain the difference between "must change" and "nice to have" and ask them to label comments that way. Mention what's in scope for this round per our agreement: [REVISION TERMS]. Under 170 words.
+  output_format: One email with numbered review questions.
+  tips: Specific review questions produce more useful feedback than "what do you think?"
+  pairs_with: [DEL-05]
+
+- id: DEL-04
+  category: Delivery & Client Communication
+  title: Meeting notes → summary & action items
+  objective: Turn meeting notes or a transcript into decisions, actions and a follow-up email.
+  use_case: After every client meeting.
+  inputs:
+    - "[NOTES]: notes or transcript (redacted; recorded only with consent)"
+  prompt: |
+    Here are notes or a transcript from a client meeting (redacted): """[NOTES]""". Produce: (1) a 3-sentence summary; (2) decisions made; (3) action items as a table with Owner, Task, Due date (write "TBC" if no date was agreed; don't invent dates); (4) open questions. Then draft a short follow-up email to the client that confirms decisions and action items.
+  output_format: Summary, decisions list, action table, open questions, then a follow-up email.
+  tips: Send the follow-up the same day. It becomes the record if memories differ later.
+  pairs_with: [DEL-01]
+
+- id: DEL-05
+  category: Delivery & Client Communication
+  title: Feedback triage
+  objective: Sort messy client feedback into clear, in-scope actions.
+  use_case: When feedback arrives as a long email, many comments or conflicting opinions.
+  inputs:
+    - "[FEEDBACK]"
+    - "[AGREED SCOPE]"
+  prompt: |
+    Sort this client feedback (redacted) """[FEEDBACK]""" against our agreed scope """[AGREED SCOPE]""". Output a table with: Comment (paraphrased), Type (fix / change / new request / question / conflict), In scope? (yes / no / unclear), Proposed action. Then list conflicting comments that need the client to decide, and draft 2–3 clarifying questions to send back.
+  output_format: A triage table, a conflicts list and 2–3 clarifying questions.
+  tips: Out-of-scope items go to DEL-07 before any work starts.
+  pairs_with: [DEL-07, DEL-03]
+
+- id: DEL-06
+  category: Delivery & Client Communication
+  title: Status report for a longer project
+  objective: Give stakeholders a clear monthly view of progress, budget and risks.
+  use_case: Monthly on projects longer than six weeks or with several stakeholders.
+  inputs:
+    - "[MILESTONES AND STATUS]"
+    - "[BUDGET USED]: if applicable"
+    - "[RISKS]"
+  prompt: |
+    Create a one-page monthly status report from: milestones & status """[MILESTONES AND STATUS]"""; budget/time used """[BUDGET USED]"""; risks """[RISKS]""". Sections: Overall status (On track / At risk / Off track, with one-line reason); Milestones (table); Budget/time; Risks & mitigations; Decisions needed from the client; Next month. Use only my data. If a status can't be determined, say so.
+  output_format: A one-page report with six sections.
+  tips: Send before a short monthly call, not instead of one.
+  pairs_with: [DEL-01]
+
+- id: DEL-07
+  category: Delivery & Client Communication
+  title: Scope change request email
+  objective: Quote extra work before doing it, without awkwardness.
+  use_case: Whenever a request falls outside the agreed scope.
+  inputs:
+    - "[SCOPE]"
+    - "[REQUEST]"
+    - "[PRICE / TIME IMPACT I'LL PROVIDE]"
+  prompt: |
+    A client asked for something outside our agreed scope. Agreed scope: """[SCOPE]""". Their request: """[REQUEST]""". Draft a friendly, confident email that: thanks them for the idea; notes it's outside the current scope (without blaming); offers 2 options, (a) add it now for [PRICE / TIME IMPACT I'LL PROVIDE] or (b) park it for a later phase; and asks them to confirm which option they prefer before I start. Under 170 words, in my voice.
+  output_format: One email with two clearly labeled options.
+  tips: Log approved changes in writing (email is fine) before starting the work.
+  pairs_with: [PROP-06, DEL-05]
+
+- id: DEL-08
+  category: Delivery & Client Communication
+  title: Approval request for a milestone
+  objective: Get explicit sign-off before moving to the next phase.
+  use_case: At the end of each phase or milestone.
+  inputs:
+    - "[MILESTONE]"
+    - "[WHAT WAS DELIVERED]"
+    - "[NEXT PHASE]"
+  prompt: |
+    Write an email asking the client to formally approve [MILESTONE]. Summarize what was delivered: """[WHAT WAS DELIVERED]""". Explain what approval means (we move to [NEXT PHASE]; later changes to this milestone may be treated as new requests per our agreement: [CHANGE TERMS]). Ask them to reply "Approved" or list remaining must-change items by [DATE]. Under 150 words, clear and friendly.
+  output_format: One email with a clear reply instruction.
+  tips: If an invoice is tied to this milestone, send it right after approval.
+  pairs_with: [PAY-01]
+
+- id: DEL-09
+  category: Delivery & Client Communication
+  title: Handling a vague request
+  objective: Clarify an unclear client request before spending time on it.
+  use_case: When a client asks for something like "make it pop" or "can you look at the site?"
+  inputs:
+    - "[REQUEST]"
+    - "[PROJECT CONTEXT]"
+  prompt: |
+    A client sent a vague request: """[REQUEST]""". Project context: """[PROJECT CONTEXT]""". Write a short reply that shows willingness to help and asks 2–3 specific questions (with example answers they can pick from) so I can understand exactly what they want. Under 100 words, in my voice [VOICE PROFILE].
+  output_format: One short reply with multiple-choice style questions.
+  tips: Offering example answers speeds up replies from busy clients.
+  pairs_with: [DEL-05]
+
+- id: DEL-10
+  category: Delivery & Client Communication
+  title: Out-of-office / capacity notice
+  objective: Tell clients about time off or reduced availability in advance.
+  use_case: 1–2 weeks before holidays or planned time off.
+  inputs:
+    - "[DATES]"
+    - "[COVERAGE]: what happens while you're away"
+    - "[DEADLINES AFFECTED]"
+  prompt: |
+    Write an advance notice to clients that I'll be away [DATES]. What happens meanwhile: [COVERAGE]. Deadlines affected: [DEADLINES AFFECTED]. Ask them to send anything they need from me before [CUTOFF DATE]. Also write a matching 2-sentence auto-reply. Friendly, under 130 words total for the email.
+  output_format: One advance-notice email plus an auto-reply.
+  tips: Add the cutoff date to each client's next action in your tracker.
+  pairs_with: [DEL-01]
+
+- id: DEL-11
+  category: Delivery & Client Communication
+  title: Explaining a technical issue simply
+  objective: Explain a technical problem to a non-technical client without jargon.
+  use_case: When something breaks or a technical constraint affects the project.
+  inputs:
+    - "[TECHNICAL DETAILS]"
+    - "[IMPACT ON CLIENT]"
+    - "[OPTIONS]"
+  prompt: |
+    Explain this technical issue to a non-technical client: """[TECHNICAL DETAILS]""". Impact on them: [IMPACT ON CLIENT]. Options: [OPTIONS]. Use a short everyday analogy if helpful, avoid jargon (or define it once), state what I recommend and why, and what I need them to decide. Under 180 words. Don't overstate certainty. If I haven't confirmed a cause, say it's the likely cause.
+  output_format: One email with a clear recommendation and decision request.
+  tips: Check the analogy isn't misleading, since simple shouldn't mean inaccurate.
+  pairs_with: [DEL-02]
+
+- id: DEL-12
+  category: Delivery & Client Communication
+  title: Presentation outline for a deliverable
+  objective: Present your work in a way that frames decisions, not opinions.
+  use_case: Before presenting a design, strategy or report to a client.
+  inputs:
+    - "[DELIVERABLE]"
+    - "[CLIENT GOALS]"
+    - "[KEY DECISIONS]"
+  prompt: |
+    Create an outline for presenting [DELIVERABLE] to a client in 20 minutes. Their goals: """[CLIENT GOALS]""". Key decisions I made and why: """[KEY DECISIONS]""". Structure: recap of goals; walkthrough linking each decision to a goal; what I considered and rejected; questions to guide their feedback; next steps. Include timings.
+  output_format: A timed outline with speaking notes per section.
+  tips: Tying each decision to a stated goal reduces "I just don't like it" feedback.
+  pairs_with: [DEL-03]
+
+- id: DEL-13
+  category: Delivery & Client Communication
+  title: Thread summarizer
+  objective: Catch up on a long email thread quickly and see what's actually needed.
+  use_case: When returning to a project after time away, or a thread gets long.
+  inputs:
+    - "[THREAD]: redacted email thread"
+  prompt: |
+    Summarize this email thread (redacted) """[THREAD]""" for me in: (1) 5 bullet summary; (2) decisions made, with who made them and when; (3) open questions and who owes an answer; (4) commitments I made; (5) suggested next reply in one or two sentences. Quote key phrases where precision matters.
+  output_format: Five labeled sections.
+  tips: Verify commitments against the original emails before acting on them.
+  pairs_with: [DEL-04]
+
+- id: DEL-14
+  category: Delivery & Client Communication
+  title: Client check-in on a quiet project
+  objective: Re-engage a client who has gone quiet mid-project.
+  use_case: When you're waiting on client input past its due date.
+  inputs:
+    - "[WHAT I'M WAITING FOR]"
+    - "[ORIGINAL DUE DATE]"
+    - "[IMPACT ON TIMELINE]"
+  prompt: |
+    A client hasn't sent [WHAT I'M WAITING FOR], which was due [ORIGINAL DUE DATE]. Write a friendly nudge that restates what's needed, explains the timeline impact ([IMPACT ON TIMELINE]), and offers an easy way forward (e.g., a 15-minute call, or a simplified version of what I need). Under 110 words, no guilt, in my voice [VOICE PROFILE].
+  output_format: One short email.
+  tips: If two nudges get no answer, pause the project in writing per your agreement.
+  pairs_with: [HARD-04]
+
+- id: PAY-01
+  category: Invoicing & Getting Paid
+  title: Invoice email
+  objective: Send an invoice with a short, clear cover message.
+  use_case: Every time you send an invoice.
+  inputs:
+    - "[INVOICE NUMBER], [AMOUNT], [DUE DATE], [PAYMENT LINK]"
+    - "[WHAT IT COVERS]"
+  prompt: |
+    Write a short email to accompany invoice [INVOICE NUMBER] for [AMOUNT], covering [WHAT IT COVERS], due [DUE DATE]. Include the payment link [PAYMENT LINK], a one-line thank-you tied to the work, and a note to reply if anything looks wrong. Under 80 words.
+  output_format: One short email with subject line.
+  tips: Put the invoice number and due date in the subject line.
+  pairs_with: [PAY-02]
+
+- id: PAY-02
+  category: Invoicing & Getting Paid
+  title: Payment reminder sequence personalizer
+  objective: Send the right reminder, at the right stage, in the right tone.
+  use_case: For any unpaid invoice approaching or past its due date.
+  inputs:
+    - "[RELATIONSHIP], [INVOICE NUMBER], [AMOUNT], [DATE], [X] days overdue, previous reminders"
+    - "[RELEVANT TERMS]: from your agreement"
+  prompt: |
+    I need to send a payment reminder. Context (redacted): client relationship [NEW / LONG-TERM / DIFFICULT], invoice [NUMBER] for [AMOUNT], due [DATE], currently [X] days overdue, previous reminders sent: [LIST]. My agreement says: """[RELEVANT TERMS]""". Draft the next reminder at stage [A/B/C/D/E]. Keep the tone [FRIENDLY / FIRM / FORMAL] and under 120 words, in my voice [VOICE PROFILE]. Only mention fees or consequences that appear in my agreement text. Include the payment link placeholder [LINK].
+  output_format: One reminder email with subject line.
+  tips: The Client Desk workbook tells you which stage (A–E) is due for each invoice.
+  pairs_with: [PAY-03, PAY-04]
+
+- id: PAY-03
+  category: Invoicing & Getting Paid
+  title: Payment plan offer
+  objective: Offer a structured way for a struggling client to pay.
+  use_case: When a client says they can't pay in full right now.
+  inputs:
+    - "[BALANCE]"
+    - "[PLAN I'M WILLING TO OFFER]"
+  prompt: |
+    A client can't pay the full balance of [BALANCE] right now. Write an email offering this plan: [PLAN I'M WILLING TO OFFER] (e.g., three payments on specific dates). Ask them to confirm in writing, state what happens to ongoing work during the plan per my terms [TERMS], and keep a supportive, practical tone. Under 150 words.
+  output_format: One email with the payment schedule as a short list.
+  tips: Get the plan confirmed in writing and track each payment separately.
+  pairs_with: [PAY-02]
+
+- id: PAY-04
+  category: Invoicing & Getting Paid
+  title: Final notice (per your agreement)
+  objective: Send a formal final notice that states agreed next steps.
+  use_case: About 30 days overdue after earlier reminders.
+  inputs:
+    - "[INVOICE DETAILS]"
+    - "[HISTORY]: reminders sent and dates"
+    - "[NEXT STEP FROM AGREEMENT]"
+  prompt: |
+    Write a formal but courteous final notice for invoice [INVOICE DETAILS]. History of reminders: [HISTORY]. State the final payment date [FINAL DATE] and the next step exactly as my agreement describes it: [NEXT STEP FROM AGREEMENT]. Don't threaten anything outside my agreement or the law, and don't add fees I haven't listed. Invite them to contact me today to resolve it. Under 150 words.
+  output_format: One formal email.
+  tips: Before escalating (collections, small claims), check the rules that apply where you and the client are.
+  pairs_with: [PAY-02]
+
+- id: PAY-05
+  category: Invoicing & Getting Paid
+  title: Payment terms section for proposals
+  objective: Write clear, fair payment terms in plain language.
+  use_case: When creating or updating your proposal template.
+  inputs:
+    - "[TERMS I'VE DECIDED]: deposit, schedule, due days, methods, late policy"
+  prompt: |
+    Turn these payment terms into a clear "Payment terms" section for my proposals: """[TERMS I'VE DECIDED]""". Use short bullets: deposit, schedule, due dates, how to pay, what happens if payment is late (only what I specified), and refunds/cancellation if provided. Plain language, no legalese, under 130 words. Add a note reminding me to confirm the terms match my signed agreement.
+  output_format: A headed bullet list plus a note to me.
+  tips: Your agreement is the source of truth. This section summarizes it.
+  pairs_with: [PROP-01]
+
+- id: PAY-06
+  category: Invoicing & Getting Paid
+  title: Deposit request
+  objective: Request a deposit clearly so the project can start.
+  use_case: Immediately after a proposal is accepted.
+  inputs:
+    - "[DEPOSIT AMOUNT], [DUE DATE], [PAYMENT LINK]"
+    - "[START DATE]"
+  prompt: |
+    Write a short, upbeat email requesting the project deposit of [DEPOSIT AMOUNT] via [PAYMENT LINK], due [DUE DATE], so we can start on [START DATE]. Explain in one sentence what the deposit secures (e.g., reserved time in my schedule). Under 90 words.
+  output_format: One short email.
+  tips: Hold your start date only once the deposit arrives, and say so kindly.
+  pairs_with: [ONB-01]
+
+- id: PAY-07
+  category: Invoicing & Getting Paid
+  title: Monthly money review
+  objective: Get a quick picture of invoicing, collections and upcoming cash.
+  use_case: Monthly, during your weekly review nearest month-end.
+  inputs:
+    - "[INVOICE EXPORT]: number, client, issue date, due date, amount, paid, paid date (redacted)"
+  prompt: |
+    Analyze my invoices (redacted) """[INVOICE EXPORT]""". Report: total invoiced this month; total collected; outstanding and overdue totals; average days to payment for paid invoices; clients who paid late more than once; invoices due in the next 30 days. Suggest up to 3 practical changes (e.g., deposits, milestone billing). Use only the data provided and show your calculations.
+  output_format: A short summary with a small table, calculations and up to 3 suggestions.
+  tips: Check AI arithmetic against your spreadsheet totals.
+  pairs_with: [OPS-06]
+
+- id: PAY-08
+  category: Invoicing & Getting Paid
+  title: Payment received thank-you
+  objective: Confirm payment and strengthen the relationship.
+  use_case: When a payment arrives, especially after reminders.
+  inputs:
+    - "[INVOICE NUMBER], [AMOUNT]"
+    - "[NEXT STEP]"
+  prompt: |
+    Write a short thank-you confirming receipt of payment for invoice [INVOICE NUMBER] ([AMOUNT]). Mention the next step [NEXT STEP] if there is one. If this followed reminders, keep it gracious with no reference to lateness. Under 60 words.
+  output_format: One brief message.
+  tips: Mark the invoice as paid in your tracker the same day.
+  pairs_with: [PAY-01]
+
+- id: RET-01
+  category: Offboarding, Testimonials & Referrals
+  title: Project wrap-up & handover email
+  objective: Close a project cleanly with everything the client needs.
+  use_case: When final deliverables are approved.
+  inputs:
+    - "[DELIVERABLES AND WHERE THEY ARE]"
+    - "[ACCESS CHANGES]"
+    - "[SUPPORT TERMS]"
+  prompt: |
+    Write a project wrap-up email: thank the client; list final deliverables and where to find them """[DELIVERABLES AND WHERE THEY ARE]"""; access changes """[ACCESS CHANGES]"""; what support is included afterwards per """[SUPPORT TERMS]"""; how to reach me for future work; and a note that the final invoice (if any) follows separately. Under 200 words, warm and organized.
+  output_format: One email with short sections.
+  tips: Attach or link a one-page handover document (RET-03).
+  pairs_with: [RET-03, RET-02]
+
+- id: RET-02
+  category: Offboarding, Testimonials & Referrals
+  title: Testimonial request with specific questions
+  objective: Get an honest, useful testimonial with permission to use it.
+  use_case: A few days after a successful project ends.
+  inputs:
+    - "[PROJECT]"
+    - "[VOICE PROFILE]"
+  prompt: |
+    Draft a short email asking a client for a testimonial after we finished [PROJECT]. Make it easy: offer 3 optional questions (What was the situation before? What was it like working together? What changed afterwards?); say it can be 2–3 sentences; ask permission to publish it with their name and business (or anonymously, their choice); and say I'll send them the final wording to approve before it appears anywhere. Under 140 words, in my voice [VOICE PROFILE].
+  output_format: One email with three optional questions.
+  tips: Never edit a testimonial in a way that changes its meaning, and keep the permission email on file.
+  pairs_with: [RET-04]
+
+- id: RET-03
+  category: Offboarding, Testimonials & Referrals
+  title: Handover document
+  objective: Give clients a one-page guide to what you delivered and how to maintain it.
+  use_case: At the end of any project that the client will maintain.
+  inputs:
+    - "[DELIVERABLES]"
+    - "[HOW-TO NOTES]"
+    - "[ACCOUNTS AND ACCESS]: no passwords"
+  prompt: |
+    Create a one-page handover document for the client from: deliverables """[DELIVERABLES]"""; how-to notes """[HOW-TO NOTES]"""; accounts and access (no passwords) """[ACCOUNTS AND ACCESS]""". Sections: What you have; Where everything lives; How to do common tasks (numbered steps); What to avoid; When to get help; Contacts. Plain language for a non-expert.
+  output_format: A one-page document with six headed sections.
+  tips: Keep a copy in your project archive, since it's useful if they come back later.
+  pairs_with: [RET-01]
+
+- id: RET-04
+  category: Offboarding, Testimonials & Referrals
+  title: Testimonial tidy-up (with approval)
+  objective: Lightly edit a testimonial for length and clarity without changing its meaning.
+  use_case: When a client's testimonial is long or rambling.
+  inputs:
+    - "[ORIGINAL TESTIMONIAL]"
+    - "[TARGET LENGTH]"
+  prompt: |
+    Here is a client's testimonial: """[ORIGINAL TESTIMONIAL]""". Suggest a shortened version of about [TARGET LENGTH] words that keeps their words and meaning. Only cut; don't add claims, adjectives or results they didn't state. Show what you removed. Then draft a one-line message asking the client to approve the shortened version before I publish it.
+  output_format: The shortened testimonial, a list of cuts, and an approval request.
+  tips: Only publish the version the client approves in writing.
+  pairs_with: [RET-02]
+
+- id: RET-05
+  category: Offboarding, Testimonials & Referrals
+  title: Referral ask after a great project
+  objective: Ask a happy client for introductions at the right moment.
+  use_case: When a client expresses satisfaction at the end of a project.
+  inputs:
+    - "[WHAT WENT WELL]"
+    - "[IDEAL REFERRAL]"
+  prompt: |
+    A client just told me they're happy with the project ([WHAT WENT WELL]). Write a short message thanking them and asking if they know anyone like [IDEAL REFERRAL] who might need similar help. Include a 2-sentence forwardable blurb about me. No pressure, under 110 words, in my voice [VOICE PROFILE].
+  output_format: One message plus a forwardable blurb.
+  tips: Thank anyone who refers you, whether or not the referral becomes a client.
+  pairs_with: [LEAD-04]
+
+- id: RET-06
+  category: Offboarding, Testimonials & Referrals
+  title: 90-day check-in
+  objective: Stay in touch after a project without selling.
+  use_case: About 90 days after a project ends.
+  inputs:
+    - "[PROJECT]"
+    - "[ONE USEFUL TIP]: relevant to what you delivered"
+  prompt: |
+    Write a friendly 90-day check-in to a past client about [PROJECT]. Ask how it's working for them, share one useful tip related to what I delivered: [ONE USEFUL TIP], and mention I'm around if they need anything, without a sales pitch. Under 100 words, in my voice [VOICE PROFILE].
+  output_format: One short email.
+  tips: The Client Desk calculates this date automatically for past clients.
+  pairs_with: [RET-07]
+
+- id: RET-07
+  category: Offboarding, Testimonials & Referrals
+  title: Client feedback survey
+  objective: Learn what to improve from finished projects.
+  use_case: Sent with or after the wrap-up email.
+  inputs:
+    - "[SERVICE]"
+  prompt: |
+    Create a short feedback survey (5–6 questions, under 3 minutes) for clients who finished a [SERVICE] project. Include: an overall rating; what worked best; what could have been better; how communication felt; likelihood to recommend (0–10); and permission to follow up. Use neutral wording that doesn't lead them toward positive answers.
+  output_format: A numbered question list with answer types.
+  tips: Read every response, and log patterns in your weekly review.
+  pairs_with: [OPS-05]
+
+- id: RET-08
+  category: Offboarding, Testimonials & Referrals
+  title: Win-back message to a past client
+  objective: Reconnect with a past client when you have something genuinely relevant.
+  use_case: When you launch a new service or have availability relevant to a past client.
+  inputs:
+    - "[PAST PROJECT]"
+    - "[RELEVANT OFFER OR IDEA]"
+  prompt: |
+    Write a message to a past client (we worked on [PAST PROJECT]) mentioning [RELEVANT OFFER OR IDEA] and why it might be useful for them specifically. Make it easy to say "not now". No discounts unless I specify one, no false urgency, under 120 words, in my voice [VOICE PROFILE].
+  output_format: One short email.
+  tips: Only send when the offer genuinely fits them; generic win-back emails feel like spam.
+  pairs_with: [RET-06]

@@ -1,0 +1,316 @@
+# Band of One Prompt Library: Proposals & Pricing, Onboarding
+
+- id: PROP-01
+  category: Proposals & Pricing
+  title: Proposal draft from discovery notes
+  objective: Draft a complete, specific proposal from your call summary.
+  use_case: After the discovery follow-up (DISC-05), once you've set your price.
+  inputs:
+    - "[BUSINESS BRIEF] and [VOICE PROFILE]"
+    - "[SUMMARY]: discovery call summary (redacted)"
+    - "[PRICE / OPTIONS I'LL PROVIDE]"
+  prompt: |
+    Here is my business brief [PASTE], my voice profile [PASTE], and my discovery call summary (redacted): """[SUMMARY]""". Draft a proposal using this structure: 1) Your situation (3–4 sentences using the client's words), 2) Outcomes (3–5 bullets), 3) Scope (numbered deliverables), 4) Not included (5–8 bullets), 5) Timeline (milestones with client dependencies), 6) Investment: [PRICE / OPTIONS I'LL PROVIDE]. Use exactly my prices and payment terms and don't invent numbers. 7) Next step. Keep it under 700 words, plain language, no buzzwords. Mark anything you had to assume with [CHECK].
+  output_format: A 7-section proposal document, under 700 words, with [CHECK] markers.
+  tips: Delete any number you didn't provide. Read it aloud once before sending.
+  pairs_with: [PROP-06, PROP-04, DISC-05]
+
+- id: PROP-02
+  category: Proposals & Pricing
+  title: Three-option package builder
+  objective: Structure good / better / best options so clients choose how, not whether.
+  use_case: When a project could reasonably be delivered at different depths.
+  inputs:
+    - "[SCOPE SKETCH]"
+    - "[YOUR PRICES FOR EACH OPTION]"
+  prompt: |
+    Using this scope sketch """[SCOPE SKETCH]""", structure three options (Essential, Recommended, Complete). For each: who it suits, what's included, what's excluded, timeline, and the price I set: [YOUR PRICES FOR EACH OPTION]. Make the differences obvious in a comparison table. Explain in one sentence why "Recommended" is recommended, based on the client's stated goals only. Don't invent prices or features I didn't list.
+  output_format: A comparison table plus a short description of each option.
+  tips: Keep options genuinely different. Artificial decoy options erode trust.
+  pairs_with: [PROP-01]
+
+- id: PROP-03
+  category: Proposals & Pricing
+  title: Pricing rationale explainer
+  objective: Explain your price in terms of value and effort without sounding defensive.
+  use_case: When a client asks "why does it cost that much?"
+  inputs:
+    - "[PRICE]"
+    - "[WHAT'S INCLUDED]"
+    - "[CLIENT GOALS]"
+  prompt: |
+    A client asked why my quote is [PRICE]. What's included: """[WHAT'S INCLUDED]""". Their goals: """[CLIENT GOALS]""". Write a calm, confident reply (under 170 words) that: connects the price to the outcomes they want; briefly shows the work involved (phases, not hours, unless I say otherwise); offers a smaller alternative scope if that's appropriate: [SMALLER OPTION OR "NONE"]. No discounting unless I specify one, no apologizing, no comparisons to named competitors.
+  output_format: One email reply.
+  tips: If price is the only concern, offering a reduced scope protects your rate better than a discount.
+  pairs_with: [PROP-02, HARD-01]
+
+- id: PROP-04
+  category: Proposals & Pricing
+  title: Proposal follow-up sequence
+  objective: Follow up on a sent proposal politely and consistently.
+  use_case: Day 3, day 7 and day 14 after sending a proposal.
+  inputs:
+    - "[PROJECT]"
+    - "[DATE SENT]"
+    - "[BOOKING LINK]"
+  prompt: |
+    I sent a proposal for [PROJECT] on [DATE SENT]. Write three follow-up emails in my voice [VOICE PROFILE]: Day 3 (one or two sentences: any questions?); Day 7 (offer a 15-minute call to walk through options, link [BOOKING LINK]); Day 14 (a gracious close-the-loop message that assumes timing isn't right and leaves the door open). Each under 80 words. No guilt, no fake deadlines.
+  output_format: Three labeled emails with subject lines.
+  tips: Put the dates in your tracker's next-action column the day you send the proposal.
+  pairs_with: [PROP-01]
+
+- id: PROP-05
+  category: Proposals & Pricing
+  title: Retainer proposal
+  objective: Propose an ongoing monthly arrangement to an existing client.
+  use_case: When a client keeps coming back with similar requests.
+  inputs:
+    - "[HISTORY]: past projects and recurring requests"
+    - "[RETAINER TERMS I'VE DECIDED]: price, hours or deliverables, notice period"
+  prompt: |
+    Draft a short retainer proposal (under 300 words) for an existing client. Our history (redacted): """[HISTORY]""". Terms I've decided: """[RETAINER TERMS I'VE DECIDED]""". Include: why a retainer suits their pattern of requests; exactly what they get each month; what's excluded; how unused capacity is handled (per my terms); notice period; how to start. Position it as their convenience, not my revenue goal. Use only the terms I provided.
+  output_format: A short proposal with headed sections.
+  tips: Base the retainer on real past demand, which the history section should make visible.
+  pairs_with: [PROP-01]
+
+- id: PROP-06
+  category: Proposals & Pricing
+  title: Scope exclusions & assumptions list
+  objective: Prevent scope creep by stating what's not included.
+  use_case: For every proposal; build a master list once per service.
+  inputs:
+    - "[PROFESSION]"
+    - "[DELIVERABLES]"
+  prompt: |
+    I'm a [PROFESSION] and this project includes: [DELIVERABLES]. List 10 things clients commonly assume are included in this kind of project but often aren't (e.g., extra revision rounds, copywriting, stock photos, hosting, training, ongoing support). For each, write one plain-language line for a "Not included" section and, where useful, the add-on I could offer instead. Then list 5 assumptions about the client's responsibilities (content, feedback times, access) that I should state in the proposal.
+  output_format: Two lists, "Not included" (10 lines with optional add-ons) and "Assumptions" (5 lines).
+  tips: Keep a master version per service and copy the relevant lines each time.
+  pairs_with: [PROP-01, DEL-07]
+
+- id: PROP-07
+  category: Proposals & Pricing
+  title: Timeline with client dependencies
+  objective: Build a realistic timeline that makes the client's responsibilities visible.
+  use_case: In proposals and kickoff documents.
+  inputs:
+    - "[START DATE]"
+    - "[PHASES AND DURATIONS]"
+    - "[CLIENT INPUTS NEEDED]"
+  prompt: |
+    Create a project timeline starting [START DATE] from these phases and durations: """[PHASES AND DURATIONS]""". For each milestone, list what I deliver and what the client must provide, and by when (based on: """[CLIENT INPUTS NEEDED]"""). Add a short note explaining that the timeline shifts if client inputs arrive late, phrased collaboratively. Use calendar dates, skip weekends, and flag any [HOLIDAYS OR BREAKS] I mention.
+  output_format: A table (Milestone, Date, I deliver, You provide by) plus a two-sentence note.
+  tips: Double-check date arithmetic yourself; AI can miscount days.
+  pairs_with: [PROP-01, ONB-05]
+
+- id: PROP-08
+  category: Proposals & Pricing
+  title: Case study summary for proposals (from your notes)
+  objective: Turn a past project into a short, truthful proof point.
+  use_case: When you want to reference relevant past work in a proposal.
+  inputs:
+    - "[PROJECT NOTES]: situation, what you did, result as the client described it"
+    - "[PERMISSION STATUS]: named / anonymized"
+  prompt: |
+    Turn these notes about a past project into a 90-word case study for proposals. Notes: """[PROJECT NOTES]""". Permission: [PERMISSION STATUS]. If anonymized, describe the client generically (e.g., "a three-location dental practice"). Structure: situation, what I did, outcome. Only state outcomes that appear in my notes, and attribute any numbers to the client ("the client reported…"). Don't embellish.
+  output_format: A 90-word paragraph plus a one-line title.
+  tips: Ask permission before naming clients or quoting their results.
+  pairs_with: [RET-02]
+
+- id: PROP-09
+  category: Proposals & Pricing
+  title: Price increase announcement
+  objective: Tell existing clients about a rate change clearly and respectfully.
+  use_case: When you raise rates for retainers or repeat clients.
+  inputs:
+    - "[OLD RATE] and [NEW RATE]"
+    - "[EFFECTIVE DATE]"
+    - "[REASON]: optional"
+  prompt: |
+    Write an email informing an existing client that my rate will change from [OLD RATE] to [NEW RATE] effective [EFFECTIVE DATE]. Give appropriate notice as stated in our agreement: [NOTICE TERMS]. Briefly mention [REASON] if provided, without over-justifying. Thank them for the relationship and make it easy to ask questions. Under 140 words, confident and warm.
+  output_format: One email.
+  tips: Check your agreement's notice terms before sending.
+  pairs_with: [HARD-01]
+
+- id: PROP-10
+  category: Proposals & Pricing
+  title: Contract clause plain-language explainer
+  objective: Help a client (and you) understand what a clause in your agreement means.
+  use_case: When a client asks about a clause, or you want to summarize your terms in plain English.
+  inputs:
+    - "[CLAUSE TEXT]"
+  prompt: |
+    Explain this clause from my client agreement in plain language for a non-lawyer, in under 120 words: """[CLAUSE TEXT]""". Then list 2–3 questions a client might ask about it. Don't give legal advice or say whether the clause is enforceable. End with: "This is a plain-language summary, not legal advice."
+  output_format: A short explanation, a question list and the disclaimer line.
+  tips: Have your agreement template reviewed by a qualified professional; this prompt only explains it.
+  pairs_with: [ONB-02]
+
+- id: PROP-11
+  category: Proposals & Pricing
+  title: Proposal self-review checklist
+  objective: Catch gaps, vague language and risky promises before sending.
+  use_case: As the last step before any proposal goes out.
+  inputs:
+    - "[PROPOSAL TEXT]"
+  prompt: |
+    Review this proposal as a skeptical client and as a careful business owner: """[PROPOSAL TEXT]""". List: (1) anything vague that could cause a dispute later; (2) promises or guarantees I may not want to make; (3) missing items (payment terms, revisions, timeline dependencies, exclusions, next step); (4) jargon to simplify; (5) the single biggest improvement. Quote the exact text for each issue.
+  output_format: Five numbered sections with quoted text and suggested fixes.
+  tips: Fix issues yourself instead of asking AI to rewrite everything, so your voice stays intact.
+  pairs_with: [PROP-01]
+
+- id: PROP-12
+  category: Proposals & Pricing
+  title: Estimate my effort before pricing
+  objective: Estimate your time on a project so your price reflects real effort.
+  use_case: Before setting a fixed price.
+  inputs:
+    - "[SCOPE]"
+    - "[MY PAST TASK TIMES]: how long similar tasks took"
+  prompt: |
+    Help me estimate effort for this scope: """[SCOPE]""". Use my past task times as the baseline: """[MY PAST TASK TIMES]""". Break the work into tasks, estimate hours for each (low / likely / high), add time for communication, revisions and project management, and total them. Flag tasks where you had to guess because I gave no baseline. Don't convert hours into a price.
+  output_format: A task table (Task, Low, Likely, High, Basis) with totals and flagged guesses.
+  tips: Multiply the likely total by your own rate, then sanity-check against the "high" total.
+  pairs_with: [DISC-07, PROP-02]
+
+- id: ONB-01
+  category: Onboarding
+  title: Welcome email
+  objective: Start the project with clear next steps and expectations.
+  use_case: As soon as a client says yes.
+  inputs:
+    - "[BUSINESS BRIEF] and [VOICE PROFILE]"
+    - "[PROJECT, TIMELINE, LINKS]"
+  prompt: |
+    Using my business brief and voice profile [PASTE], write a welcome email for a new client (redacted details: """[PROJECT, TIMELINE, LINKS]"""). Include: a warm opening that references the project; a numbered "what happens next" list (agreement, deposit, questionnaire link, kickoff booking link); my communication norms from the brief; and a friendly close. Under 220 words. Use only the links and dates I provide. Use [NEED INFO] for anything missing.
+  output_format: One email with a numbered next-steps list, under 220 words.
+  tips: Save the result as a template, since only the first line and links change per client.
+  pairs_with: [ONB-03, SET-07]
+
+- id: ONB-02
+  category: Onboarding
+  title: Agreement summary email
+  objective: Send the agreement with a short, friendly summary of key terms.
+  use_case: When sending your contract for signature.
+  inputs:
+    - "[KEY TERMS]: scope, fee, payment schedule, revisions, cancellation"
+    - "[SIGNING LINK]"
+  prompt: |
+    Write a short email sending my client agreement for signature ([SIGNING LINK]). Summarize the key terms in 4–6 plain-language bullets based only on: """[KEY TERMS]""". Invite questions before they sign, and mention that work starts once the agreement and deposit are complete. Under 150 words. Don't add terms that aren't in my list.
+  output_format: One email with a bullet summary.
+  tips: The summary helps clients read the agreement. It doesn't replace it.
+  pairs_with: [PROP-10]
+
+- id: ONB-03
+  category: Onboarding
+  title: Intake questionnaire builder
+  objective: Collect everything you need from a new client in one form.
+  use_case: When setting up onboarding for each service type.
+  inputs:
+    - "[PROFESSION]"
+    - "[PROJECT TYPE]"
+  prompt: |
+    I'm a [PROFESSION] starting a [PROJECT TYPE] for a client. Create an intake questionnaire of 10–15 questions grouped under: Goals & success measures; Audience/customers; Brand & preferences; Content & assets they'll provide; Access & logistics; Communication & approvals. For each question, note why I need it (one line) and mark it Required or Optional. Avoid questions I could answer myself from their website. End with a "Anything else we should know?" question.
+  output_format: Grouped questions with purpose notes and Required/Optional labels.
+  tips: Build it in a form tool so answers land in a spreadsheet.
+  pairs_with: [ONB-01]
+
+- id: ONB-04
+  category: Onboarding
+  title: Client onboarding document
+  objective: Create a single "everything you need to know" document for new clients.
+  use_case: Once per service; share a copy with every new client.
+  inputs:
+    - "[BUSINESS BRIEF]"
+    - "[PROCESS STEPS]"
+    - "[FAQ]"
+  prompt: |
+    Create a client onboarding document (under 600 words) from my business brief """[BUSINESS BRIEF]""", my process """[PROCESS STEPS]""" and my FAQ """[FAQ]""". Sections: Welcome; How the project works (numbered phases); What I need from you and when; How we'll communicate; Feedback & approvals; Payments; Frequently asked questions; Who to contact. Friendly, scannable, second person ("you").
+  output_format: A Markdown document with eight headed sections.
+  tips: Export it as a PDF and link it in the welcome email.
+  pairs_with: [SET-06, SET-07]
+
+- id: ONB-05
+  category: Onboarding
+  title: Kickoff call agenda
+  objective: Run a focused kickoff meeting that sets the project up well.
+  use_case: When scheduling the kickoff call.
+  inputs:
+    - "[PROJECT]"
+    - "[QUESTIONNAIRE ANSWERS]: summarized"
+    - "[CALL LENGTH]"
+  prompt: |
+    Create a [CALL LENGTH]-minute kickoff call agenda for [PROJECT]. Use the client's questionnaire answers (redacted) """[QUESTIONNAIRE ANSWERS]""" to list: items to confirm, open questions to resolve, decisions needed, and risks to discuss. Include timings for each agenda item, and end with "agree next steps & dates". Also write a 3-sentence email to send the agenda in advance.
+  output_format: A timed agenda plus a short cover email.
+  tips: Share the agenda 24 hours before so the client arrives prepared.
+  pairs_with: [DEL-04]
+
+- id: ONB-06
+  category: Onboarding
+  title: Asset & access request
+  objective: Ask for files, logins and access in one clear, secure request.
+  use_case: Right after kickoff.
+  inputs:
+    - "[ITEMS NEEDED]"
+    - "[DEADLINE]"
+    - "[SECURE SHARING METHOD]"
+  prompt: |
+    Write an email asking a client for the assets and access I need: """[ITEMS NEEDED]""", by [DEADLINE]. Format as a checklist they can reply to. Explain how to share passwords securely using [SECURE SHARING METHOD] and ask them never to send passwords in plain email. Mention politely that the timeline starts when the items arrive. Under 180 words.
+  output_format: One email with a checklist.
+  tips: Offer to walk them through access on a quick call if they're not technical.
+  pairs_with: [ONB-05]
+
+- id: ONB-07
+  category: Onboarding
+  title: Project folder & naming convention
+  objective: Create a consistent file structure for every client.
+  use_case: Once; reuse for every new client.
+  inputs:
+    - "[SERVICE]"
+    - "[TOOLS]: e.g., Google Drive, Dropbox"
+  prompt: |
+    Design a simple folder structure and file-naming convention for [SERVICE] projects stored in [TOOLS]. Include: top-level folders (max 7), what goes in each, a naming pattern for files with a date and version (e.g., YYYY-MM-DD_Client_Deliverable_v01), and rules for archiving when a project ends. Keep it simple enough to follow on a busy day.
+  output_format: A folder tree, a naming pattern with 3 examples, and 3 archiving rules.
+  tips: Save a template folder and copy it for each new client.
+  pairs_with: [OPS-01]
+
+- id: ONB-08
+  category: Onboarding
+  title: Expectations reset for a new client
+  objective: Gently re-establish norms when a new client starts off with unrealistic expectations.
+  use_case: Early in a project, when a client expects instant replies or unlimited revisions.
+  inputs:
+    - "[SITUATION]"
+    - "[AGREED TERMS]"
+  prompt: |
+    A new client is expecting more than we agreed. Situation (redacted): """[SITUATION]""". Our agreed terms: """[AGREED TERMS]""". Write a friendly email that restates how we'll work (response times, revision rounds, channels), explains the benefit to them, and proposes a practical way forward. No blame, under 160 words, in my voice [VOICE PROFILE].
+  output_format: One email.
+  tips: Do this early. Resetting expectations in week one is far easier than in week eight.
+  pairs_with: [SET-07, HARD-02]
+
+- id: ONB-09
+  category: Onboarding
+  title: Onboarding checklist tailored to a service
+  objective: Turn the generic onboarding checklist into one that fits your exact service.
+  use_case: Once per service.
+  inputs:
+    - "[SERVICE]"
+    - "[TOOLS]"
+    - "[CURRENT STEPS]: what you do now, even if messy"
+  prompt: |
+    Here's how I currently onboard clients for [SERVICE] using [TOOLS]: """[CURRENT STEPS]""". Turn it into a clean onboarding checklist in the order steps should happen, grouped into: Paperwork & payment; Welcome & information; Setup; Kickoff. Mark steps that can use a saved template (T) or could be automated later (A). Point out missing steps common in [SERVICE] projects.
+  output_format: A grouped checklist with T/A markers and a short "missing steps" list.
+  tips: Copy the result into your SOP library (OPS-01).
+  pairs_with: [OPS-01]
+
+- id: ONB-10
+  category: Onboarding
+  title: First-week check-in message
+  objective: Reassure a new client and surface issues early.
+  use_case: At the end of the first week of a project.
+  inputs:
+    - "[PROGRESS SO FAR]"
+    - "[NEXT STEPS]"
+  prompt: |
+    Write a short end-of-first-week message to a new client. Progress so far: """[PROGRESS SO FAR]""". Coming up: """[NEXT STEPS]""". Ask one question that invites honest feedback about how things are going so far. Under 110 words, warm and specific, in my voice [VOICE PROFILE].
+  output_format: One short email or message.
+  tips: Log any concerns they raise in the Notes column of your tracker.
+  pairs_with: [DEL-01]

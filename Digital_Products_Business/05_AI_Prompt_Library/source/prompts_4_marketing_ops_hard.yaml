@@ -1,0 +1,314 @@
+# Band of One Prompt Library: Content & Marketing, Systems & Planning, Tough Conversations
+
+- id: MKT-01
+  category: Content & Marketing
+  title: One idea → a week of posts
+  objective: Repurpose one piece of expertise into several platform-appropriate posts.
+  use_case: Weekly content batching for LinkedIn, Instagram, Threads or similar.
+  inputs:
+    - "[CORE IDEA]: a lesson, opinion or how-to from your work"
+    - "[PLATFORMS]"
+    - "[VOICE PROFILE]"
+  prompt: |
+    Turn this idea from my work into posts for [PLATFORMS]: """[CORE IDEA]""". Create: 1 short how-to post, 1 opinion/lesson post, 1 checklist post, 1 myth-vs-reality post, and 1 question post that invites replies. Each must stand alone, match the platform's style and length norms, and sound like my voice [VOICE PROFILE]. No invented statistics, client stories or results. If a claim needs a source, write [SOURCE NEEDED].
+  output_format: Five labeled posts, each with a suggested hook line.
+  tips: Add one real detail from your own experience to each post before publishing.
+  pairs_with: [MKT-02, MKT-03]
+
+- id: MKT-02
+  category: Content & Marketing
+  title: Hook generator
+  objective: Write scroll-stopping first lines that are honest.
+  use_case: For posts and short videos.
+  inputs:
+    - "[TOPIC]"
+    - "[AUDIENCE]"
+  prompt: |
+    Write 12 opening hooks (under 15 words each) for content about [TOPIC] for [AUDIENCE]. Mix: a specific problem, a surprising-but-true observation, a mistake to avoid, a "here's exactly how" promise, and a question. Every hook must be something the content can deliver on. No clickbait, no income claims, no "nobody talks about this".
+  output_format: A numbered list of 12 hooks, labeled by type.
+  tips: Pick the hook after writing the content, not before.
+  pairs_with: [MKT-01, MKT-04]
+
+- id: MKT-03
+  category: Content & Marketing
+  title: Carousel outline
+  objective: Structure a swipeable educational carousel.
+  use_case: LinkedIn document posts or Instagram carousels.
+  inputs:
+    - "[TOPIC]"
+    - "[KEY STEPS OR POINTS]"
+  prompt: |
+    Outline a 7–9 slide carousel teaching [TOPIC] using these points: """[KEY STEPS OR POINTS]""". Slide 1: hook (under 10 words). Slides 2–(n−1): one idea per slide, a headline under 8 words plus up to 25 words of support. Final slide: a recap plus a soft call to action (save, share, or a link in my profile). Also write a 2–3 sentence caption.
+  output_format: Numbered slides with headline/support text, plus a caption.
+  tips: Design each slide in your brand template before adding any extra text.
+  pairs_with: [MKT-01]
+
+- id: MKT-04
+  category: Content & Marketing
+  title: Short video script (30–45 seconds)
+  objective: Script a short, useful vertical video.
+  use_case: TikTok, Reels or YouTube Shorts.
+  inputs:
+    - "[TOPIC]"
+    - "[ONE PRACTICAL TIP]"
+  prompt: |
+    Write a 30–45 second vertical video script about [TOPIC], teaching this tip: """[ONE PRACTICAL TIP]""". Format: Hook (0–3s), Setup (3–10s), Steps or demo (10–35s), Close with one takeaway and a soft CTA (35–45s). Include on-screen text for each section (under 8 words) and a note on what to show (screen recording, face to camera, B-roll). Conversational, no hype, no invented results.
+  output_format: A timed script table (Time, Voiceover, On-screen text, Visual).
+  tips: Record the voiceover first, then match the visuals to it.
+  pairs_with: [MKT-02]
+
+- id: MKT-05
+  category: Content & Marketing
+  title: Services page draft
+  objective: Write a clear services page that attracts the right clients.
+  use_case: When creating or refreshing your website.
+  inputs:
+    - "[SERVICE MENU]: from SET-05"
+    - "[IDEAL CLIENT]"
+    - "[PROOF]: real testimonials with permission, or none"
+  prompt: |
+    Draft a services page for my website using my service menu """[SERVICE MENU]""" for [IDEAL CLIENT]. Structure: headline focused on the client's outcome; who it's for (and not for); services with what's included; how it works (3–5 steps); proof: [PROOF] (use only what I provide; if none, omit the section); FAQs; call to action. Plain language, scannable, under 600 words. Don't invent testimonials, logos, numbers or guarantees.
+  output_format: A page draft with headings and placeholder markers where I must add info.
+  tips: Replace generic phrases with specifics from your real projects.
+  pairs_with: [SET-05]
+
+- id: MKT-06
+  category: Content & Marketing
+  title: Newsletter issue from my notes
+  objective: Turn a week of notes into a helpful short newsletter.
+  use_case: Weekly or biweekly newsletters.
+  inputs:
+    - "[NOTES]: ideas, lessons, links you want to share"
+    - "[VOICE PROFILE]"
+  prompt: |
+    Turn these notes into a short newsletter issue (350–500 words): """[NOTES]""". Structure: a personal-but-relevant opening (2–3 sentences, no invented anecdotes); one main lesson with steps or an example; 2–3 quick useful links with one-line explanations (use only the links I provided); a single question inviting replies. Suggest 3 subject lines under 45 characters. My voice: [VOICE PROFILE].
+  output_format: Subject line options plus the full issue.
+  tips: Replies are a good sign readers find the issue useful, so answer them.
+  pairs_with: [MKT-01]
+
+- id: MKT-07
+  category: Content & Marketing
+  title: LinkedIn profile refresh
+  objective: Make your profile clearly say who you help and how.
+  use_case: When your positioning changes or your profile feels generic.
+  inputs:
+    - "[CURRENT HEADLINE AND ABOUT]"
+    - "[BUSINESS BRIEF]"
+  prompt: |
+    Rewrite my LinkedIn headline (under 220 characters) and About section (under 1,600 characters) using my business brief """[BUSINESS BRIEF]""". Current version: """[CURRENT HEADLINE AND ABOUT]""". Headline: who I help + outcome + how. About: a short hook, who I help, what I do, how I work, one proof point I provided (or none), and a clear call to action. First person, no buzzwords, no invented claims. Give character counts.
+  output_format: A headline and an About section with character counts.
+  tips: Confirm the character counts yourself before pasting, since platform limits change.
+  pairs_with: [SET-01]
+
+- id: MKT-08
+  category: Content & Marketing
+  title: Case study post (with permission)
+  objective: Share a client success story truthfully and helpfully.
+  use_case: After a project with a client who agreed to be featured.
+  inputs:
+    - "[PROJECT NOTES]"
+    - "[CLIENT-APPROVED QUOTE OR RESULT]"
+  prompt: |
+    Write a social post telling the story of a project, for other people facing the same problem. Notes: """[PROJECT NOTES]""". Use only this client-approved quote/result: """[CLIENT-APPROVED QUOTE OR RESULT]""". Structure: the problem, what we did (3 steps), what changed (only as approved), and one lesson readers can apply. Under 220 words. No exaggeration.
+  output_format: One post with a hook line.
+  tips: Send the draft to the client for approval before posting.
+  pairs_with: [PROP-08, RET-02]
+
+- id: MKT-09
+  category: Content & Marketing
+  title: Content calendar for a month
+  objective: Plan a month of content around your services and audience questions.
+  use_case: At the start of each month.
+  inputs:
+    - "[SERVICES]"
+    - "[AUDIENCE QUESTIONS]"
+    - "[POSTS PER WEEK]"
+    - "[PLATFORMS]"
+  prompt: |
+    Create a 4-week content calendar for [PLATFORMS] at [POSTS PER WEEK] posts per week. My services: [SERVICES]. Questions my audience asks: """[AUDIENCE QUESTIONS]""". Mix: 60% teaching, 20% behind-the-scenes/process, 10% opinion, 10% offers. For each post: date slot, format, working title, the question it answers, and CTA. Avoid repeating the same topic within two weeks.
+  output_format: A calendar table (Week, Day, Format, Title, Question answered, CTA).
+  tips: Batch-create one week at a time using MKT-01.
+  pairs_with: [MKT-01, MKT-06]
+
+- id: MKT-10
+  category: Content & Marketing
+  title: Lead magnet outline
+  objective: Plan a small, genuinely useful freebie that attracts ideal clients.
+  use_case: When building an email list.
+  inputs:
+    - "[AUDIENCE PROBLEM]"
+    - "[FORMAT]: checklist, template, mini-guide"
+  prompt: |
+    Outline a lead magnet solving this specific problem for my audience: [AUDIENCE PROBLEM]. Format: [FORMAT]. Include: 5 title options; what the reader will be able to do in 15 minutes; a section-by-section outline (max 6 sections); one worksheet or checklist element; how it connects naturally to my paid service or product without a hard sell. Keep it small, specific and quick to use.
+  output_format: Titles, promise, outline, worksheet idea, connection to offer.
+  tips: A narrow, fast win usually beats a big ebook as a lead magnet.
+  pairs_with: [MKT-06]
+
+- id: OPS-01
+  category: Systems, SOPs & Planning
+  title: SOP from rough notes
+  objective: Document a process in minutes.
+  use_case: After doing a task while jotting notes or recording a voice memo.
+  inputs:
+    - "[NOTES]"
+  prompt: |
+    Turn my rough notes into an SOP using this template: SOP name, Purpose, Trigger, Time, Tools & templates, Steps (numbered, each starting with a verb, max 12), Done when, Common mistakes, Last reviewed [TODAY'S DATE]. Notes: """[NOTES]""". Keep my exact tool names and links. Where a step is unclear or seems to be missing, add [CHECK: question] instead of guessing.
+  output_format: A complete SOP in the template's headings.
+  tips: Log it in the SOP Library tab of The Client Desk with a review date.
+  pairs_with: [OPS-02]
+
+- id: OPS-02
+  category: Systems, SOPs & Planning
+  title: SOP stress test
+  objective: Find gaps in an SOP before someone (including future you) relies on it.
+  use_case: After writing an SOP, or before handing a task to a contractor.
+  inputs:
+    - "[SOP TEXT]"
+  prompt: |
+    Act as someone doing this task for the first time with no context. Read this SOP: """[SOP TEXT]""". List: steps that assume knowledge you don't have; missing tools, links or access; ambiguous words ("soon", "update", "check"); points where a mistake would be costly and a check is missing; and a suggested fix for each. Don't rewrite the whole SOP.
+  output_format: A table (Issue, Where, Why it matters, Suggested fix).
+  tips: Fix the top three issues, then mark the SOP as reviewed.
+  pairs_with: [OPS-01]
+
+- id: OPS-03
+  category: Systems, SOPs & Planning
+  title: Automation opportunity check
+  objective: Decide whether a task should be templated, AI-drafted, automated or left alone.
+  use_case: For high-scoring tasks from your admin audit.
+  inputs:
+    - "[TASK DESCRIPTION]: steps, frequency, minutes, risk"
+    - "[TOOLS I HAVE]"
+  prompt: |
+    Evaluate this task for automation: """[TASK DESCRIPTION]""". Tools I already have: [TOOLS I HAVE]. Answer: Is it already templated? Is it weekly or more? Is it rule-based? What happens if it fails silently? Then recommend one level: Template, AI draft, Automate, or Keep human, with reasoning. If you recommend automation, outline the trigger, steps, human checkpoint and failure alert using only tools I have or clearly free options, and note any limits I should check.
+  output_format: Four yes/no answers with notes, a recommendation, and an optional automation outline.
+  tips: Build automation only after the manual version has worked for a few weeks.
+  pairs_with: [OPS-04]
+
+- id: OPS-04
+  category: Systems, SOPs & Planning
+  title: Automation recipe writer
+  objective: Write step-by-step instructions to build a simple automation.
+  use_case: When you've decided a task should be automated.
+  inputs:
+    - "[TRIGGER], [DESIRED OUTCOME]"
+    - "[AUTOMATION TOOL]: e.g., Zapier, Make, n8n, or built-in features"
+  prompt: |
+    Write step-by-step instructions for a beginner to build this automation in [AUTOMATION TOOL]: when [TRIGGER] happens, [DESIRED OUTCOME]. Include: the apps and permissions needed; each step with field mappings; a test plan with sample data; a human checkpoint before anything reaches a client; and what to do if it fails. Tell me which features might require a paid plan so I can check current pricing, and don't state prices.
+  output_format: Numbered build steps, a test plan and failure handling notes.
+  tips: Tool interfaces change often. If a menu doesn't match, check the tool's current help docs.
+  pairs_with: [OPS-03]
+
+- id: OPS-05
+  category: Systems, SOPs & Planning
+  title: Weekly admin review assistant
+  objective: Run your weekly review faster, with nothing missed.
+  use_case: Every week on your review day.
+  inputs:
+    - "[PASTE]: tracker rows, open invoices, next week's calendar (redacted)"
+  prompt: |
+    Act as my weekly admin review assistant. I'll paste: my client tracker rows (redacted), my open invoices with due dates, and my calendar for next week. Produce: (1) follow-ups due this week, with the template to use; (2) invoice actions by reminder stage; (3) risks (overdue items, client dependencies, deadline clashes); (4) a suggested time-block plan for next week; (5) one improvement to my admin system based on patterns you notice. Ask me questions if something is unclear. Data: """[PASTE]"""
+  output_format: Five labeled sections.
+  tips: The Client Desk Dashboard already lists most of this, so paste its tables for a quick summary.
+  pairs_with: [PAY-02, OPS-06]
+
+- id: OPS-06
+  category: Systems, SOPs & Planning
+  title: Monthly business review
+  objective: Reflect on the month with numbers and decide one or two changes.
+  use_case: At month-end.
+  inputs:
+    - "[NUMBERS]: revenue invoiced/collected, hours, proposals, pipeline, admin hours"
+    - "[NOTES]: what went well/badly"
+  prompt: |
+    Help me run a monthly business review. Numbers: """[NUMBERS]""". Notes: """[NOTES]""". Produce: a 5-bullet summary; what the numbers suggest (flag small-sample caveats); what went well to keep; one or two problems to fix, with a concrete action and owner (me) and a date; and a question I should think about before next month. Base conclusions only on what I provided.
+  output_format: A short review with five labeled parts.
+  tips: Log the decided actions in your tracker with dates.
+  pairs_with: [OPS-05, LEAD-10]
+
+- id: OPS-07
+  category: Systems, SOPs & Planning
+  title: Quarterly planning session
+  objective: Set a few realistic priorities for the next quarter.
+  use_case: Once per quarter.
+  inputs:
+    - "[LAST QUARTER RESULTS]"
+    - "[CAPACITY]: hours per week available"
+    - "[GOALS]"
+  prompt: |
+    Facilitate a quarterly planning session for my one-person business. Last quarter: """[LAST QUARTER RESULTS]""". Capacity: [CAPACITY] hours/week. Goals: """[GOALS]""". Ask me up to 5 clarifying questions first. Then propose: max 3 priorities, each with a measurable outcome, the first step, and the weekly time it needs; what I should stop or pause to make room; and a simple monthly checkpoint. Keep total time within my capacity.
+  output_format: Clarifying questions first; then a priorities table and a stop/pause list.
+  tips: Fewer priorities, finished, beat many half-done.
+  pairs_with: [OPS-06]
+
+- id: OPS-08
+  category: Systems, SOPs & Planning
+  title: Weekly time-block plan
+  objective: Protect focused client work and batch admin.
+  use_case: During your weekly review, for the week ahead.
+  inputs:
+    - "[DEADLINES AND MEETINGS]"
+    - "[TASKS]"
+    - "[ENERGY PATTERNS]: when you do your best focused work"
+  prompt: |
+    Build a time-block plan for next week. Fixed commitments: """[DEADLINES AND MEETINGS]""". Tasks with estimates: """[TASKS]""". My energy patterns: [ENERGY PATTERNS]. Put deep client work in my best hours, batch admin into two or three short blocks, leave 20% buffer, and schedule my weekly review. Flag anything that doesn't fit and suggest what to move or drop.
+  output_format: A day-by-day schedule table plus a "doesn't fit" list.
+  tips: Treat the buffer as real, because it's what absorbs surprises.
+  pairs_with: [OPS-05]
+
+- id: HARD-01
+  category: Tough Conversations
+  title: Responding to a discount request
+  objective: Respond to "can you do it cheaper?" while protecting your rate and the relationship.
+  use_case: When a prospect or client asks for a lower price.
+  inputs:
+    - "[REQUEST]"
+    - "[MY OPTIONS]: e.g., reduced scope, phased delivery, payment plan, no change"
+  prompt: |
+    A client asked for a lower price: """[REQUEST]""". Draft a reply that acknowledges their budget, restates the value tied to their goals, and offers these options only: [MY OPTIONS]. If I've chosen not to reduce the price, say so kindly and clearly. Under 150 words, confident, no apology spiral, in my voice [VOICE PROFILE].
+  output_format: One email with options as a short list.
+  tips: Changing scope is usually better than cutting your rate for the same work.
+  pairs_with: [PROP-03]
+
+- id: HARD-02
+  category: Tough Conversations
+  title: Setting a boundary with a demanding client
+  objective: Address after-hours messages, urgency creep or disrespectful tone professionally.
+  use_case: When a client repeatedly crosses agreed working norms.
+  inputs:
+    - "[BEHAVIOR]: what's been happening, factually"
+    - "[AGREED NORMS]"
+  prompt: |
+    A client keeps [BEHAVIOR]. Our agreed norms: """[AGREED NORMS]""". Draft a calm message that names the pattern factually (no accusations), restates the norm and its benefit to their project, proposes a practical alternative (e.g., a weekly call for urgent items), and invites their input. Under 160 words. Offer a second, firmer version in case the first doesn't work.
+  output_format: Two versions, gentle and firmer.
+  tips: If a client is abusive, you don't owe them a template. Consider ending the engagement per your agreement.
+  pairs_with: [ONB-08]
+
+- id: HARD-03
+  category: Tough Conversations
+  title: Handling a complaint about your work
+  objective: Respond to a complaint in a way that de-escalates and solves the problem.
+  use_case: When a client says they're unhappy with a deliverable or service.
+  inputs:
+    - "[COMPLAINT]"
+    - "[FACTS]: what actually happened"
+    - "[WHAT I CAN OFFER]"
+  prompt: |
+    A client complained: """[COMPLAINT]""". The facts as I understand them: """[FACTS]""". What I can offer: [WHAT I CAN OFFER]. Draft a response that: thanks them for telling me; acknowledges their experience without admitting things that aren't accurate; explains briefly what happened; proposes the fix and a timeline; and suggests a short call if helpful. Under 180 words, calm and human. Point out anything in my facts that I should double-check before sending.
+  output_format: One email, then a short list of facts to verify.
+  tips: Sleep on it before sending, if timing allows.
+  pairs_with: [HARD-04]
+
+- id: HARD-04
+  category: Tough Conversations
+  title: Ending a client relationship professionally
+  objective: End an engagement clearly, kindly and according to your agreement.
+  use_case: When a working relationship isn't working for either side.
+  inputs:
+    - "[REASON]: your private reason; share only what's appropriate"
+    - "[TERMINATION TERMS]: from your agreement"
+    - "[HANDOVER PLAN]"
+  prompt: |
+    Draft a message ending my work with a client. Termination terms from our agreement: """[TERMINATION TERMS]""". Handover plan: """[HANDOVER PLAN]""". Share only this reason: [SHAREABLE REASON]. Structure: clear decision; effective date; what I'll complete or hand over and when; final invoice or refund per the agreement; good wishes. Under 170 words, respectful, no blame. Add a reminder for me to check the agreement and, if unsure, get professional advice before sending.
+  output_format: One message plus a reminder note to me.
+  tips: Keep everything in writing and deliver the handover exactly as promised.
+  pairs_with: [RET-01]

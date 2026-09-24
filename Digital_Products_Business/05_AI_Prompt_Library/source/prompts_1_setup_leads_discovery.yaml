@@ -1,0 +1,375 @@
+# Band of One Prompt Library: Setup, Leads, Discovery
+# Fields: id, category, title, objective, use_case, inputs, prompt, output_format, tips, pairs_with
+
+- id: SET-01
+  category: Setup & Foundations
+  title: Business brief builder
+  objective: Create a one-page description of your business that you reuse as context in every other prompt.
+  use_case: Do this once when you start using AI for client admin; update it when your services or policies change.
+  inputs:
+    - "None: the AI interviews you"
+  prompt: |
+    Help me write a one-page "business brief" I can give an AI assistant before asking for help with client admin. Interview me with one question at a time (wait for each answer) covering: what I do and for whom; my 2–4 core services and typical project size; how I like to work (communication hours, response times, meeting preferences); my payment terms and policies; phrases or promises I never want used; and three examples of great client outcomes (described generally, no client names). When we're done, output the brief in this format: ## Who I am, ## Services, ## Ideal clients, ## How I work, ## Policies, ## Tone and words to avoid. Keep it under 450 words.
+  output_format: A Markdown document with six headed sections, under 450 words.
+  tips: Save the result in your assistant's custom instructions or project knowledge, or paste it at the start of each chat.
+  pairs_with: [SET-02, SET-04]
+
+- id: SET-02
+  category: Setup & Foundations
+  title: Voice profile from writing samples
+  objective: Capture how you write so AI drafts sound like you, not like a generic assistant.
+  use_case: After the business brief; refresh every few months.
+  inputs:
+    - "[NUMBER]: how many samples you're providing (3–5)"
+    - "[PASTE 3–5 REDACTED EMAILS]: emails you're happy with, names removed"
+  prompt: |
+    Below are [NUMBER] emails I wrote to clients (names removed). Analyze my writing style and produce a "voice profile" I can reuse in future prompts. Include: typical sentence length; greeting and sign-off habits; level of formality (1–5); words and phrases I use often; things I never do (e.g., exclamation marks, emojis, corporate phrases); how I deliver bad news; and 3 short "do this / not that" examples. Keep it under 250 words and don't invent traits that aren't in the samples.
+    """[PASTE 3–5 REDACTED EMAILS]"""
+  output_format: A short profile (≤250 words) with bullet points and 3 do/don't examples.
+  tips: Choose emails that cover different situations (good news, a delay, a follow-up) so the profile is well-rounded.
+  pairs_with: [SET-01]
+
+- id: SET-03
+  category: Setup & Foundations
+  title: Redaction check before pasting
+  objective: Catch client names and sensitive details before you share text with an AI tool.
+  use_case: While you're building the redaction habit, or on long documents such as transcripts and threads.
+  inputs:
+    - "[PASTE TEXT]: the text you plan to use"
+  prompt: |
+    I'm about to paste text into an AI assistant. Act as a careful privacy reviewer. Scan the text between the triple quotes and list every item that could identify a person or company or expose sensitive data (names, emails, phone numbers, addresses, account numbers, prices tied to named clients, health/legal/HR details, passwords or links with tokens). Then return a redacted version that replaces each item with a clear placeholder like [CLIENT NAME] or [INVOICE AMOUNT]. Don't change anything else.
+    """[PASTE TEXT]"""
+  output_format: "1) A bulleted list of sensitive items found. 2) The full redacted text."
+  tips: Running this inside the same assistant means the text has already been shared, so use it on text you've already partly redacted, or on non-confidential material while you learn.
+  pairs_with: [SET-01]
+
+- id: SET-04
+  category: Setup & Foundations
+  title: Custom instructions writer
+  objective: Turn your business brief and voice profile into compact standing instructions for your AI assistant.
+  use_case: When your assistant has a "custom instructions", "project instructions" or "personalization" field with a character limit.
+  inputs:
+    - "[BUSINESS BRIEF]"
+    - "[VOICE PROFILE]"
+    - "[CHARACTER LIMIT]: e.g., 1,500 characters"
+  prompt: |
+    Using my business brief and voice profile below, write standing instructions for my AI assistant in under [CHARACTER LIMIT] characters. Split them into two parts: (1) "What you should know about me" (business facts, services, policies) and (2) "How you should respond" (tone, format preferences, rules). Always include these rules: never invent prices, dates or facts about clients; mark missing information as [NEED INFO]; keep client emails under 200 words unless I ask otherwise; suggest one clarifying question when my request is ambiguous. Count the characters and confirm the total.
+    Business brief: """[BUSINESS BRIEF]"""
+    Voice profile: """[VOICE PROFILE]"""
+  output_format: Two labeled blocks of plain text plus a character count.
+  tips: Test the instructions with one real task (e.g., LEAD-01) and tweak.
+  pairs_with: [SET-01, SET-02]
+
+- id: SET-05
+  category: Setup & Foundations
+  title: Service menu clarifier
+  objective: Describe each of your services clearly, with who it's for, what's included, and what's not.
+  use_case: Before writing proposals or a services page; when clients keep misunderstanding what you offer.
+  inputs:
+    - "[SERVICES]: rough notes on each service"
+    - "[IDEAL CLIENT]"
+  prompt: |
+    I'm a [PROFESSION] serving [IDEAL CLIENT]. Here are rough notes about my services: """[SERVICES]""". For each service, produce: a plain-language name; a one-sentence promise focused on the client's outcome; who it's for and not for; what's included (bullets); what's not included (bullets); typical timeline; what I need from the client. Keep prices exactly as I wrote them; if I didn't give a price, write [PRICE]. Then point out any overlaps or gaps between services that could confuse a buyer.
+  output_format: One block per service with consistent headings, then a short "overlaps and gaps" list.
+  tips: Reuse the "not included" bullets in your proposals (PROP-06).
+  pairs_with: [PROP-06, MKT-05]
+
+- id: SET-06
+  category: Setup & Foundations
+  title: Client FAQ builder
+  objective: Build a set of answers to the questions clients ask again and again.
+  use_case: When you notice you're typing the same explanations; before creating an onboarding packet.
+  inputs:
+    - "[REPEATED QUESTIONS]: questions clients often ask"
+    - "[BUSINESS BRIEF]"
+  prompt: |
+    Using my business brief """[BUSINESS BRIEF]""", draft clear answers to these frequently asked client questions: """[REPEATED QUESTIONS]""". For each: a direct answer in 2–4 sentences in my voice, any policy it depends on, and where the answer should live (proposal, welcome email, onboarding doc, website FAQ). If my brief doesn't contain the information needed, write [NEED INFO: what's missing] instead of guessing. Add up to 5 more questions clients in my field commonly ask that I haven't listed.
+  output_format: A table with columns Question, Answer, Depends on, Where it lives; then a list of suggested extra questions.
+  tips: Paste the finished FAQ into your onboarding document and link it in your welcome email.
+  pairs_with: [ONB-04]
+
+- id: SET-07
+  category: Setup & Foundations
+  title: Communication policy writer
+  objective: Write a friendly, clear policy for response times, channels, meetings and feedback rounds.
+  use_case: Before onboarding new clients, or when boundaries have been slipping.
+  inputs:
+    - "[WORKING HOURS]"
+    - "[RESPONSE TIME]"
+    - "[CHANNELS]: e.g., email for decisions, Slack for quick questions"
+    - "[FEEDBACK ROUNDS]"
+  prompt: |
+    Write a short "How we'll work together" section for my client onboarding materials. Details: working hours [WORKING HOURS]; typical response time [RESPONSE TIME]; channels [CHANNELS]; meetings [MEETING PREFERENCES]; feedback process [FEEDBACK ROUNDS]; urgent issues [HOW TO FLAG URGENT]. Make it warm and confident, not defensive. Explain the reason behind each norm in one short clause (e.g., "so nothing gets lost"). Under 200 words, using bullets.
+  output_format: A heading plus 5–7 bullets, under 200 words.
+  tips: Put this in your welcome email (ONB-01) and your onboarding document.
+  pairs_with: [ONB-01, ONB-04]
+
+- id: SET-08
+  category: Setup & Foundations
+  title: Tool stack audit
+  objective: Find overlapping or unused software and decide what to keep, replace or cancel.
+  use_case: Quarterly, or when subscription costs creep up.
+  inputs:
+    - "[TOOL LIST]: tool, what I use it for, monthly cost, how often I use it"
+  prompt: |
+    Here is the list of software tools I pay for or rely on in my one-person business: """[TOOL LIST]""". Analyze it and produce: (1) overlaps: tools doing the same job; (2) tools I barely use relative to their cost; (3) jobs that seem to have no tool or rely on manual work; (4) a recommendation for each tool: Keep, Downgrade, Replace with [free option I already have], or Cancel, with one-line reasoning. Don't recommend new paid tools unless a gap clearly justifies it, and say what the free alternative is. Finish with the total monthly cost before and after your recommendations, based only on the prices I gave.
+  output_format: Four short sections, then a table (Tool, Recommendation, Reason, Monthly cost), then before/after totals.
+  tips: Check cancellation terms and data export before cancelling anything.
+  pairs_with: [OPS-07]
+
+- id: LEAD-01
+  category: Leads & Inquiries
+  title: Reply to a new inquiry
+  objective: Answer a new inquiry quickly and qualify the lead.
+  use_case: Within one business day of any new inquiry by email, form or DM.
+  inputs:
+    - "[BUSINESS BRIEF] and [VOICE PROFILE]"
+    - "[PASTE INQUIRY]"
+    - "[BOOKING LINK]"
+  prompt: |
+    Here is my business brief and voice profile: [PASTE]. A potential client sent this inquiry (redacted): """[PASTE INQUIRY]""". Draft a reply under 150 words that: thanks them and references one specific detail from their message; answers any direct question they asked (if I haven't given you the answer, write [NEED INFO] instead of guessing); asks the 2–3 most useful qualifying questions for my services; and ends with my booking link [BOOKING LINK]. Match my voice profile. Don't mention prices unless they asked and my brief includes them.
+  output_format: A ready-to-edit email with subject line, under 150 words.
+  tips: Save your best version as an email template and only use AI for the personalized first two lines.
+  pairs_with: [LEAD-02, DISC-01]
+
+- id: LEAD-02
+  category: Leads & Inquiries
+  title: Lead fit scorecard
+  objective: Decide quickly whether a lead is a good fit before investing time.
+  use_case: When an inquiry is vague, oddly sized or outside your usual work.
+  inputs:
+    - "[IDEAL CLIENT CRITERIA]"
+    - "[LEAD INFO]: inquiry + anything you know"
+  prompt: |
+    My ideal client criteria: """[IDEAL CLIENT CRITERIA]""". Here's what I know about a new lead (redacted): """[LEAD INFO]""". Score the lead from 1–5 on: budget fit, timeline fit, scope fit, decision-maker access, and red flags (5 = no red flags). Explain each score in one line, quoting the evidence. Recommend one of: Book a call, Ask 2 questions first, Refer elsewhere, Politely decline. If there isn't enough information to score a criterion, say "Unknown" and give the question that would resolve it.
+  output_format: A 5-row table (Criterion, Score, Evidence) plus a one-line recommendation and up to 3 questions.
+  tips: This is a thinking aid. You make the final call, and politeness costs nothing even when you decline.
+  pairs_with: [LEAD-01, LEAD-06]
+
+- id: LEAD-03
+  category: Leads & Inquiries
+  title: Follow up an inquiry that went quiet
+  objective: Re-open a conversation with a lead who stopped replying, without pressure.
+  use_case: 3–7 days after your last message with no response.
+  inputs:
+    - "[LAST MESSAGE SUMMARY]"
+    - "[DAYS SINCE]"
+    - "[BOOKING LINK]"
+  prompt: |
+    A potential client stopped replying [DAYS SINCE] days ago. Our last exchange: """[LAST MESSAGE SUMMARY]""". Write two alternative follow-up emails in my voice [VOICE PROFILE], each under 90 words: Version A adds something useful (a relevant tip, example or resource related to their project, without inventing facts about them); Version B is a simple, friendly check-in that makes it easy to say "not now". Neither should guilt-trip or imply urgency that doesn't exist. Include my booking link [BOOKING LINK] once.
+  output_format: Two labeled email drafts with subject lines.
+  tips: Send at most two follow-ups, then stop and mark the lead "cold" in your tracker.
+  pairs_with: [LEAD-01]
+
+- id: LEAD-04
+  category: Leads & Inquiries
+  title: Referral request to a happy client or peer
+  objective: Ask for referrals in a specific, easy-to-act-on way.
+  use_case: After a successful project or a positive comment from a client or peer.
+  inputs:
+    - "[RELATIONSHIP]: client or peer, and context"
+    - "[IDEAL REFERRAL]: who you want to be introduced to"
+  prompt: |
+    Write a short message asking [RELATIONSHIP] for referrals. Be specific about who I'm looking for: [IDEAL REFERRAL]. Make it easy: include a two-sentence blurb about me that they can forward as-is, and say it's completely fine if nobody comes to mind. Keep it under 120 words, warm and not salesy, in my voice [VOICE PROFILE]. Don't offer a referral fee unless I've specified one here: [REFERRAL INCENTIVE OR "NONE"].
+  output_format: One message plus a separate forwardable blurb (2 sentences).
+  tips: Specific asks ("a physio clinic owner planning a new website") get more introductions than "anyone who needs help".
+  pairs_with: [RET-05]
+
+- id: LEAD-05
+  category: Leads & Inquiries
+  title: Personalized cold outreach (non-spammy)
+  objective: Write a short, relevant first message to a specific prospect you've researched.
+  use_case: Occasional, targeted outreach to businesses you can genuinely help, not mass email.
+  inputs:
+    - "[PROSPECT RESEARCH]: public info you gathered"
+    - "[MY SERVICE]"
+    - "[OBSERVATION]: one specific thing you noticed"
+  prompt: |
+    Draft a first-contact email to a prospect. Public information I gathered: """[PROSPECT RESEARCH]""". My service: [MY SERVICE]. One specific observation: [OBSERVATION]. Requirements: under 110 words; lead with the observation, framed helpfully rather than as criticism; one sentence on how I've helped similar businesses, described generally with no invented results or client names; a low-friction ask (e.g., "Would a 3-point audit be useful?"); a line that makes it easy to say no. No flattery clichés, no fake familiarity, no false urgency. Also give 3 subject line options under 7 words.
+  output_format: One email plus three subject lines.
+  tips: Follow the anti-spam and consent rules that apply where you and the recipient are, and always honor opt-outs.
+  pairs_with: [LEAD-02]
+
+- id: LEAD-06
+  category: Leads & Inquiries
+  title: Polite decline (with a referral)
+  objective: Turn down a lead gracefully and protect your reputation.
+  use_case: When the budget, timing or fit is wrong.
+  inputs:
+    - "[REASON]: budget, timing, scope or fit"
+    - "[ALTERNATIVE]: who or what might help them instead (optional)"
+  prompt: |
+    Write a kind, brief email declining a potential project. Reason (for me; share only what's appropriate): [REASON]. If I've provided an alternative, recommend it: [ALTERNATIVE]. Leave the door open for future work if appropriate: [YES/NO]. Under 100 words, no over-apologizing, no vague excuses, in my voice [VOICE PROFILE].
+  output_format: A single short email.
+  tips: A good decline often generates referrals later, because people remember being treated well.
+  pairs_with: [LEAD-02]
+
+- id: LEAD-07
+  category: Leads & Inquiries
+  title: Inquiry form questions
+  objective: Design the questions on your website's inquiry form so leads arrive pre-qualified.
+  use_case: Setting up or improving your contact/inquiry form.
+  inputs:
+    - "[SERVICES]"
+    - "[MUST-KNOW INFO]: what you need to qualify a lead"
+  prompt: |
+    I offer [SERVICES]. Design an inquiry form with no more than 7 fields that collects what I need to qualify a lead: [MUST-KNOW INFO]. For each field give: the label, field type (short text, dropdown, multiple choice, date, long text), options if applicable, whether it's required, and why it helps. Include a budget question that feels respectful (ranges, including "Not sure yet"). Finish with the confirmation message the person sees after submitting (under 60 words, telling them when to expect a reply).
+  output_format: A table of fields plus the confirmation message.
+  tips: Fewer required fields usually means more submissions. Only require what you truly need.
+  pairs_with: [LEAD-01]
+
+- id: LEAD-08
+  category: Leads & Inquiries
+  title: DM reply to a social media inquiry
+  objective: Respond to a direct message and move the conversation somewhere you can manage it.
+  use_case: When someone asks about your services in Instagram, LinkedIn or TikTok messages.
+  inputs:
+    - "[DM TEXT]"
+    - "[PLATFORM]"
+    - "[BOOKING LINK or EMAIL]"
+  prompt: |
+    Someone sent me this message on [PLATFORM]: """[DM TEXT]""". Write a short, friendly reply (under 60 words) that answers any quick question they asked (use [NEED INFO] if you don't know the answer), shows I read their message, and invites them to continue by email or my booking link [BOOKING LINK or EMAIL] so I can give them proper attention. Casual but professional; match the platform's tone.
+  output_format: One short DM reply.
+  tips: Log the lead in your tracker as soon as they move to email.
+  pairs_with: [LEAD-01]
+
+- id: LEAD-09
+  category: Leads & Inquiries
+  title: Waitlist or "fully booked" reply
+  objective: Tell a good-fit lead you're booked up without losing them.
+  use_case: When you're at capacity but want the work later.
+  inputs:
+    - "[NEXT AVAILABLE START]"
+    - "[OPTIONS]: waitlist, smaller interim option, referral"
+  prompt: |
+    Write a reply to a good-fit potential client explaining that I'm fully booked until [NEXT AVAILABLE START]. Offer these options: [OPTIONS]. Explain the benefit of waiting in one honest sentence (e.g., focused attention), without implying scarcity that isn't real. Ask them to reply with their preferred option. Under 120 words, in my voice [VOICE PROFILE].
+  output_format: One email with a clear choice for the reader.
+  tips: Add waitlisted leads to your tracker with a next-action date two weeks before your availability.
+  pairs_with: [LEAD-01]
+
+- id: LEAD-10
+  category: Leads & Inquiries
+  title: Lead source analysis
+  objective: Understand which channels bring your best clients so you invest time wisely.
+  use_case: Every quarter, using your tracker's Source and Stage columns.
+  inputs:
+    - "[TRACKER EXPORT]: client, source, stage, value (redacted)"
+  prompt: |
+    Here's an export of my leads and clients (redacted): """[TRACKER EXPORT]""". Summarize by source: number of leads, number that became clients, conversion rate, total and average project value. Then highlight: my best source by value, my best by conversion rate, and any source that takes effort but rarely converts. Suggest 2–3 practical adjustments for next quarter. Base everything strictly on the data; if the sample is too small to conclude anything, say so.
+  output_format: A summary table by source, then 3 highlights and 2–3 recommendations.
+  tips: Small numbers can mislead, so treat the output as a prompt for reflection, not a verdict.
+  pairs_with: [OPS-06]
+
+- id: DISC-01
+  category: Discovery & Sales Calls
+  title: Pre-call questionnaire
+  objective: Collect key information before a discovery call so the call is more useful.
+  use_case: Sent with the booking confirmation for discovery calls.
+  inputs:
+    - "[SERVICE]"
+    - "[CALL LENGTH]"
+  prompt: |
+    Create a short pre-call questionnaire (5–7 questions) for people booking a [CALL LENGTH]-minute discovery call about [SERVICE]. Questions should uncover goals, current situation, constraints (timeline, budget range, decision-makers) and what success looks like, without feeling like homework. Mark each as required or optional. Add a one-sentence intro explaining why I ask.
+  output_format: An intro line plus a numbered question list with required/optional labels.
+  tips: Most scheduling tools let you add these questions to the booking page.
+  pairs_with: [DISC-02]
+
+- id: DISC-02
+  category: Discovery & Sales Calls
+  title: Discovery call prep sheet
+  objective: Walk into a discovery call prepared, in 10 minutes.
+  use_case: Before any discovery or sales call.
+  inputs:
+    - "[INQUIRY + ANY PUBLIC INFO ABOUT THEIR BUSINESS]"
+    - "[SERVICES]"
+    - "[LENGTH]"
+  prompt: |
+    I have a discovery call with a potential client. Here is what I know (redacted): """[INQUIRY + ANY PUBLIC INFO ABOUT THEIR BUSINESS]""". My services: [SERVICES]. Create a one-page call prep sheet with: (1) a 2-sentence summary of what they seem to want; (2) 5 open questions to uncover goals, constraints and decision process; (3) 3 likely objections or risks and how I might address them; (4) what I need to learn to scope the project; (5) a proposed call agenda for [LENGTH] minutes. Flag any assumptions you're making.
+  output_format: A one-page sheet with five numbered sections.
+  tips: Print it or keep it beside your call window, and take notes directly under each question.
+  pairs_with: [DISC-05]
+
+- id: DISC-03
+  category: Discovery & Sales Calls
+  title: Discovery call agenda email
+  objective: Set expectations before the call so it starts focused.
+  use_case: The day before a discovery call.
+  inputs:
+    - "[CALL DATE/TIME]"
+    - "[CALL LINK]"
+    - "[AGENDA POINTS]"
+  prompt: |
+    Write a brief email confirming our discovery call on [CALL DATE/TIME] ([CALL LINK]). Include a 3–4 point agenda based on [AGENDA POINTS], one thing they could think about beforehand, and a note that it's fine to reschedule if needed. Under 110 words, friendly and organized, in my voice [VOICE PROFILE].
+  output_format: One short confirmation email.
+  tips: Many scheduling tools can send this automatically. Paste the result into your booking confirmation template.
+  pairs_with: [DISC-02]
+
+- id: DISC-04
+  category: Discovery & Sales Calls
+  title: Qualifying question bank for my niche
+  objective: Build a tailored list of questions that reveal fit, budget and urgency.
+  use_case: Once per service; revisit when you change niche.
+  inputs:
+    - "[PROFESSION]"
+    - "[TYPICAL CLIENT]"
+  prompt: |
+    I'm a [PROFESSION] working with [TYPICAL CLIENT]. Write 15 discovery questions grouped under: Goals & success; Current situation; Constraints (timeline, budget, resources); Decision process; Past experience with similar providers. For each, add a one-line note on what a "good fit" answer versus a "warning sign" answer sounds like. Keep questions open-ended and non-salesy.
+  output_format: Grouped question list, each with good-fit / warning-sign notes.
+  tips: Use 5–6 of these per call, not all 15.
+  pairs_with: [DISC-02]
+
+- id: DISC-05
+  category: Discovery & Sales Calls
+  title: Call notes → summary + next steps email
+  objective: Send a clear follow-up the same day as a call.
+  use_case: Immediately after a discovery call.
+  inputs:
+    - "[NOTES]: redacted notes or transcript"
+    - "[VOICE PROFILE]"
+  prompt: |
+    Here are my rough notes from a discovery call (redacted): """[NOTES]""". Using my voice profile [PASTE], write a follow-up email that: thanks them; summarizes their goals, constraints and timeline in 3–5 bullets using their words where possible; lists open questions; states the next step and date (e.g., "I'll send a proposal by [DATE]"); and stays under 200 words. After the email, separately list anything in my notes that is ambiguous or that I should clarify before writing a proposal.
+  output_format: One email, then a separate list of ambiguities to clarify.
+  tips: This summary becomes the input for PROP-01, so write it carefully.
+  pairs_with: [PROP-01]
+
+- id: DISC-06
+  category: Discovery & Sales Calls
+  title: Objection response helper
+  objective: Prepare calm, honest responses to common objections.
+  use_case: Before calls, or after an objection you handled poorly.
+  inputs:
+    - "[OBJECTIONS]: e.g., price, timing, 'we'll do it ourselves'"
+    - "[SERVICE]"
+  prompt: |
+    For my [SERVICE], write responses to these objections: [OBJECTIONS]. For each: (1) what the objection often really means; (2) a clarifying question to ask first; (3) a short, honest response that respects their decision; (4) when it's better to agree it's not a fit. No pressure tactics, false scarcity or manipulation.
+  output_format: One block per objection with four labeled parts.
+  tips: The clarifying question is usually more valuable than the response.
+  pairs_with: [DISC-02]
+
+- id: DISC-07
+  category: Discovery & Sales Calls
+  title: Scope sketch from discovery notes
+  objective: Turn a messy discovery conversation into a draft scope you can price.
+  use_case: Between the discovery call and writing the proposal.
+  inputs:
+    - "[DISCOVERY SUMMARY]"
+    - "[MY SERVICES AND PROCESS]"
+  prompt: |
+    Based on this discovery summary (redacted) """[DISCOVERY SUMMARY]""" and my standard process """[MY SERVICES AND PROCESS]""", sketch a draft scope: phases, deliverables per phase, client inputs required, rough effort per phase (Small / Medium / Large), and risks that could expand scope. List the questions I must answer before pricing. Don't suggest prices.
+  output_format: A phase table (Phase, Deliverables, Client inputs, Effort, Risks) plus a question list.
+  tips: Price from your own effort estimates and rates, never from AI suggestions.
+  pairs_with: [PROP-01, PROP-06]
+
+- id: DISC-08
+  category: Discovery & Sales Calls
+  title: Post-call self-review
+  objective: Improve your discovery calls over time.
+  use_case: Right after a call, while it's fresh.
+  inputs:
+    - "[CALL NOTES]"
+    - "[OUTCOME]: booked, pending, lost"
+  prompt: |
+    Act as a supportive sales coach. Here are my notes from a discovery call (redacted) and the outcome so far: """[CALL NOTES]""" / [OUTCOME]. Assess: how well I uncovered goals, constraints and decision process; whether I talked too much (estimate from the notes); what I could have asked; and one thing to do differently next time. Be specific and kind, and base your comments on the notes rather than generic advice.
+  output_format: Four short sections, ending with one clear action for next time.
+  tips: Keep the "one thing" in your Prompt Log notes and track whether you apply it.
+  pairs_with: [DISC-02]

@@ -4,7 +4,7 @@ from brand import COLORS as C, ROOT, font_face_css
 LOGO = ROOT / "Digital_Products_Business" / "02_Branding" / "logo"
 
 
-def product_cover(kicker, title_html, subtitle, bullets, ring=None, disc=None, big="1", version="Version 1.0 · September 2026", big_size="250pt"):
+def product_cover(kicker, title_html, subtitle, bullets, ring=None, disc=None, big="1", version="Version 1.0 · September 2026", big_size="250pt", big_top="6.55in", big_right="0.45in"):
     ring = ring or C["orange"]
     disc = disc or C["teal"]
     logo = (LOGO / "band-of-one-horizontal-on-dark.svg").as_uri()
@@ -15,7 +15,7 @@ html,body{{margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 .page{{position:relative;width:8.5in;height:11in;overflow:hidden;background:{C['ink']};color:{C['paper']};font-family:Inter,sans-serif}}
 .ring{{position:absolute;right:-3.6in;top:4.75in;width:7.4in;height:7.4in;border-radius:50%;border:0.55in solid {ring}}}
 .disc{{position:absolute;right:-2.2in;top:6.15in;width:5.7in;height:5.7in;border-radius:50%;background:{disc}}}
-.one{{position:absolute;right:0.45in;top:6.55in;font-family:Fraunces;font-weight:800;font-size:{big_size};line-height:1;color:{C['paper']};opacity:.95;text-align:right}}
+.one{{position:absolute;right:{big_right};top:{big_top};font-family:Fraunces;font-weight:800;font-size:{big_size};line-height:1;color:{C['paper']};opacity:.95;text-align:right}}
 .wrap{{position:absolute;left:0.85in;top:0.85in;right:0.85in}}
 .kicker{{font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:10pt;color:{C['butter']}}}
 h1{{font-family:Fraunces,serif;font-weight:700;font-size:54pt;line-height:.98;letter-spacing:-.02em;margin:16pt 0 18pt}}
