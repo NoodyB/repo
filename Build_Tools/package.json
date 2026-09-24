@@ -1,0 +1,17 @@
+{
+  "name": "band-of-one-build-tools",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Scripts that regenerate PDFs, images, workbooks and packages for the Band of One businesses.",
+  "scripts": {
+    "render": "node render.js"
+  },
+  "dependencies": {
+    "@expo-google-fonts/fraunces": "0.4.1",
+    "@expo-google-fonts/inter": "0.4.2",
+    "@expo-google-fonts/jetbrains-mono": "0.4.1",
+    "@fontsource/fraunces": "5.3.0",
+    "@fontsource/inter": "5.3.0",
+    "@fontsource/jetbrains-mono": "5.3.0"
+  }
+}

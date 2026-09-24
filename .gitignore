@@ -1,0 +1,9 @@
+Build_Tools/node_modules/
+Build_Tools/.tmp/
+__pycache__/
+*.pyc
+.DS_Store
+Content_Automation_Business/03_Website/node_modules/
+Content_Automation_Business/03_Website/_site/
+.env
+*.env.local
