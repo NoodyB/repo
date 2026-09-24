@@ -54,11 +54,13 @@ pre{font-family:'JetBrains Mono',monospace;font-size:8.6pt;line-height:1.5;backg
 pre code{background:none;padding:0;font-size:inherit}
 blockquote{margin:10pt 0;padding:8pt 14pt;border-left:4px solid var(--butter);background:#FFF9EA;color:var(--ink);border-radius:0 6px 6px 0}
 blockquote p:last-child{margin:0}
-table{border-collapse:collapse;width:100%%;margin:6pt 0 14pt;font-size:9.2pt;break-inside:avoid}
+table{border-collapse:collapse;width:100%%;margin:6pt 0 14pt;font-size:9.2pt;break-inside:auto}
 thead{display:table-header-group}
 tr{break-inside:avoid}
 th{background:var(--deep);color:#fff;font-weight:600;text-align:left;padding:6pt 8pt;border:1px solid var(--deep)}
 td{padding:5.5pt 8pt;border:1px solid var(--stone);vertical-align:top}
+td:empty{height:23pt;background:#fff}
+sup.ref{font-size:7pt;color:var(--teal);font-weight:600;margin-left:1px}
 tbody tr:nth-child(even) td{background:#FAF8F4}
 img{max-width:100%%}
 .page-break{break-after:page;height:0}
@@ -79,13 +81,14 @@ li.task{list-style:none;margin-left:-15pt;padding-left:19pt;position:relative}
 li.task::before{content:'';position:absolute;left:0;top:2.5pt;width:10pt;height:10pt;border:1.4px solid var(--teal);border-radius:2.5px;background:#fff}
 li.task.done::before{background:var(--teal)}
 /* worksheet helpers */
-.lines{margin:4pt 0 10pt}
+.lines{margin:4pt 0 10pt;break-inside:avoid}
 .lines span{display:block;height:21pt;border-bottom:1px solid #C9CFD3}
 .box{border:1px solid #C9CFD3;border-radius:6px;margin:4pt 0 10pt;background:#fff}
 /* chapter openers */
 .chapter-label{font-family:'Inter';font-size:8.6pt;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--rust);margin:0 0 6pt}
 section.chapter{break-before:page}
 section.chapter:first-of-type{break-before:auto}
+section.chapter.nobreak{break-before:auto;margin-top:26pt}
 .lede{font-size:12.2pt;line-height:1.55;color:var(--slate);margin:0 0 14pt}
 /* TOC */
 .toc{break-after:page}
@@ -122,8 +125,12 @@ FOOTER_TEMPLATE = """
 _ADMON = re.compile(r'^!!! (\w+)(?: "([^"]*)")?\s*$')
 
 
+REF = re.compile(r"\^\[(\d+(?:[,–-]\s?\d+)*)\]\^")
+
+
 def _preprocess(md_text: str) -> str:
     """Convert custom tokens to HTML-friendly markdown before python-markdown runs."""
+    md_text = REF.sub(r'<sup class="ref">[\1]</sup>', md_text)
     out = []
     for line in md_text.splitlines():
         m = re.fullmatch(r"\s*\[\[lines:(\d+)\]\]\s*", line)
@@ -161,6 +168,9 @@ def slugify(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
 
 
+NO_BREAK_PREFIXES = ("appendix b", "appendix c", "about and license", "appendix e")
+
+
 def split_chapters(body_html: str, number_chapters: bool = True):
     """Wrap each <h1> section in <section class=chapter> and collect TOC entries."""
     parts = re.split(r"(?=<h1[ >])", body_html)
@@ -171,7 +181,7 @@ def split_chapters(body_html: str, number_chapters: bool = True):
         m = re.match(r"<h1[^>]*>(.*?)</h1>", part, re.S)
         if m:
             title_html = m.group(1)
-            title_txt = re.sub(r"<[^>]+>", "", title_html)
+            title_txt = htmlmod.unescape(re.sub(r"<[^>]+>", "", title_html))
             skip_number = title_txt.lower().startswith(("appendix", "sources", "about", "how to use", "introduction", "conclusion", "your next", "license", "quick start", "welcome"))
             label = ""
             if number_chapters and not skip_number:
@@ -181,9 +191,10 @@ def split_chapters(body_html: str, number_chapters: bool = True):
             part = part.replace(m.group(0), f'{label}<h1 id="{anchor}">{title_html}</h1>', 1)
             toc.append((1, title_txt, anchor))
             for h2 in re.finditer(r"<h2[^>]*>(.*?)</h2>", part, re.S):
-                t = re.sub(r"<[^>]+>", "", h2.group(1))
+                t = htmlmod.unescape(re.sub(r"<[^>]+>", "", h2.group(1)))
                 toc.append((2, t, slugify(t)))
-            sections.append(f'<section class="chapter">{part}</section>')
+            cls = "chapter nobreak" if any(title_txt.lower().startswith(x) for x in NO_BREAK_PREFIXES) else "chapter"
+            sections.append(f'<section class="{cls}">{part}</section>')
         else:
             sections.append(f"<section>{part}</section>")
     return "\n".join(sections), toc
@@ -331,7 +342,7 @@ def _ensure_reference_docx():
     REFERENCE_DOCX.parent.mkdir(parents=True, exist_ok=True)
     pandoc = pypandoc.get_pandoc_path()
     with open(REFERENCE_DOCX, "wb") as f:
-        subprocess.run([pandoc, "-o", "-", "--print-default-data-file", "reference.docx"], stdout=f, check=True)
+        subprocess.run([pandoc, "--print-default-data-file", "reference.docx"], stdout=f, check=True)
     doc = Document(str(REFERENCE_DOCX))
 
     def rgb(h):
@@ -372,6 +383,7 @@ def _ensure_reference_docx():
 
 def _md_for_docx(md_text: str) -> str:
     """Translate custom syntax into plain pandoc markdown."""
+    md_text = REF.sub(lambda m: "^\\[" + m.group(1) + "\\]^", md_text)
     out, in_admon, admon_indent = [], False, 4
     for line in md_text.splitlines():
         m = _ADMON.match(line)
@@ -399,6 +411,9 @@ def _md_for_docx(md_text: str) -> str:
         if re.fullmatch(r"\s*\[\[pagebreak\]\]\s*", line):
             out.append('\n```{=openxml}\n<w:p><w:r><w:br w:type="page"/></w:r></w:p>\n```\n')
             continue
+        if re.fullmatch(r"\|(\s*\|)+\s*", line):
+            # keep blank worksheet rows: pandoc drops fully empty table rows
+            line = "|" + "|".join(["\\ " * 12] * (line.count("|") - 1)) + "|"
         line = re.sub(r"^(\s*)- \[ \] ", r"\1- ☐ ", line)
         line = re.sub(r"^(\s*)- \[[xX]\] ", r"\1- ☑ ", line)
         line = re.sub(r"\{:[^}]*\}", "", line)
