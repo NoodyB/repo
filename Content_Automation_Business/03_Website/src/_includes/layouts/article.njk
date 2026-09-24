@@ -1,0 +1,45 @@
+---
+layout: layouts/base.njk
+---
+{%- set catName = category | categoryName(categories) %}
+{%- set related = collections.posts | bySlugs(related) %}
+<script type="application/ld+json">{{ title | articleJsonLd(description, date, updated, slug, category, catName, page.url, site) | safe }}</script>
+<article class="article">
+  <div class="wrap narrow">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/blog/">Articles</a></li><li><a href="/category/{{ category }}/">{{ catName }}</a></li></ol></nav>
+    <h1>{{ title }}</h1>
+    <p class="meta">
+      Updated <time datetime="{{ (updated or date) | isoDate }}">{{ (updated or date) | readableDate }}</time>
+      · {{ content | readingTime }} min read
+      {%- if review_type == "tested" %} · <span class="badge tested">Tested</span>
+      {%- elif review_type == "researched" %} · <span class="badge researched">Researched</span>{% endif %}
+    </p>
+    {%- if tested_note %}
+    <div class="note {{ review_type }}"><strong>{% if review_type == "tested" %}How we tested this{% else %}How we researched this{% endif %}:</strong> {{ tested_note }}</div>
+    {%- endif %}
+    {%- if affiliate %}
+    <div class="note disclosure"><strong>Disclosure:</strong> this article contains affiliate links, marked "(affiliate link)". If you buy through one, we may earn a commission at no extra cost to you. It never changes our recommendations. <a href="/affiliate-disclosure/">Read our disclosure</a>.</div>
+    {%- endif %}
+    <div class="prose">
+{{ content | safe }}
+    </div>
+    {%- if download %}
+    <p class="download"><a class="btn" href="{{ download }}" download>Download the free starter file (.xlsx)</a></p>
+    {%- endif %}
+    {%- if sources and sources.length %}
+    <section class="sources" aria-labelledby="sources-title">
+      <h2 id="sources-title">Sources</h2>
+      <ol>{% for s in sources %}<li><a href="{{ s.url }}" rel="noopener">{{ s.title }}</a>{% if s.accessed %}, accessed {{ s.accessed | readableDate }}{% endif %}</li>{% endfor %}</ol>
+    </section>
+    {%- endif %}
+    {% set key = product_cta %}{% include "partials/product-cta.njk" %}
+  </div>
+  {%- if related.length %}
+  <section class="related" aria-labelledby="related-title">
+    <div class="wrap">
+      <h2 id="related-title">Keep reading</h2>
+      <div class="grid three">{% for post in related %}{% include "partials/card.njk" %}{% endfor %}</div>
+    </div>
+  </section>
+  {%- endif %}
+</article>

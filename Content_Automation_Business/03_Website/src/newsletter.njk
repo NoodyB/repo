@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+title: Free Client Admin Starter Kit
+description: "Get 10 AI prompts for weekly client admin and a 30-minute weekly review checklist, free, plus one practical admin-system idea a week by email."
+hideNewsletter: true
+---
+<div class="wrap narrow page">
+  <h1>Get the free Client Admin Starter Kit</h1>
+  <div class="nl-page">
+    <img src="/assets/img/cover-starter.webp" alt="Cover of The Client Admin Starter Kit" width="280" height="362">
+    <div>
+      <p class="lead">10 ready-to-use AI prompts for the admin moments that come up every week, plus a printable 30-minute weekly review checklist.</p>
+      <ul>
+        <li>Reply to new inquiries and summarize discovery calls</li>
+        <li>Draft proposals, welcome emails and weekly updates</li>
+        <li>Handle scope changes and payment reminders</li>
+        <li>Request testimonials and run your weekly review</li>
+      </ul>
+      <p>You'll also get the Band of One email: one practical admin-system idea a week. No spam, and you can unsubscribe any time.</p>
+      {%- if site.newsletterUrl %}
+      <p><a class="btn" href="{{ site.newsletterUrl }}">Sign up and get the kit</a></p>
+      {%- else %}
+      <div class="note"><strong>Signup opens at launch.</strong> The email platform isn't connected yet, so no form is shown and no email addresses are collected.</div>
+      {%- endif %}
+      <p class="small">We use your email only to send what you signed up for. See our <a href="/privacy/">privacy policy</a>.</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+{%- set p = products[key] %}
+{%- if p %}
+<aside class="product-cta" aria-label="Related product">
+  <img src="{{ p.image }}" alt="" width="120" height="155" loading="lazy">
+  <div>
+    <p class="eyebrow">{% if p.price == "Free" %}Free resource{% else %}From Band of One · {{ p.price }}{% endif %}</p>
+    <h2>{{ p.name }}</h2>
+    <p>{{ p.pitch }}</p>
+    <p><a class="btn" href="{{ p.href or site.storeLink(p.slug) }}">{{ p.cta }}</a></p>
+  </div>
+</aside>
+{%- endif %}

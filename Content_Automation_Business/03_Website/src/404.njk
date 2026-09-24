@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+title: Page not found
+description: "The page you were looking for doesn't exist."
+permalink: /404.html
+noindex: true
+eleventyExcludeFromCollections: true
+---
+<div class="wrap narrow page">
+  <h1>Page not found</h1>
+  <p class="lead">That page doesn't exist, or it has moved.</p>
+  <p>Try <a href="/blog/">all articles</a>, or start with one of these topics:</p>
+  <ul>{% for c in categories | orderCategories %}<li><a href="/category/{{ c.slug }}/">{{ c.name }}</a></li>{% endfor %}</ul>
+</div>

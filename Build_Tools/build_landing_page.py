@@ -172,6 +172,8 @@ details p{{margin:.6em 0 0}}
 .starter{{background:var(--mist)}}
 .starter .wrap{{display:flex;gap:28px;align-items:center;justify-content:space-between;flex-wrap:wrap}}
 footer{{padding:40px 0;font-size:.9rem}}
+.pt0{{padding-top:0}}
+.mt{{margin-top:20px}}
 footer .wrap{{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}}
 footer p{{margin:.3em 0}}
 @media (max-width:900px){{
@@ -186,13 +188,12 @@ footer p{{margin:.3em 0}}
 <body>
 <a class="skip" href="#main">Skip to content</a>
 {preview_banner}
-<div class="dark">
-<header class="site"><div class="wrap">
+<header class="site dark"><div class="wrap">
   <a href="{SITE_URL or '#'}" aria-label="Band of One home"><img src="assets/logo-on-dark.svg" alt="Band of One" width="170" height="34"></a>
   <nav aria-label="Page sections"><a href="#inside">What's inside</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav>
 </div></header>
 <main id="main">
-<section class="hero" aria-labelledby="hero-title"><div class="wrap grid">
+<section class="hero dark" aria-labelledby="hero-title"><div class="wrap grid">
   <div>
     <p class="kicker">The Complete Bundle</p>
     <h1 id="hero-title">The admin system for a <em>business of one</em></h1>
@@ -206,7 +207,6 @@ footer p{{margin:.3em 0}}
     <img src="assets/cover-prompts.webp" alt="" width="560" height="725" loading="eager">
   </div>
 </div></section>
-</div>
 
 <section class="problem" aria-labelledby="problem-title"><div class="wrap">
   <p class="kicker">Why this exists</p>
@@ -265,10 +265,10 @@ footer p{{margin:.3em 0}}
     <div class="card"><b>2</b><h3>Audit your admin</h3><p>Score your recurring tasks in the playbook's audit and pick the one or two workflows to fix first.</p></div>
     <div class="card"><b>3</b><h3>Set up The Client Desk</h3><p>Fill in Settings, clear the sample data and add your clients and open invoices. About ten minutes.</p></div>
   </div>
-  <p style="margin-top:22px">Then book a weekly 45-minute admin review. The playbook gives you the agenda, and The Client Desk shows you what's due.</p>
+  <p class="mt">Then book a weekly 45-minute admin review. The playbook gives you the agenda, and The Client Desk shows you what's due.</p>
 </div></section>
 
-<section aria-labelledby="look-title" style="padding-top:0"><div class="wrap">
+<section aria-labelledby="look-title" class="pt0"><div class="wrap">
   <h2 id="look-title">A look inside</h2>
   <div class="gallery">
     <figure><img src="assets/shot-dashboard.webp" alt="The Client Desk dashboard showing follow-ups due, invoices needing a reminder and pipeline by stage, with fictional sample data" loading="lazy" width="1400" height="820"><figcaption>The Client Desk dashboard (sample data)</figcaption></figure>
@@ -277,7 +277,7 @@ footer p{{margin:.3em 0}}
   </div>
 </div></section>
 
-<section aria-labelledby="fit-title" style="padding-top:0"><div class="wrap">
+<section aria-labelledby="fit-title" class="pt0"><div class="wrap">
   <h2 id="fit-title">Is it for you?</h2>
   <div class="fit">
     <div class="card"><h3>A good fit if you…</h3><ul><li>run a one-person service business (freelance, consulting, coaching, VA, design, development, writing)</li><li>handle your own inquiries, proposals and invoices</li><li>want a simple system rather than another app</li><li>are curious about AI but want to stay in control of what goes to clients</li></ul></div>
@@ -285,7 +285,7 @@ footer p{{margin:.3em 0}}
   </div>
 </div></section>
 
-<section class="pricing" id="pricing" aria-labelledby="pricing-title" style="padding-top:0"><div class="wrap">
+<section class="pricing pt0" id="pricing" aria-labelledby="pricing-title"><div class="wrap">
   <p class="kicker">Pricing</p>
   <h2 id="pricing-title">One price for the whole system</h2>
   <div class="table">
@@ -305,10 +305,10 @@ footer p{{margin:.3em 0}}
       <p class="guarantee"><strong>14-day refund policy.</strong> If it isn't useful for your business, email within 14 days for a full refund.</p>
     </div>
   </div>
-  <p class="src" style="margin-top:18px">Prices in USD. Sales tax or VAT may be added at checkout depending on your location. Checkout is handled by Gumroad.</p>
+  <p class="src mt">Prices in USD. Sales tax or VAT may be added at checkout depending on your location. Checkout is handled by Gumroad.</p>
 </div></section>
 
-<section id="faq" aria-labelledby="faq-title" style="padding-top:0"><div class="wrap">
+<section id="faq" class="pt0" aria-labelledby="faq-title"><div class="wrap">
   <h2 id="faq-title">Questions</h2>
   {faq_html}
 </div></section>

@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+title: Articles
+description: "Every Band of One article: client workflows, getting paid, AI done right, systems and SOPs, and honest tool comparisons for one-person service businesses."
+permalink: /blog/
+---
+<div class="wrap">
+  <header class="page-head">
+    <h1>Articles</h1>
+    <p class="lead">Practical guides for the admin side of a one-person service business, organized by topic.</p>
+    <nav aria-label="Topics" class="chips">{% for c in categories | orderCategories %}<a href="#{{ c.slug }}">{{ c.name }}</a>{% endfor %}</nav>
+  </header>
+  {%- for c in categories | orderCategories %}
+  {%- set posts = collections.posts | byCategory(c.slug) %}
+  {%- if posts.length %}
+  <section class="section tight" id="{{ c.slug }}" aria-labelledby="h-{{ c.slug }}">
+    <h2 id="h-{{ c.slug }}"><a href="/category/{{ c.slug }}/">{{ c.name }}</a></h2>
+    <p>{{ c.short }}</p>
+    <div class="grid three">{% for post in posts %}{% include "partials/card.njk" %}{% endfor %}</div>
+  </section>
+  {%- endif %}
+  {%- endfor %}
+</div>

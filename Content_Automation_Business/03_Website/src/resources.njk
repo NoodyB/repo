@@ -1,0 +1,37 @@
+---
+layout: layouts/base.njk
+title: Resources
+description: "Free resources and Band of One products for running client admin in a one-person service business: starter kit, invoice tracker, playbook, workbook and prompt library."
+---
+<div class="wrap">
+  <header class="page-head">
+    <h1>Resources</h1>
+    <p class="lead">Free tools first, then the products we make. Everything is built around the same system you'll find in the articles.</p>
+  </header>
+  <section class="section tight" aria-labelledby="free-title">
+    <h2 id="free-title">Free</h2>
+    <div class="grid two">
+      <article class="card"><h3>The Client Admin Starter Kit</h3><p>10 AI prompts for the admin you do every week, plus a 30-minute weekly review checklist. Delivered by email.</p><p><a class="btn" href="/newsletter/">Get the starter kit</a></p></article>
+      <article class="card"><h3>Invoice Tracker Starter (.xlsx)</h3><p>A small spreadsheet that calculates due dates, days overdue and which payment reminder to send. Formulas tested in LibreOffice; works in Excel and Google Sheets.</p><p><a class="btn ghost" href="/downloads/BandOfOne_Invoice-Tracker-Starter.xlsx" download>Download</a> <a href="/blog/track-invoices-in-a-spreadsheet/">How it works</a></p></article>
+    </div>
+  </section>
+  <section class="section tight" id="products" aria-labelledby="products-title">
+    <h2 id="products-title">Products</h2>
+    {%- if not site.storeUrl %}<p class="note">The store isn't open yet. Product links will work at launch.</p>{% endif %}
+    <div class="grid three">
+      {%- for key in ["playbook", "desk", "prompts"] %}{% set p = products[key] %}
+      <article class="card product">
+        <img src="{{ p.image }}" alt="Cover of {{ p.name }}" width="560" height="725" loading="lazy">
+        <h3>{{ p.name }}</h3><p class="price">{{ p.price }}</p><p>{{ p.pitch }}</p>
+        {%- if site.storeUrl %}<p><a class="btn" href="{{ site.storeLink(p.slug) }}">{{ p.cta }}</a></p>{% endif %}
+      </article>
+      {%- endfor %}
+    </div>
+    <div class="card bundle-card">
+      <h3>The Complete Bundle: {{ products.bundle.price }}</h3>
+      <p>{{ products.bundle.pitch }}</p>
+      <p><a class="btn" href="/bundle/">See the bundle</a></p>
+    </div>
+    <p class="small">Educational products and templates. No specific time savings or income are promised. Prices in USD; tax may be added at checkout.</p>
+  </section>
+</div>

@@ -1,0 +1,5 @@
+<article class="card post-card">
+  <p class="eyebrow"><a href="/category/{{ post.data.category }}/">{{ post.data.category | categoryName(categories) }}</a>{% if post.data.review_type == "tested" %} · <span class="badge tested">Tested</span>{% elif post.data.review_type == "researched" %} · <span class="badge researched">Researched</span>{% endif %}</p>
+  <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+  <p>{{ post.data.description }}</p>
+</article>

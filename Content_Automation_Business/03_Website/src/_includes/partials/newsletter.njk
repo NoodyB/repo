@@ -1,0 +1,14 @@
+<section class="newsletter" aria-labelledby="nl-title">
+  <div class="wrap nl-grid">
+    <img src="/assets/img/cover-starter.webp" alt="" width="170" height="220" loading="lazy">
+    <div>
+      <h2 id="nl-title">Get the free Client Admin Starter Kit</h2>
+      <p>10 AI prompts for the admin you do every week, plus a 30-minute weekly review checklist. You'll also get one practical admin-system idea a week by email. Unsubscribe any time.</p>
+      {%- if site.newsletterUrl %}
+      <p><a class="btn" href="{{ site.newsletterUrl }}">Get the starter kit</a></p>
+      {%- else %}
+      <p><a class="btn" href="/newsletter/">Get the starter kit</a></p>
+      {%- endif %}
+    </div>
+  </div>
+</section>

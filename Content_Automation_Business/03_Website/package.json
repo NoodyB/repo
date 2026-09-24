@@ -1,0 +1,27 @@
+{
+  "name": "band-of-one-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Band of One website: practical AI systems for businesses of one (Eleventy static site)",
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync-articles.mjs",
+    "sync:preview": "node scripts/sync-articles.mjs --all",
+    "build": "npm run clean && npm run sync && eleventy",
+    "build:preview": "npm run clean && npm run sync:preview && eleventy",
+    "serve": "npm run sync:preview && eleventy --serve",
+    "validate": "html-validate \"_site/**/*.html\"",
+    "test": "npm run build:preview && npm run validate && node ../../Build_Tools/test_pages.js _site $(node scripts/list-pages.mjs)",
+    "clean": "node -e \"require('fs').rmSync('_site',{recursive:true,force:true})\""
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "html-validate": "^11.16.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "markdown-it-anchor": "^9.2.1"
+  }
+}

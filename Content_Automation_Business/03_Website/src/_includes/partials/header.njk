@@ -1,0 +1,13 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="{{ site.name }} home"><img src="/assets/img/band-of-one-horizontal.svg" alt="{{ site.name }}" width="168" height="34"></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="/blog/"{% if page.url.startsWith("/blog/") or page.url.startsWith("/category/") %} aria-current="page"{% endif %}>Articles</a></li>
+        <li><a href="/resources/"{% if page.url == "/resources/" %} aria-current="page"{% endif %}>Resources</a></li>
+        <li><a href="/about/"{% if page.url == "/about/" %} aria-current="page"{% endif %}>About</a></li>
+        <li><a class="nav-cta" href="/newsletter/">Free starter kit</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

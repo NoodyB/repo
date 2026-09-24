@@ -1,0 +1,7 @@
+[
+  {"slug": "client-workflows", "name": "Client Workflows", "short": "Onboarding, proposals, updates and scope, from inquiry to handover.", "description": "Step-by-step workflows, templates and AI prompts for the client side of a one-person service business: onboarding, proposals, weekly updates and scope conversations."},
+  {"slug": "getting-paid", "name": "Getting Paid", "short": "Invoices, deposits, payment terms and reminders that work.", "description": "Practical systems for invoicing, deposits, payment terms and payment reminders, so freelancers and consultants get paid on time without awkward chasing."},
+  {"slug": "ai-done-right", "name": "AI, Done Right", "short": "Prompts, privacy and making AI sound like you.", "description": "How to use AI assistants for client work responsibly: context, voice, privacy and prompts with guardrails against invented facts."},
+  {"slug": "systems-sops", "name": "Systems & SOPs", "short": "SOPs, weekly reviews, what to automate and minimal tool stacks.", "description": "Simple operating systems for a business of one: SOPs, a weekly admin review, what to automate first and a minimal tool stack."},
+  {"slug": "tools-honestly", "name": "Tools, Honestly", "short": "Clearly labeled researched comparisons, no hype.", "description": "Honest tool comparisons for solo service businesses, clearly labeled as hands-on tested or researched, with dates and sources."}
+]

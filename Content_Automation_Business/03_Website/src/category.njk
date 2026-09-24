@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: categories
+  size: 1
+  alias: cat
+permalink: "/category/{{ cat.slug }}/"
+eleventyComputed:
+  title: "{{ cat.name }}"
+  description: "{{ cat.description }}"
+---
+<div class="wrap">
+  <header class="page-head">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/blog/">Articles</a></li></ol></nav>
+    <h1>{{ cat.name }}</h1>
+    <p class="lead">{{ cat.description }}</p>
+  </header>
+  {%- set posts = collections.posts | byCategory(cat.slug) %}
+  <div class="grid three">{% for post in posts %}{% include "partials/card.njk" %}{% endfor %}</div>
+  {%- if not posts.length %}<p>New articles in this topic are on the way.</p>{% endif %}
+</div>

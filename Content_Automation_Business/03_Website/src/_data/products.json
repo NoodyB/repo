@@ -1,0 +1,12 @@
+{
+  "starter": {"name": "The Client Admin Starter Kit", "price": "Free", "slug": null, "image": "/assets/img/cover-starter.webp",
+    "pitch": "10 AI prompts for the admin you do every week, plus a 30-minute weekly review checklist.", "cta": "Get the free starter kit", "href": "/newsletter/"},
+  "playbook": {"name": "The Solo Admin Playbook", "price": "$24", "slug": "solo-admin-playbook", "image": "/assets/img/cover-playbook.webp",
+    "pitch": "A 38-page guide to building an AI-assisted admin system: six client workflows, worksheets, templates and 17 prompts.", "cta": "See the playbook"},
+  "desk": {"name": "The Client Desk", "price": "$29", "slug": "client-desk", "image": "/assets/img/cover-desk.webp",
+    "pitch": "Clients, projects, invoices and payment reminders in one Excel & Google Sheets workbook, with a dashboard of what needs attention.", "cta": "See The Client Desk"},
+  "prompts": {"name": "The Band of One Prompt Library", "price": "$19", "slug": "prompt-library", "image": "/assets/img/cover-prompts.webp",
+    "pitch": "100 fully specified AI prompts for client work and admin, with a searchable spreadsheet and a Notion-ready CSV.", "cta": "See the Prompt Library"},
+  "bundle": {"name": "The Complete Bundle", "price": "$49", "slug": "complete-bundle", "image": "/assets/img/cover-prompts.webp",
+    "pitch": "The playbook, The Client Desk and the Prompt Library together: one admin system for a business of one ($72 separately).", "cta": "See the bundle", "href": "/bundle/"}
+}

@@ -7,3 +7,6 @@ Content_Automation_Business/03_Website/node_modules/
 Content_Automation_Business/03_Website/_site/
 .env
 *.env.local
+
+# Synced copies of 04_Blog_Articles (regenerated each build)
+Content_Automation_Business/03_Website/src/blog/posts/

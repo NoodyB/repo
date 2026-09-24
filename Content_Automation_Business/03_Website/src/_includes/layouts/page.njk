@@ -1,0 +1,13 @@
+---
+layout: layouts/base.njk
+---
+<div class="wrap narrow page">
+  {%- if draftNotice %}
+  <div class="note draft"><strong>Draft for review:</strong> {{ draftNotice }}</div>
+  {%- endif %}
+  <h1>{{ title }}</h1>
+  {%- if updated %}<p class="meta">Last updated <time datetime="{{ updated | isoDate }}">{{ updated | readableDate }}</time></p>{% endif %}
+  <div class="prose">
+{{ content | safe }}
+  </div>
+</div>

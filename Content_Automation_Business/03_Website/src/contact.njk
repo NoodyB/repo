@@ -1,0 +1,21 @@
+---
+layout: layouts/page.njk
+title: Contact
+description: "How to contact Band of One about articles, corrections, products or support."
+---
+<p>We read every message. We aim to reply within two business days (Monday to Friday).</p>
+<h2 id="email">Email</h2>
+{%- if site.supportEmail %}
+<p><a href="mailto:{{ site.supportEmail }}">{{ site.supportEmail }}</a></p>
+{%- else %}
+<p class="note"><strong>[SUPPORT EMAIL: add before launch]</strong> The support inbox hasn't been set up yet.</p>
+{%- endif %}
+<h2 id="what-to-include">What to include</h2>
+<ul>
+  <li><strong>Product support:</strong> the product name and, if you can, your order email or receipt number. Never send passwords or card details.</li>
+  <li><strong>Corrections:</strong> the article link and what needs fixing. We update articles and note the change date.</li>
+  <li><strong>Everything else:</strong> a line or two is plenty.</li>
+</ul>
+<h2 id="not-offered">What we can't help with</h2>
+<p>We can't give legal, tax, accounting or financial advice, or review individual contracts. Please speak to a qualified professional where you work.</p>
+<p>We don't accept paid guest posts or undisclosed sponsored content.</p>

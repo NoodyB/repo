@@ -1,0 +1,14 @@
+---
+permalink: /robots.txt
+eleventyExcludeFromCollections: true
+---
+{%- if site.isPreview %}
+# Preview build: no site URL configured, so indexing is blocked.
+User-agent: *
+Disallow: /
+{%- else %}
+User-agent: *
+Allow: /
+
+Sitemap: {{ "/sitemap.xml" | absolute(site.baseUrl) }}
+{%- endif %}

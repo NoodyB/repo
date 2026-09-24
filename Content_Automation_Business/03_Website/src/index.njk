@@ -1,0 +1,53 @@
+---
+layout: layouts/base.njk
+title: Band of One
+description: "Practical, no-hype guides to running client admin with AI and simple systems, for freelancers, consultants, coaches and VAs."
+---
+<script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "WebSite", "name": site.name, "url": "/" | absolute(site.baseUrl), "description": site.description} | json | safe }}</script>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker">For freelancers, consultants, coaches &amp; VAs</p>
+      <h1 id="hero-title">Practical AI systems for <em>businesses of one</em></h1>
+      <p class="lead">You're the whole back office: inquiries, proposals, onboarding, updates, invoices. We show you complete, tested workflows for that admin, with templates you can copy and plain talk about what AI should <strong>not</strong> do.</p>
+      <p class="ctas"><a class="btn" href="/newsletter/">Get the free starter kit</a> <a class="btn ghost" href="/blog/">Read the articles</a></p>
+    </div>
+    <img class="hero-art" src="/assets/img/band-of-one-mark.svg" alt="" width="260" height="260">
+  </div>
+</section>
+
+<section class="section" aria-labelledby="topics-title">
+  <div class="wrap">
+    <h2 id="topics-title">Start with the problem you have</h2>
+    <div class="grid three topics">
+      {%- for c in categories | orderCategories %}
+      <a class="card topic" href="/category/{{ c.slug }}/"><h3>{{ c.name }}</h3><p>{{ c.short }}</p><span class="count">{{ (collections.posts | byCategory(c.slug)).length }} articles</span></a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section alt" aria-labelledby="latest-title">
+  <div class="wrap">
+    <h2 id="latest-title">Popular starting points</h2>
+    <div class="grid three">
+      {%- for post in collections.posts | bySlugs(["client-onboarding-checklist", "payment-reminder-schedule", "client-data-privacy-ai", "what-to-automate-first", "weekly-client-update-template", "track-invoices-in-a-spreadsheet"]) %}
+      {% include "partials/card.njk" %}
+      {%- endfor %}
+    </div>
+    <p><a href="/blog/">All articles →</a></p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="promise-title">
+  <div class="wrap narrow">
+    <h2 id="promise-title">How we write</h2>
+    <ul class="promise">
+      <li><strong>Every article solves one job</strong> and includes something you can use: a template, checklist, prompt or worked example.</li>
+      <li><strong>Facts are sourced and dated.</strong> Statistics come with who measured them and when.</li>
+      <li><strong>Tools are labeled honestly</strong> as <span class="badge tested">Tested</span> (we used it) or <span class="badge researched">Researched</span> (official documentation, dated).</li>
+      <li><strong>No invented results.</strong> No fake testimonials, income claims or "we tested 50 tools".</li>
+    </ul>
+    <p><a href="/editorial-policy/">Read our editorial policy →</a></p>
+  </div>
+</section>

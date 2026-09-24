@@ -1,0 +1,26 @@
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <img src="/assets/img/band-of-one-horizontal-on-dark.svg" alt="{{ site.name }}" width="150" height="30">
+      <p>{{ site.tagline }}</p>
+      <p class="small">Educational content. Nothing on this site is legal, tax or financial advice. Results depend on your business; no specific outcomes are promised.</p>
+    </div>
+    <nav aria-label="Categories">
+      <h2 class="footer-h">Topics</h2>
+      <ul>{% for c in categories | orderCategories %}<li><a href="/category/{{ c.slug }}/">{{ c.name }}</a></li>{% endfor %}</ul>
+    </nav>
+    <nav aria-label="Site">
+      <h2 class="footer-h">Site</h2>
+      <ul>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/editorial-policy/">Editorial policy</a></li>
+        <li><a href="/affiliate-disclosure/">Affiliate disclosure</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+        <li><a href="/terms/">Terms</a></li>
+        <li><a href="/feed.xml">RSS feed</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap"><p class="small">© {{ site.year }} {{ site.name }}</p></div>
+</footer>
