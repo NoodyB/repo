@@ -1,0 +1,562 @@
+# Month 1: Content & audience building. 30 short-form videos (30–60 s).
+# Format works as talking-head OR faceless (screen recording + voiceover): follow the [VISUAL] cues.
+# Each video points to ONE article or the free starter kit. No income claims, no invented results.
+# Fields: id, day, pillar, concept, hook, script (spoken lines with [VISUAL] cues), on_screen, cta, link, caption, tags (hashtag set)
+
+- id: C-V01
+  day: 1
+  pillar: client-workflows
+  concept: "The 30-minute onboarding checklist"
+  hook: "Most client problems start in the first week, not the last."
+  script: |
+    [VISUAL: you to camera, or the checklist on screen]
+    Most client problems start in the first week, not the last.
+    Missing logins. No deposit. A kickoff call nobody prepared for.
+    So here's the onboarding checklist I'd give every freelancer.
+    [VISUAL: checklist scrolling, items highlighted one by one]
+    One: proposal accepted in writing. Two: agreement signed. Three: deposit invoice sent, and work starts when it clears.
+    Four: a welcome email with next steps. Five: an intake form, not twenty questions by email.
+    Six: agree how you'll communicate and when they'll hear from you.
+    Seven: kickoff call with an agenda, and a written summary the same day.
+    Same steps, same order, every client. The full checklist and free tools are in the link.
+  on_screen: "The onboarding checklist (7 steps)"
+  cta: "Full checklist + free tools: link in bio"
+  link: /blog/client-onboarding-checklist/
+  caption: "Most client problems start in week one. Here's the 7-step onboarding checklist I'd give every freelancer: same steps, same order, every client. Full checklist + free tools at the link in bio."
+  tags: workflows
+
+- id: C-V02
+  day: 2
+  pillar: ai-done-right
+  concept: "Never paste these into ChatGPT"
+  hook: "Five things that should never go into an AI chat, even for client work."
+  script: |
+    [VISUAL: you to camera; list appears as you speak]
+    Five things that should never go into an AI chat, even for client work.
+    Passwords and access links. Bank or card details. Government ID numbers.
+    Health, legal or HR details about real people. And anything a client marked confidential.
+    [VISUAL: before/after text: "Sarah Chen, Harbor Dental" → "[CLIENT NAME]"]
+    For everything else, swap names and details for placeholders before you paste.
+    The AI can write a great email to "client name". You put the real name back before sending.
+    Then check your assistant's data settings. The article shows where they are in ChatGPT, Claude and Gemini.
+  on_screen: "Never paste: passwords · bank details · IDs · health/legal/HR · confidential"
+  cta: "Privacy routine + settings: link in bio"
+  link: /blog/client-data-privacy-ai/
+  caption: "Using AI for client emails? Five things that never go in the chat, plus the 5-second redaction habit for everything else. The settings for ChatGPT, Claude and Gemini are in the full guide (link in bio)."
+  tags: ai
+
+- id: C-V03
+  day: 3
+  pillar: getting-paid
+  concept: "The 5-stage payment reminder schedule"
+  hook: "Chasing invoices feels personal because you haven't decided the schedule in advance."
+  script: |
+    [VISUAL: calendar graphic with 5 markers]
+    Chasing invoices feels awkward because you're deciding what to do every time.
+    Decide once. Five stages.
+    A: three days before it's due, a friendly heads-up, because most late payments are the invoice sitting in the wrong inbox.
+    B: on the due date, a short reminder.
+    C: seven days late, ask if anything's holding it up.
+    D: fourteen days, ask for a payment date in writing.
+    E: thirty days, the final notice, stating only what's in your agreement.
+    Same schedule for every client. It stops feeling personal.
+  on_screen: "A −3 · B 0 · C +7 · D +14 · E +30"
+  cta: "All 5 templates: link in bio"
+  link: /blog/payment-reminder-schedule/
+  caption: "Chasing invoices gets easier when the schedule is decided in advance. Five stages, five templates, from a friendly heads-up to a final notice. Link in bio."
+  tags: paid
+
+- id: C-V04
+  day: 4
+  pillar: ai-done-right
+  concept: "Why your AI emails sound generic"
+  hook: "Your AI emails sound generic because the AI knows nothing about your business."
+  script: |
+    [VISUAL: a bland AI email with the generic phrases highlighted]
+    Your AI emails sound generic because the AI knows nothing about your business.
+    It doesn't know your services, your payment terms, or that you never promise unlimited revisions. So it guesses.
+    Fix it once with a business brief: one page, six headings.
+    [VISUAL: the six headings appear]
+    Who I am. Services. Ideal clients. How I work. Policies. Words to avoid.
+    Let the AI interview you to build it. Takes about twenty minutes.
+    Then paste it before any client-email prompt, or save it as custom instructions.
+  on_screen: "The 1-page AI business brief"
+  cta: "Interview prompt: link in bio"
+  link: /blog/ai-business-brief/
+  caption: "If your AI drafts sound generic, it's usually missing context, not a better prompt. Build a one-page business brief once (the interview prompt is in the link in bio) and every draft starts from your reality."
+  tags: ai
+
+- id: C-V05
+  day: 5
+  pillar: client-workflows
+  concept: "The weekly client update in 4 headings"
+  hook: "Clients chase you when they don't know what's happening."
+  script: |
+    [VISUAL: an email template with four headings]
+    "Just checking in" from a client usually means one thing: they don't know what's happening.
+    Send a weekly update before they ask. Same day every week. Four headings.
+    Done this week. Next week. Needed from you, with dates. Risks or changes.
+    [VISUAL: "Needed from you (by Thursday): logo files" highlighted]
+    That third one does the heavy lifting. "Waiting on the client" becomes a specific request with a date.
+    Five minutes per client. Clients stop chasing.
+  on_screen: "Done · Next · Needed from you · Risks"
+  cta: "Template + AI prompt: link in bio"
+  link: /blog/weekly-client-update-template/
+  caption: "The five-minute weekly client update: four headings, same day every week. 'Needed from you (with dates)' is the line that does the heavy lifting. Template + AI prompt at the link in bio."
+  tags: workflows
+
+- id: C-V06
+  day: 6
+  pillar: systems-sops
+  concept: "Score before you automate"
+  hook: "Don't automate your admin yet. Score it first."
+  script: |
+    [VISUAL: a simple table being filled in]
+    Don't automate your admin yet. Score it first.
+    List every recurring task. For each one: how often, how many minutes, how repeatable, how risky.
+    [VISUAL: formula on screen]
+    Priority equals times per month, times minutes, times repeatability, divided by risk.
+    In our fictional example, a web designer found weekly client updates beat proposals for total time.
+    The fix wasn't an automation. It was a template and an AI draft.
+    Automate only what's frequent, rule-based, low-risk and already written down.
+  on_screen: "(times × minutes) × repeatability ÷ risk"
+  cta: "Scoring method: link in bio"
+  link: /blog/what-to-automate-first/
+  caption: "Before you buy an automation tool, score your admin tasks: (times per month × minutes) × repeatability ÷ risk. Often the best first fix is a template, not a robot. Method + example at the link in bio."
+  tags: systems
+
+- id: C-V07
+  day: 7
+  pillar: brand
+  concept: "What Band of One is (intro)"
+  hook: "If you run a service business on your own, you're also the whole back office."
+  script: |
+    [VISUAL: you to camera, or quick cuts of inbox, invoice, calendar]
+    If you run a service business on your own, you're also the receptionist, the project manager and the collections department.
+    Band of One is about that side of the work: inquiries, proposals, onboarding, updates, invoices.
+    We share complete workflows and templates you can copy.
+    We're clear about where AI helps, and we're plain about what it shouldn't do.
+    No hype, no fake results. Just systems that make the admin smaller.
+    Start with the free starter kit: ten prompts and a weekly checklist.
+  on_screen: "Practical AI systems for businesses of one"
+  cta: "Free starter kit: link in bio"
+  link: /newsletter/
+  caption: "Band of One: practical AI systems for businesses of one. Workflows, templates and honest tool notes for freelancers, consultants, coaches and VAs. Start with the free starter kit (link in bio)."
+  tags: brand
+
+- id: C-V08
+  day: 8
+  pillar: getting-paid
+  concept: "Deposits: the one sentence that matters"
+  hook: "The most important sentence in your payment terms is seven words long."
+  script: |
+    [VISUAL: proposal page with a sentence highlighted]
+    The most important sentence in your payment terms: "Work starts once the deposit has cleared."
+    A deposit confirms commitment, covers early costs, and tests the payment process before much is at stake.
+    Then tie the rest to milestones clients can see: "design approved", not "fifty percent complete".
+    And put an actual date on every invoice, not just "net fourteen".
+    Rules differ by country, so check what applies where you work.
+  on_screen: "\"Work starts once the deposit has cleared.\""
+  cta: "Payment terms wording: link in bio"
+  link: /blog/deposits-and-payment-terms/
+  caption: "Deposits, milestones and payment terms: decide them once and put them in every proposal. The wording (plus a full example) is at the link in bio. General info, not legal advice."
+  tags: paid
+
+- id: C-V09
+  day: 9
+  pillar: ai-done-right
+  concept: "Make AI sound like you"
+  hook: "You can spot an AI email from the first line."
+  script: |
+    [VISUAL: "I hope this email finds you well" with a red strike-through]
+    You can spot an AI email from the first line. Clients can too.
+    Fix it with a voice profile. Take three to five emails you actually wrote, with names removed.
+    Ask the AI to describe your style: sentence length, greetings, sign-offs, things you never do, how you give bad news.
+    [VISUAL: voice profile bullets]
+    Tell it not to invent traits that aren't in the samples.
+    Edit the result, then add it to every drafting prompt.
+  on_screen: "Build a voice profile from 3–5 real emails"
+  cta: "Voice profile prompt: link in bio"
+  link: /blog/make-ai-sound-like-you/
+  caption: "\"I hope this email finds you well.\" Here's how to make AI drafts sound like you instead: a voice profile built from 3–5 of your real emails. Prompt and example at the link in bio."
+  tags: ai
+
+- id: C-V10
+  day: 10
+  pillar: client-workflows
+  concept: "Scope creep: offer a choice"
+  hook: "Scope creep isn't a people problem. It's a visibility problem."
+  script: |
+    [VISUAL: a chat message "while you're in there, could you…"]
+    Scope creep rarely looks like a big request. It looks like "while you're in there".
+    The goal isn't to say no. It's to make the change visible and give an easy choice.
+    Option one: add it now, with the price and the new date. Option two: keep the launch date and do it as a later phase.
+    Then the key line: "I'll hold off on this piece until I hear back."
+    Don't start extra work before they choose. It's very hard to charge for it later.
+  on_screen: "Name it · Offer 2 options · Wait for a yes"
+  cta: "4 scope creep templates: link in bio"
+  link: /blog/scope-creep-email-templates/
+  caption: "Scope creep is a visibility problem. Name the change, offer two options, wait for a yes. Four email templates (including the \"quick favor\") at the link in bio."
+  tags: workflows
+
+- id: C-V11
+  day: 11
+  pillar: getting-paid
+  concept: "Spreadsheet formula: which reminder is due"
+  hook: "One spreadsheet formula can tell you which payment reminder to send."
+  script: |
+    [VISUAL: screen recording of Google Sheets]
+    One spreadsheet formula can tell you which payment reminder to send today.
+    Put today's date in a cell. Next to each invoice, you've got the due date.
+    The formula checks: thirty days late? Stage E. Fourteen? D. Seven? C. Due date? B. Three days before? A.
+    [VISUAL: the Action column showing "Send C"]
+    A second formula compares that with the last reminder you sent and says "Send C" or "Up to date".
+    We tested it against eight scenarios before publishing. The free file is in the link.
+  on_screen: "Tested formulas + free starter file"
+  cta: "Free invoice tracker: link in bio"
+  link: /blog/track-invoices-in-a-spreadsheet/
+  caption: "A spreadsheet that tells you which payment reminder to send (A–E). Tested against eight scenarios; works in Google Sheets and Excel. Free starter file at the link in bio."
+  tags: paid
+
+- id: C-V12
+  day: 12
+  pillar: systems-sops
+  concept: "The weekly admin review"
+  hook: "Admin with no set time leaks into every day."
+  script: |
+    [VISUAL: calendar with one 45-minute block]
+    Admin with no set time leaks into every day. Give it one appointment a week.
+    Forty-five minutes. Ten to clear the inbox and capture tasks. Ten on your pipeline: every client needs a next action and a date.
+    Ten on money: send invoices, send whichever reminders are due, record payments.
+    Ten to plan next week. And five to improve one thing: turn an annoying task into a template.
+    That last block is what turns a review into a system.
+  on_screen: "10 · 10 · 10 · 10 · 5"
+  cta: "The full agenda: link in bio"
+  link: /blog/weekly-admin-review/
+  caption: "One 45-minute appointment a week keeps admin out of the rest of your week. The five-block agenda (plus an AI prompt that pre-sorts it) is at the link in bio."
+  tags: systems
+
+- id: C-V13
+  day: 13
+  pillar: client-workflows
+  concept: "AI proposals: the one rule"
+  hook: "Never let AI set your prices."
+  script: |
+    [VISUAL: proposal outline with "Investment" section highlighted]
+    If you use AI to draft proposals, one rule: never let it set your prices.
+    Give it your discovery notes and a structure. Situation in the client's words. Outcomes. Scope. What's not included. Timeline. Investment. Next step.
+    In the prompt, say: "Use exactly my prices and don't invent any."
+    And: "Mark anything you had to assume with CHECK."
+    Then read it once for promises you can't control, like results, rankings or revenue.
+  on_screen: "AI drafts. You set price & promises."
+  cta: "Full proposal prompt: link in bio"
+  link: /blog/write-a-proposal-with-ai/
+  caption: "AI can draft proposals that don't sound generic, but it should never set your prices or promises. Seven-part structure + prompt at the link in bio."
+  tags: workflows
+
+- id: C-V14
+  day: 14
+  pillar: brand
+  concept: "Starter kit walkthrough"
+  hook: "Ten prompts for the admin you do every week, free."
+  script: |
+    [VISUAL: flip through the starter kit PDF]
+    Ten prompts for the admin you do every week. It's free, so here's what's inside.
+    A business brief builder, so the AI knows your business. A reply to new inquiries. A call-notes-to-summary email.
+    A proposal draft. A welcome email. A weekly update. A scope change email. A payment reminder personalizer.
+    A testimonial request that asks permission properly. And a weekly review assistant.
+    Plus a thirty-minute weekly review checklist you can print.
+  on_screen: "10 prompts + weekly checklist · free"
+  cta: "Get it: link in bio"
+  link: /newsletter/
+  caption: "The free Client Admin Starter Kit: 10 AI prompts for the admin you do every week + a printable 30-minute weekly review checklist. Link in bio."
+  tags: brand
+
+- id: C-V15
+  day: 15
+  pillar: getting-paid
+  concept: "Invoice details that prevent late payment"
+  hook: "Late payments often start with the invoice itself."
+  script: |
+    [VISUAL: invoice template with items ticked]
+    Late payment often starts with the invoice itself.
+    Add a unique number, and a description they'll recognize: "Milestone two, design approved", not "services".
+    Use a due date that's an actual date. Say how to pay, with a link or bank details. Add the PO number if they need one.
+    And send it to the person who actually pays invoices. Ask who that is during onboarding.
+    Requirements vary by country; your tax authority has the official list.
+  on_screen: "Number · Description · Date · How to pay · PO · Right person"
+  cta: "Invoice checklist: link in bio"
+  link: /blog/what-to-include-on-an-invoice/
+  caption: "Remove every reason for your invoice to be set aside: clear description, real due date, easy payment, right recipient. Full checklist (and where to check your country's rules) at the link in bio."
+  tags: paid
+
+- id: C-V16
+  day: 16
+  pillar: systems-sops
+  concept: "SOPs for a one-person business"
+  hook: "SOPs aren't just for companies with an operations team."
+  script: |
+    [VISUAL: a one-page SOP]
+    SOPs aren't just for companies. If you work alone, you're the one who has to remember how everything works.
+    An SOP is a checklist with a purpose, a trigger and a finish line.
+    Keep steps verb-first: "Send", "Check", "Duplicate". Twelve steps max.
+    And add a "common mistakes" section. It turns last month's mistake into this month's prevention.
+    Start with onboarding and invoicing. Do the process once with rough notes, and let AI format it.
+  on_screen: "Purpose · Trigger · Steps · Done when · Mistakes"
+  cta: "SOP template + prompt: link in bio"
+  link: /blog/sop-template-one-person-business/
+  caption: "A one-page SOP template for solo businesses, plus the AI prompt that turns rough notes into a finished SOP (and flags gaps instead of inventing steps). Link in bio."
+  tags: systems
+
+- id: C-V17
+  day: 17
+  pillar: tools-honestly
+  concept: "Make vs Zapier vs n8n in 45 seconds"
+  hook: "Make, Zapier or n8n? Here's the honest short version."
+  script: |
+    [VISUAL: three logos as text labels, no logos needed]
+    Make, Zapier or n8n? The short version, from their pricing pages, as checked in September.
+    Zapier: simplest start. The free plan is one hundred tasks a month with two-step automations.
+    Make: visual, multi-step, budget-friendly. The free plan has two active scenarios.
+    n8n: the most control. You can self-host it for free if you're technical, or use their cloud.
+    And for a lot of solo businesses, the right tool this month is none, until the process is worth automating.
+    This is a researched comparison, not a hands-on test. Check current pricing before you choose.
+  on_screen: "Researched comparison · checked Sept 2026"
+  cta: "Full comparison: link in bio"
+  link: /blog/make-vs-zapier-vs-n8n/
+  caption: "Make vs Zapier vs n8n for freelancers: simplest start, best budget multi-step, most control. Researched from official pricing pages (checked Sept 2026), not hands-on tested. Full comparison at the link in bio."
+  tags: tools
+
+- id: C-V18
+  day: 18
+  pillar: ai-done-right
+  concept: "A prompt that says [NEED INFO]"
+  hook: "The most useful words in any AI prompt: 'write NEED INFO instead of guessing'."
+  script: |
+    [VISUAL: an AI reply with "[NEED INFO]" highlighted]
+    The most useful words in any client-email prompt: "If I haven't given you the answer, write NEED INFO instead of guessing."
+    AI assistants fill gaps confidently. That's how an email ends up promising a date you never agreed.
+    With that one line, the gap becomes visible, and you fill it in.
+    Add it to your saved instructions with three more rules. Never invent prices, dates or facts. Keep emails under two hundred words. Ask one question when my request is unclear.
+  on_screen: "\"Write [NEED INFO] instead of guessing.\""
+  cta: "12 prompts with guardrails: link in bio"
+  link: /blog/ai-prompts-for-client-emails/
+  caption: "One line that stops AI inventing details in client emails: \"write [NEED INFO] instead of guessing.\" 12 client-email prompts with guardrails at the link in bio."
+  tags: ai
+
+- id: C-V19
+  day: 19
+  pillar: tools-honestly
+  concept: "Free newsletter tools: what actually differs"
+  hook: "If you want a free welcome email sequence, the free plans differ a lot."
+  script: |
+    [VISUAL: simple comparison table]
+    Starting a newsletter for your service business? The free plans differ where it matters: automation.
+    When we checked their pricing pages, MailerLite's free plan included automations but capped subscribers at two hundred and fifty.
+    Kit's free plan allowed up to ten thousand subscribers, but automated sequences were paid.
+    beehiiv's free plan is built for publishing, and automations weren't included.
+    So: need a welcome sequence now? MailerLite. Broadcasts only, bigger list? Kit.
+    Plans change, so check before you sign up.
+  on_screen: "Researched · checked Sept 2026"
+  cta: "Full comparison: link in bio"
+  link: /blog/mailerlite-vs-kit-vs-beehiiv/
+  caption: "MailerLite vs Kit vs beehiiv for a service business newsletter: the free-plan difference that matters is automation. Researched from official pricing pages (Sept 2026). Link in bio."
+  tags: tools
+
+- id: C-V20
+  day: 20
+  pillar: client-workflows
+  concept: "The kickoff summary email"
+  hook: "The email you send after the kickoff call saves more arguments than any contract clause."
+  script: |
+    [VISUAL: a short summary email]
+    The email you send after a kickoff call prevents more arguments than any contract clause.
+    Same day, five parts. Their goals, in their words. What's in scope and what's not.
+    Milestones and who approves each one. What you need from them and by when. The next step and date.
+    When a question comes up in week six, you've got a written answer from week one.
+    AI can draft it from your call notes. Just redact names first and check every date.
+  on_screen: "Kickoff summary = your week-6 insurance"
+  cta: "Onboarding checklist: link in bio"
+  link: /blog/client-onboarding-checklist/
+  caption: "The kickoff summary email: same day, five parts, and your written answer to questions that come up in week six. Part of the onboarding checklist at the link in bio."
+  tags: workflows
+
+- id: C-V21
+  day: 21
+  pillar: brand
+  concept: "Tested vs researched: why we label"
+  hook: "When you read a tool review, ask one question: did they actually use it?"
+  script: |
+    [VISUAL: the two badges "Tested" and "Researched"]
+    When you read a tool review, ask one question: did they actually use it?
+    Every tool article on Band of One is labeled. "Tested" means we used it for the job described, and we say how.
+    "Researched" means it's based on the official documentation and pricing pages, with the date we checked.
+    We never say we tested fifty tools. And we don't publish income claims or fake testimonials.
+    It's a small thing. We think it's the whole point.
+  on_screen: "Tested vs Researched: always labeled"
+  cta: "Our editorial policy: link in bio"
+  link: /editorial-policy/
+  caption: "Did the reviewer actually use the tool? Our tool articles are always labeled Tested or Researched, with dates. Why we do it: editorial policy at the link in bio."
+  tags: brand
+
+- id: C-V22
+  day: 22
+  pillar: systems-sops
+  concept: "One tool per job"
+  hook: "Two tools for the same job is worse than one simple one."
+  script: |
+    [VISUAL: messy app icons collapsing into a short list]
+    Tool overload is its own kind of admin.
+    The fix: one tool per job. Email and calendar. Intake forms. Documents. Client tracking. Invoicing. An AI assistant.
+    Later, maybe, an email list and one automation.
+    Most jobs have free options. The system matters more than the software.
+    And once a quarter, ask of every tool: is it earning its place?
+  on_screen: "8 jobs · 1 tool each · mostly free"
+  cta: "The minimum tool stack: link in bio"
+  link: /blog/minimum-tool-stack/
+  caption: "The minimum tool stack for a solo service business: eight jobs, one tool each, mostly free to start (free-plan limits checked on official pricing pages). Link in bio."
+  tags: systems
+
+- id: C-V23
+  day: 23
+  pillar: getting-paid
+  concept: "Stage D: ask for a date"
+  hook: "Fourteen days late? Stop asking 'when'. Ask for a date."
+  script: |
+    [VISUAL: email with the key sentence highlighted]
+    Fourteen days late? Stop asking "any update?" Ask for a date.
+    "Please could you confirm the date you'll be paying it?"
+    Then give them room to raise a problem: "If there's an issue with the invoice or the work, I'd like to know so we can sort it out."
+    And close with your expectation: "Otherwise, I'll expect payment by" a date five business days out.
+    Specific, polite, in writing. It changes "someday" into a commitment.
+  on_screen: "Stage D: get a payment date in writing"
+  cta: "All 5 reminder templates: link in bio"
+  link: /blog/payment-reminder-schedule/
+  caption: "At 14 days overdue, the key move is getting a payment date in writing. The exact wording (and the other four stages) at the link in bio."
+  tags: paid
+
+- id: C-V24
+  day: 24
+  pillar: tools-honestly
+  concept: "Intake forms: keep it to 7 fields"
+  hook: "Every extra required field on your inquiry form is a reason not to submit."
+  script: |
+    [VISUAL: form builder with fields being deleted]
+    Every extra required field on your inquiry form is a reason not to submit.
+    Seven is plenty. Name. Email. Business and website. What they need help with. Timeline. Budget range, including "not sure yet". Anything else.
+    End with when they'll hear from you: "I reply within one business day."
+    Tally, Google Forms and Jotform all have free options. We compared them from their pricing pages.
+    And never ask for passwords in a form.
+  on_screen: "Inquiry form: 7 fields max"
+  cta: "Form tools compared: link in bio"
+  link: /blog/client-intake-form-tools/
+  caption: "Your inquiry form needs 7 fields or fewer. The questions to ask (and a researched comparison of Tally, Google Forms and Jotform) at the link in bio."
+  tags: tools
+
+- id: C-V25
+  day: 25
+  pillar: ai-done-right
+  concept: "Temporary chats and privacy settings"
+  hook: "Turning off AI training is a good default. It doesn't mean nothing is stored."
+  script: |
+    [VISUAL: settings screens described with text overlays, no real client data]
+    Turning off AI model training is a good default for client work. But it doesn't mean nothing is stored.
+    From their help pages, as checked in September: ChatGPT has a data controls setting and temporary chats, which may still be kept up to thirty days for safety.
+    Claude lets consumer users choose whether chats are used for training, and has incognito chats.
+    Gemini's Keep activity setting controls review for improvement, but chats are still saved up to seventy-two hours.
+    That's why redaction matters more than any single setting.
+  on_screen: "Settings help. Redaction matters more."
+  cta: "Where the settings are: link in bio"
+  link: /blog/client-data-privacy-ai/
+  caption: "AI privacy settings are worth setting, but 'training off' isn't 'nothing stored'. What ChatGPT, Claude and Gemini's help pages say (checked Sept 2026), and why redaction comes first. Link in bio."
+  tags: ai
+
+- id: C-V26
+  day: 26
+  pillar: tools-honestly
+  concept: "Spreadsheet, Notion or CRM?"
+  hook: "Where should a solo business track clients? The one that you'll open every week."
+  script: |
+    [VISUAL: three columns: Spreadsheet · Notion · CRM]
+    Where should a solo business track clients? Honestly, wherever you'll look every week.
+    A spreadsheet is free, flexible and fast, but it won't remind you unless you check it.
+    Notion is great if it's already your home base. Just don't over-build it.
+    A CRM means less building, with reminders and invoicing, but it's a subscription and it's their data format.
+    Whatever you pick: one place only, and every client gets a next action and a date.
+  on_screen: "One place · next action + date for every client"
+  cta: "Honest trade-offs: link in bio"
+  link: /blog/spreadsheet-vs-notion-vs-crm/
+  caption: "Spreadsheet, Notion or CRM for tracking clients? The honest trade-offs, and the one habit that matters more than the tool. Link in bio."
+  tags: tools
+
+- id: C-V27
+  day: 27
+  pillar: client-workflows
+  concept: "How to report a delay"
+  hook: "How to tell a client about a delay without a wall of apologies."
+  script: |
+    [VISUAL: a four-line delay message]
+    How to tell a client about a delay without a wall of apologies.
+    Four moves. State it: "Launch will move to Thursday the sixteenth."
+    Explain it in one sentence. Give the new date.
+    And offer a choice if there is one: "If the original date is essential, we can launch without the second payment option and add it the following week."
+    Early, plain and with a plan. That's what keeps trust.
+  on_screen: "State · Explain (1 line) · New date · Choice"
+  cta: "Weekly update template: link in bio"
+  link: /blog/weekly-client-update-template/
+  caption: "Delays happen. Here's how to report one: state it, one line of why, the new date, and a choice if there is one. More in the weekly client update guide (link in bio)."
+  tags: workflows
+
+- id: C-V28
+  day: 28
+  pillar: ai-done-right
+  concept: "Testimonial request that asks permission"
+  hook: "The right way to ask for a testimonial, and the one thing never to do."
+  script: |
+    [VISUAL: a short email with three questions]
+    The right way to ask for a testimonial.
+    Make it easy with three optional questions. What was the situation before? What was it like working together? What changed afterwards?
+    Say two or three sentences is plenty. Ask permission to publish it with their name, or anonymously if they'd rather.
+    And promise to send them the final wording to approve.
+    The one thing never to do: write it for them. Real words or none.
+  on_screen: "3 optional questions · permission · approval"
+  cta: "Testimonial prompt: link in bio"
+  link: /blog/ai-prompts-for-client-emails/
+  caption: "Ask for testimonials the right way: three optional questions, clear permission, client approves the final wording. Never write one for them. Prompt at the link in bio."
+  tags: ai
+
+- id: C-V29
+  day: 29
+  pillar: systems-sops
+  concept: "Track four numbers"
+  hook: "You don't need a dashboard. You need four numbers once a month."
+  script: |
+    [VISUAL: four numbers on a sticky note]
+    You don't need a fancy dashboard. You need four numbers, once a month.
+    Hours on admin, even a rough estimate. Overdue invoices, count and total.
+    Average time to first reply on new inquiries. Proposals sent versus accepted.
+    Watch them for two or three months and you'll know whether your system's working.
+    That's better than any promise, including ours.
+  on_screen: "Admin hours · Overdue · Reply time · Win rate"
+  cta: "Weekly review guide: link in bio"
+  link: /blog/weekly-admin-review/
+  caption: "Four numbers, once a month: admin hours, overdue invoices, time to first reply, proposals sent vs accepted. Measure your system; don't take anyone's word for it. Link in bio."
+  tags: systems
+
+- id: C-V30
+  day: 30
+  pillar: brand
+  concept: "Month recap + where to start"
+  hook: "Thirty days of admin systems. If you only do one thing, do this."
+  script: |
+    [VISUAL: quick montage of the month's on-screen titles]
+    Thirty days of admin systems for businesses of one. If you only do one thing, do this.
+    Book forty-five minutes this week for an admin review. In it, send what's due, and fix one annoying task.
+    Next week, do it again.
+    Everything from this month is free on the site, plus a starter kit with ten prompts and the weekly checklist.
+    Thanks for watching. See you in the next thirty.
+  on_screen: "Start here: 1 weekly review"
+  cta: "Free starter kit: link in bio"
+  link: /newsletter/
+  caption: "30 days of admin systems for businesses of one. If you only do one thing: book a 45-minute weekly admin review. Everything from this month + the free starter kit at the link in bio."
+  tags: brand

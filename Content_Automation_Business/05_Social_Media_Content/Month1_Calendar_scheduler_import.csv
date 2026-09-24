@@ -1,0 +1,193 @@
+﻿Day,Campaign month,Channel,Type,ID,Title / concept,Hook,Link,CTA,Caption / post text,Hashtags,Graphic,Status
+1,Month 1: Content,LinkedIn,Educational post,C-E01,The onboarding checklist,,/blog/client-onboarding-checklist/,,"Most client problems start in week one, not week ten.
+
+A 7-step onboarding checklist that prevents most of them:
+
+1. Proposal accepted in writing
+2. Agreement signed (scope, exclusions, payment terms, revisions)
+3. Deposit invoice sent. Work starts when it clears
+4. Welcome email with numbered next steps
+5. Intake form instead of 20 questions by email
+6. Communication norms agreed: where, when, how fast
+7. Kickoff call with an agenda, plus a written summary the same day
+
+Same steps, same order, every client. After three clients you'll know which questions to add to your form.
+
+Full checklist + free tools: [link]",#freelancetips #clientexperience #smallbusinesstips #solopreneur #consultantlife,,Draft
+1,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V01,The 30-minute onboarding checklist,"Most client problems start in the first week, not the last.",/blog/client-onboarding-checklist/,Full checklist + free tools: link in bio,"Most client problems start in week one. Here's the 7-step onboarding checklist I'd give every freelancer: same steps, same order, every client. Full checklist + free tools at the link in bio.",#freelancetips #clientexperience #smallbusinesstips #solopreneur #consultantlife,graphics/video_covers/C-V01.png,Draft
+2,Month 1: Content,LinkedIn + Instagram,Promotional post,C-P01,Free starter kit launch,,/newsletter/,,"New and free: the Client Admin Starter Kit.
+
+10 AI prompts for the admin you do every week (inquiry replies, call summaries, proposals, welcome emails, weekly updates, scope changes, payment reminders, testimonial requests), plus a printable 30-minute weekly review checklist.
+
+Works with free AI plans. Get it here: [link]",#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/promo_cards/C-P01.png,Draft
+2,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V02,Never paste these into ChatGPT,"Five things that should never go into an AI chat, even for client work.",/blog/client-data-privacy-ai/,Privacy routine + settings: link in bio,"Using AI for client emails? Five things that never go in the chat, plus the 5-second redaction habit for everything else. The settings for ChatGPT, Claude and Gemini are in the full guide (link in bio).",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,graphics/video_covers/C-V02.png,Draft
+3,Month 1: Content,Instagram,Educational post (carousel),C-E02,5 things never to paste into AI,,/blog/client-data-privacy-ai/,,"Save this for the next time you're about to paste an email thread into an AI chat. The redaction habit takes five seconds, and the full privacy routine (with where to find the ChatGPT, Claude and Gemini settings) is at the link in bio.",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,graphics/carousels/C-E02_01.png,Draft
+3,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V03,The 5-stage payment reminder schedule,Chasing invoices feels personal because you haven't decided the schedule in advance.,/blog/payment-reminder-schedule/,All 5 templates: link in bio,"Chasing invoices gets easier when the schedule is decided in advance. Five stages, five templates, from a friendly heads-up to a final notice. Link in bio.",#freelancebusiness #invoicing #smallbusinessowner #getpaid #solopreneur,graphics/video_covers/C-V03.png,Draft
+4,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V04,Why your AI emails sound generic,Your AI emails sound generic because the AI knows nothing about your business.,/blog/ai-business-brief/,Interview prompt: link in bio,"If your AI drafts sound generic, it's usually missing context, not a better prompt. Build a one-page business brief once (the interview prompt is in the link in bio) and every draft starts from your reality.",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,graphics/video_covers/C-V04.png,Draft
+5,Month 1: Content,LinkedIn,Educational post,C-E03,"Payment reminders, decided once",,/blog/payment-reminder-schedule/,,"Chasing invoices feels personal because most of us decide what to do each time.
+
+Decide once:
+
+A: 3 days before due: friendly heads-up (catches wrong-inbox problems)
+B: due date: short reminder
+C: +7 days: ""anything holding it up?""
+D: +14 days: ask for a payment date in writing
+E: +30 days: final notice, stating only what's in your agreement
+
+It matters: in Bonsai's data from 100,000+ freelancers, 29% of invoices were paid at least a day late (Bonsai, updated Jan 2026).
+
+Templates for all five stages: [link]",#freelancebusiness #invoicing #smallbusinessowner #getpaid #solopreneur,,Draft
+5,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V05,The weekly client update in 4 headings,Clients chase you when they don't know what's happening.,/blog/weekly-client-update-template/,Template + AI prompt: link in bio,"The five-minute weekly client update: four headings, same day every week. 'Needed from you (with dates)' is the line that does the heavy lifting. Template + AI prompt at the link in bio.",#freelancetips #clientexperience #smallbusinesstips #solopreneur #consultantlife,graphics/video_covers/C-V05.png,Draft
+6,Month 1: Content,LinkedIn + Instagram,Promotional post,C-P02,Free invoice tracker,,/blog/track-invoices-in-a-spreadsheet/,,"Free download: a small spreadsheet that tells you which payment reminder to send (A–E) for every invoice.
+
+Tested against eight scenarios before we published it. Works in Google Sheets and Excel. No sign-up needed.
+
+Formulas explained + download: [link]",#freelancebusiness #invoicing #smallbusinessowner #getpaid #solopreneur,graphics/promo_cards/C-P02.png,Draft
+6,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V06,Score before you automate,Don't automate your admin yet. Score it first.,/blog/what-to-automate-first/,Scoring method: link in bio,"Before you buy an automation tool, score your admin tasks: (times per month × minutes) × repeatability ÷ risk. Often the best first fix is a template, not a robot. Method + example at the link in bio.",#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,graphics/video_covers/C-V06.png,Draft
+7,Month 1: Content,Instagram,Educational post (carousel),C-E04,The weekly client update,,/blog/weekly-client-update-template/,,"Four headings, same day every week. The 'Needed from you' line turns vague delays into specific requests with dates. Template + AI prompt at the link in bio.",#freelancetips #clientexperience #smallbusinesstips #solopreneur #consultantlife,graphics/carousels/C-E04_01.png,Draft
+7,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V07,What Band of One is (intro),"If you run a service business on your own, you're also the whole back office.",/newsletter/,Free starter kit: link in bio,"Band of One: practical AI systems for businesses of one. Workflows, templates and honest tool notes for freelancers, consultants, coaches and VAs. Start with the free starter kit (link in bio).",#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/video_covers/C-V07.png,Draft
+8,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V08,Deposits: the one sentence that matters,The most important sentence in your payment terms is seven words long.,/blog/deposits-and-payment-terms/,Payment terms wording: link in bio,"Deposits, milestones and payment terms: decide them once and put them in every proposal. The wording (plus a full example) is at the link in bio. General info, not legal advice.",#freelancebusiness #invoicing #smallbusinessowner #getpaid #solopreneur,graphics/video_covers/C-V08.png,Draft
+9,Month 1: Content,LinkedIn,Educational post,C-E05,Why AI drafts sound generic,,/blog/ai-business-brief/,,"If your AI drafts sound generic, the problem usually isn't the prompt. It's missing context.
+
+The assistant doesn't know your services, your terms, or the promises you never make. So it fills the gaps with the average of everything it's read.
+
+Fix it once with a one-page business brief:
+→ Who I am
+→ Services
+→ Ideal clients
+→ How I work
+→ Policies
+→ Tone and words to avoid
+
+Let the AI interview you to build it (about 20 minutes), then reuse it everywhere.
+
+The interview prompt: [link]",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,,Draft
+9,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V09,Make AI sound like you,You can spot an AI email from the first line.,/blog/make-ai-sound-like-you/,Voice profile prompt: link in bio,"""I hope this email finds you well."" Here's how to make AI drafts sound like you instead: a voice profile built from 3–5 of your real emails. Prompt and example at the link in bio.",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,graphics/video_covers/C-V09.png,Draft
+10,Month 1: Content,LinkedIn,Promotional post,C-P03,Why we label tested vs researched,,/editorial-policy/,,"A small promise from Band of One: every tool article is labeled.
+
+Tested = we used it for the job described, and we say how.
+Researched = based on official docs and pricing pages, with the date checked.
+
+No ""we tested 50 tools"". No income claims. No fake testimonials.
+
+Our editorial policy: [link]",#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/promo_cards/C-P03.png,Draft
+10,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V10,Scope creep: offer a choice,Scope creep isn't a people problem. It's a visibility problem.,/blog/scope-creep-email-templates/,4 scope creep templates: link in bio,"Scope creep is a visibility problem. Name the change, offer two options, wait for a yes. Four email templates (including the ""quick favor"") at the link in bio.",#freelancetips #clientexperience #smallbusinesstips #solopreneur #consultantlife,graphics/video_covers/C-V10.png,Draft
+11,Month 1: Content,Instagram,Educational post (carousel),C-E06,Score your admin before you automate,,/blog/what-to-automate-first/,,The scoring method that stops you spending a weekend automating a task you do twice a month. Worked example at the link in bio.,#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,graphics/carousels/C-E06_01.png,Draft
+11,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V11,Spreadsheet formula: which reminder is due,One spreadsheet formula can tell you which payment reminder to send.,/blog/track-invoices-in-a-spreadsheet/,Free invoice tracker: link in bio,A spreadsheet that tells you which payment reminder to send (A–E). Tested against eight scenarios; works in Google Sheets and Excel. Free starter file at the link in bio.,#freelancebusiness #invoicing #smallbusinessowner #getpaid #solopreneur,graphics/video_covers/C-V11.png,Draft
+12,Month 1: Content,Instagram,Promotional post,C-P04,Newsletter: one idea a week,,/newsletter/,,"One practical admin-system idea a week, by email. Short, useful, no hype. Plus the free starter kit when you sign up. Unsubscribe any time. Link in bio.",#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/promo_cards/C-P04.png,Draft
+12,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V12,The weekly admin review,Admin with no set time leaks into every day.,/blog/weekly-admin-review/,The full agenda: link in bio,One 45-minute appointment a week keeps admin out of the rest of your week. The five-block agenda (plus an AI prompt that pre-sorts it) is at the link in bio.,#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,graphics/video_covers/C-V12.png,Draft
+13,Month 1: Content,LinkedIn,Educational post,C-E07,Scope creep in one email,,/blog/scope-creep-email-templates/,,"Scope creep rarely arrives as a big request. It's ""while you're in there…""
+
+The goal isn't to say no. It's to make the change visible:
+
+""Thanks for the idea. It's outside the current scope, so two options:
+1) Add it now: [price], and launch moves to [date]
+2) Keep the launch date and do it as a follow-up phase
+I'll hold off on this piece until I hear which you prefer.""
+
+That last line matters most. Starting ""just to be helpful"" makes it very hard to charge for later.
+
+Four templates (including the ""quick favor""): [link]",#freelancetips #clientexperience #smallbusinesstips #solopreneur #consultantlife,,Draft
+13,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V13,AI proposals: the one rule,Never let AI set your prices.,/blog/write-a-proposal-with-ai/,Full proposal prompt: link in bio,"AI can draft proposals that don't sound generic, but it should never set your prices or promises. Seven-part structure + prompt at the link in bio.",#freelancetips #clientexperience #smallbusinesstips #solopreneur #consultantlife,graphics/video_covers/C-V13.png,Draft
+14,Month 1: Content,LinkedIn + Instagram,Promotional post,C-P05,Series: Getting Paid,,/category/getting-paid/,,"This month's Getting Paid series, all free:
+
+→ The 5-stage payment reminder schedule
+→ Deposits, milestones and payment terms
+→ What every invoice should include
+→ Tracking invoices in a spreadsheet (tested formulas)
+
+Start here: [link]",#freelancebusiness #invoicing #smallbusinessowner #getpaid #solopreneur,graphics/promo_cards/C-P05.png,Draft
+14,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V14,Starter kit walkthrough,"Ten prompts for the admin you do every week, free.",/newsletter/,Get it: link in bio,The free Client Admin Starter Kit: 10 AI prompts for the admin you do every week + a printable 30-minute weekly review checklist. Link in bio.,#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/video_covers/C-V14.png,Draft
+15,Month 1: Content,Instagram,Educational post (carousel),C-E08,What every invoice needs,,/blog/what-to-include-on-an-invoice/,,"Remove every reason for your invoice to be set aside. Full checklist, plus the UK government's list as an example baseline, at the link in bio.",#freelancebusiness #invoicing #smallbusinessowner #getpaid #solopreneur,graphics/carousels/C-E08_01.png,Draft
+15,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V15,Invoice details that prevent late payment,Late payments often start with the invoice itself.,/blog/what-to-include-on-an-invoice/,Invoice checklist: link in bio,"Remove every reason for your invoice to be set aside: clear description, real due date, easy payment, right recipient. Full checklist (and where to check your country's rules) at the link in bio.",#freelancebusiness #invoicing #smallbusinessowner #getpaid #solopreneur,graphics/video_covers/C-V15.png,Draft
+16,Month 1: Content,LinkedIn,Promotional post,C-P06,"AI, Done Right series",,/category/ai-done-right/,,"Using AI for client work without the generic emails or the privacy worries. Four free guides:
+
+→ Keep client data private (ChatGPT, Claude, Gemini settings)
+→ The one-page AI business brief
+→ Make AI drafts sound like you
+→ 12 client-email prompts with guardrails
+
+[link]",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,graphics/promo_cards/C-P06.png,Draft
+16,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V16,SOPs for a one-person business,SOPs aren't just for companies with an operations team.,/blog/sop-template-one-person-business/,SOP template + prompt: link in bio,"A one-page SOP template for solo businesses, plus the AI prompt that turns rough notes into a finished SOP (and flags gaps instead of inventing steps). Link in bio.",#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,graphics/video_covers/C-V16.png,Draft
+17,Month 1: Content,LinkedIn,Educational post,C-E09,Voice profile,,/blog/make-ai-sound-like-you/,,"""I hope this email finds you well.""
+""I'm thrilled to…""
+""Please don't hesitate to reach out.""
+
+Clients can spot AI emails from the first line.
+
+A voice profile fixes most of it. Paste 3–5 emails you actually wrote (names removed) and ask the AI to describe:
+• typical sentence length
+• greeting and sign-off habits
+• formality (1–5)
+• things you never do
+• how you deliver bad news
+• 3 ""do this / not that"" examples
+
+Key instruction: ""Don't invent traits that aren't in the samples.""
+
+Prompt + example: [link]",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,,Draft
+17,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V17,Make vs Zapier vs n8n in 45 seconds,"Make, Zapier or n8n? Here's the honest short version.",/blog/make-vs-zapier-vs-n8n/,Full comparison: link in bio,"Make vs Zapier vs n8n for freelancers: simplest start, best budget multi-step, most control. Researched from official pricing pages (checked Sept 2026), not hands-on tested. Full comparison at the link in bio.",#nocode #automation #smallbusinesstools #freelancetools #solopreneur,graphics/video_covers/C-V17.png,Draft
+18,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V18,A prompt that says [NEED INFO],The most useful words in any AI prompt: 'write NEED INFO instead of guessing'.,/blog/ai-prompts-for-client-emails/,12 prompts with guardrails: link in bio,"One line that stops AI inventing details in client emails: ""write [NEED INFO] instead of guessing."" 12 client-email prompts with guardrails at the link in bio.",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,graphics/video_covers/C-V18.png,Draft
+19,Month 1: Content,Instagram,Educational post (carousel),C-E10,The 45-minute weekly admin review,,/blog/weekly-admin-review/,,Give admin one appointment a week and it stops leaking into every day. Agenda + an AI prompt that pre-sorts it at the link in bio.,#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,graphics/carousels/C-E10_01.png,Draft
+19,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V19,Free newsletter tools: what actually differs,"If you want a free welcome email sequence, the free plans differ a lot.",/blog/mailerlite-vs-kit-vs-beehiiv/,Full comparison: link in bio,MailerLite vs Kit vs beehiiv for a service business newsletter: the free-plan difference that matters is automation. Researched from official pricing pages (Sept 2026). Link in bio.,#nocode #automation #smallbusinesstools #freelancetools #solopreneur,graphics/video_covers/C-V19.png,Draft
+20,Month 1: Content,Instagram,Promotional post,C-P07,Save this: prompt guardrails,,/blog/ai-prompts-for-client-emails/,,Save this post: 4 guardrail lines for any AI assistant used for client work → never invent prices/dates/facts · write [NEED INFO] instead of guessing · under 200 words · ask one question if unclear. 12 prompts built on them at the link in bio.,#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,graphics/promo_cards/C-P07.png,Draft
+20,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V20,The kickoff summary email,The email you send after the kickoff call saves more arguments than any contract clause.,/blog/client-onboarding-checklist/,Onboarding checklist: link in bio,"The kickoff summary email: same day, five parts, and your written answer to questions that come up in week six. Part of the onboarding checklist at the link in bio.",#freelancetips #clientexperience #smallbusinesstips #solopreneur #consultantlife,graphics/video_covers/C-V20.png,Draft
+21,Month 1: Content,LinkedIn,Educational post,C-E11,Deposits and milestones,,/blog/deposits-and-payment-terms/,,"Payment problems are usually decided before the project starts.
+
+Three decisions to make once and put in every proposal:
+
+1. Deposit: ""Work starts once the deposit has cleared."" (Then stick to it.)
+2. Milestones clients can see: ""design approved"", not ""50% complete""
+3. Terms with a real date on every invoice: ""Due 14 October"", not just ""Net 14""
+
+Why: in Bonsai's data, invoices over $20,000 were 3× more likely to be late than invoices under $100. Smaller, earlier payments mean less at risk at any moment.
+
+Wording + a full example (general info, not legal advice): [link]",#freelancebusiness #invoicing #smallbusinessowner #getpaid #solopreneur,,Draft
+21,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V21,Tested vs researched: why we label,"When you read a tool review, ask one question: did they actually use it?",/editorial-policy/,Our editorial policy: link in bio,"Did the reviewer actually use the tool? Our tool articles are always labeled Tested or Researched, with dates. Why we do it: editorial policy at the link in bio.",#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/video_covers/C-V21.png,Draft
+22,Month 1: Content,LinkedIn + Instagram,Promotional post,C-P08,Honest tool comparisons,,/category/tools-honestly/,,"Tools, Honestly: researched comparisons for solo service businesses, with free-plan limits checked on official pricing pages (Sept 2026):
+
+→ Make vs Zapier vs n8n
+→ MailerLite vs Kit vs beehiiv
+→ Tally vs Google Forms vs Jotform
+→ Spreadsheet vs Notion vs CRM
+
+No affiliate links. [link]",#nocode #automation #smallbusinesstools #freelancetools #solopreneur,graphics/promo_cards/C-P08.png,Draft
+22,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V22,One tool per job,Two tools for the same job is worse than one simple one.,/blog/minimum-tool-stack/,The minimum tool stack: link in bio,"The minimum tool stack for a solo service business: eight jobs, one tool each, mostly free to start (free-plan limits checked on official pricing pages). Link in bio.",#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,graphics/video_covers/C-V22.png,Draft
+23,Month 1: Content,Instagram,Educational post (carousel),C-E12,SOP template for solo businesses,,/blog/sop-template-one-person-business/,,"SOPs aren't just for teams. When you work alone, you're the one who has to remember everything. Template + AI prompt at the link in bio.",#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,graphics/carousels/C-E12_01.png,Draft
+23,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V23,Stage D: ask for a date,Fourteen days late? Stop asking 'when'. Ask for a date.,/blog/payment-reminder-schedule/,All 5 reminder templates: link in bio,"At 14 days overdue, the key move is getting a payment date in writing. The exact wording (and the other four stages) at the link in bio.",#freelancebusiness #invoicing #smallbusinessowner #getpaid #solopreneur,graphics/video_covers/C-V23.png,Draft
+24,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V24,Intake forms: keep it to 7 fields,Every extra required field on your inquiry form is a reason not to submit.,/blog/client-intake-form-tools/,Form tools compared: link in bio,"Your inquiry form needs 7 fields or fewer. The questions to ask (and a researched comparison of Tally, Google Forms and Jotform) at the link in bio.",#nocode #automation #smallbusinesstools #freelancetools #solopreneur,graphics/video_covers/C-V24.png,Draft
+25,Month 1: Content,LinkedIn,Educational post,C-E13,Guardrail lines for AI prompts,,/blog/ai-prompts-for-client-emails/,,"Four lines I'd add to every AI assistant used for client work:
+
+1. ""Never invent prices, dates or facts about clients.""
+2. ""If information is missing, write [NEED INFO] instead of guessing.""
+3. ""Keep client emails under 200 words unless I ask otherwise.""
+4. ""If my request is ambiguous, ask one clarifying question.""
+
+Save them as custom instructions and they apply to every chat.
+
+AI drafts, you decide. 12 client-email prompts built this way: [link]",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,,Draft
+25,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V25,Temporary chats and privacy settings,Turning off AI training is a good default. It doesn't mean nothing is stored.,/blog/client-data-privacy-ai/,Where the settings are: link in bio,"AI privacy settings are worth setting, but 'training off' isn't 'nothing stored'. What ChatGPT, Claude and Gemini's help pages say (checked Sept 2026), and why redaction comes first. Link in bio.",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,graphics/video_covers/C-V25.png,Draft
+26,Month 1: Content,LinkedIn,Promotional post,C-P09,Ask me anything: admin systems,,/contact/,,"What's the one admin task that eats most of your week as a solo business owner?
+
+Reply in the comments. I'll turn the most common answers into next month's articles and templates (free).",#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/promo_cards/C-P09.png,Draft
+26,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V26,"Spreadsheet, Notion or CRM?",Where should a solo business track clients? The one that you'll open every week.,/blog/spreadsheet-vs-notion-vs-crm/,Honest trade-offs: link in bio,"Spreadsheet, Notion or CRM for tracking clients? The honest trade-offs, and the one habit that matters more than the tool. Link in bio.",#nocode #automation #smallbusinesstools #freelancetools #solopreneur,graphics/video_covers/C-V26.png,Draft
+27,Month 1: Content,Instagram,Educational post (carousel),C-E14,Inquiry form: 7 fields,,/blog/client-intake-form-tools/,,"Every extra required field is a reason not to submit. The questions to ask, plus a researched comparison of Tally, Google Forms and Jotform, at the link in bio.",#nocode #automation #smallbusinesstools #freelancetools #solopreneur,graphics/carousels/C-E14_01.png,Draft
+27,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V27,How to report a delay,How to tell a client about a delay without a wall of apologies.,/blog/weekly-client-update-template/,Weekly update template: link in bio,"Delays happen. Here's how to report one: state it, one line of why, the new date, and a choice if there is one. More in the weekly client update guide (link in bio).",#freelancetips #clientexperience #smallbusinesstips #solopreneur #consultantlife,graphics/video_covers/C-V27.png,Draft
+28,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V28,Testimonial request that asks permission,"The right way to ask for a testimonial, and the one thing never to do.",/blog/ai-prompts-for-client-emails/,Testimonial prompt: link in bio,"Ask for testimonials the right way: three optional questions, clear permission, client approves the final wording. Never write one for them. Prompt at the link in bio.",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,graphics/video_covers/C-V28.png,Draft
+29,Month 1: Content,LinkedIn,Educational post,C-E15,Four numbers to track,,/blog/weekly-admin-review/,,"You don't need a dashboard to know if your admin system works. Four numbers, once a month:
+
+1. Hours on admin (a rough estimate is fine)
+2. Overdue invoices (count and total)
+3. Average time to first reply on new inquiries
+4. Proposals sent vs accepted
+
+Watch them for 2–3 months. Measure, don't assume, including anything we tell you.
+
+The weekly review that feeds them: [link]",#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,,Draft
+29,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V29,Track four numbers,You don't need a dashboard. You need four numbers once a month.,/blog/weekly-admin-review/,Weekly review guide: link in bio,"Four numbers, once a month: admin hours, overdue invoices, time to first reply, proposals sent vs accepted. Measure your system; don't take anyone's word for it. Link in bio.",#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,graphics/video_covers/C-V29.png,Draft
+30,Month 1: Content,LinkedIn + Instagram,Promotional post,C-P10,Month recap + starter kit,,/newsletter/,,"30 days, 20 free guides for the admin side of a one-person business: onboarding, proposals, weekly updates, getting paid, AI privacy, SOPs and honest tool comparisons.
+
+If you only take one thing: book a 45-minute weekly admin review, starting this week.
+
+Free starter kit (10 prompts + checklist): [link]",#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/promo_cards/C-P10.png,Draft
+30,Month 1: Content,TikTok / Reels / Shorts (+ LinkedIn native),Short video,C-V30,Month recap + where to start,"Thirty days of admin systems. If you only do one thing, do this.",/newsletter/,Free starter kit: link in bio,30 days of admin systems for businesses of one. If you only do one thing: book a 45-minute weekly admin review. Everything from this month + the free starter kit at the link in bio.,#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/video_covers/C-V30.png,Draft

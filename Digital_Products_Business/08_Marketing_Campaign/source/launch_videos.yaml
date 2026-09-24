@@ -1,0 +1,574 @@
+# Month 2: Product launch campaign. 30 short-form videos (30–60 s).
+# Runs AFTER Month 1 (content). Phases: pre-launch (days 1–7) · launch window (days 8–21, FOUNDING code, real end date)
+# · post-launch (days 22–30). About 1 in 3 videos asks for a sale; the rest teach using the products' real content.
+# Rules: no testimonials or sales claims until they exist; say the true launch end date; show real product screens.
+# [LAUNCH END DATE] and store links are filled in at launch (see Build_Tools/launch_config.py).
+
+- id: P-V01
+  day: 1
+  phase: pre-launch
+  product: bundle
+  concept: "Behind the build: why a system, not a prompt pack"
+  hook: "I could have made a 10,000-prompt pack. Here's why I didn't."
+  script: |
+    [VISUAL: scroll a huge generic prompt list, then cut to one detailed prompt card]
+    I could have made a ten-thousand-prompt pack. Here's why I didn't.
+    People who buy those say the same thing: you search, get twenty near-identical results, and none fits your actual client.
+    So for the last month I've been building something smaller and more specific.
+    A playbook for the admin system, a spreadsheet to run it, and a hundred prompts that each do one real job, with inputs, guardrails and an output format.
+    It launches next week. I'll show you what's inside every day until then.
+  on_screen: "Smaller. More specific. Launching next week."
+  cta: "Follow for the build"
+  link: /bundle/
+  caption: "Why the Band of One products are a system, not a 10,000-prompt pack. Launching next week. I'll show you what's inside every day until then."
+  tags: brand
+
+- id: P-V02
+  day: 2
+  phase: pre-launch
+  product: desk
+  concept: "The Client Desk dashboard tour"
+  hook: "This is what my Monday morning admin check looks like: one screen."
+  script: |
+    [VISUAL: screen recording of The Client Desk dashboard with SAMPLE data]
+    This is one screen that tells you what needs attention this week. The data here is a fictional sample.
+    Next client actions, sorted by date. Invoices that need a reminder, with the stage, A to E.
+    Pipeline by stage. And this week's numbers.
+    You don't type anything here. It's all calculated from the other tabs.
+    It works in Excel and Google Sheets. No macros.
+  on_screen: "The Client Desk · sample data"
+  cta: "Launching next week"
+  link: /bundle/
+  caption: "A tour of The Client Desk dashboard (fictional sample data): next actions, invoices needing a reminder, pipeline, weekly numbers. Excel + Google Sheets, no macros. Launching next week."
+  tags: paid
+
+- id: P-V03
+  day: 3
+  phase: pre-launch
+  product: prompts
+  concept: "Anatomy of one prompt card"
+  hook: "Here's what a fully specified AI prompt looks like."
+  script: |
+    [VISUAL: zoom into prompt card PAY-02 in the Prompt Library PDF]
+    Here's what a fully specified AI prompt looks like. This one's for payment reminders.
+    Objective: send the right reminder, at the right stage, in the right tone.
+    When to use it: for any unpaid invoice, before or after the due date.
+    Inputs: the relationship, invoice number, amount, date, days overdue, previous reminders, your agreement terms.
+    Then the prompt, with a guardrail: only mention fees that appear in your agreement.
+    And the output: one reminder email with a subject line.
+    That's one of a hundred.
+  on_screen: "Objective · When · Inputs · Prompt · Output"
+  cta: "Launching next week"
+  link: /bundle/
+  caption: "Anatomy of a prompt card from The Band of One Prompt Library: objective, when to use, inputs, guardrails, output format. That's one of 100. Launching next week."
+  tags: ai
+
+- id: P-V04
+  day: 4
+  phase: pre-launch
+  product: playbook
+  concept: "The admin audit worksheet"
+  hook: "Before you fix your admin, find out where the time actually goes."
+  script: |
+    [VISUAL: the admin audit worksheet page from the playbook]
+    Before you fix your admin, find out where the time actually goes.
+    This worksheet is chapter two of the Solo Admin Playbook.
+    List every recurring task. Score frequency, minutes, repeatability and risk. The formula ranks what to fix first.
+    In the book's fictional example, weekly updates beat proposals for total time. Most people guess the opposite.
+    You can do this on paper today, for free. The formula's on screen.
+  on_screen: "(times × minutes) × repeatability ÷ risk"
+  cta: "Try it free, then the playbook launches next week"
+  link: /blog/what-to-automate-first/
+  caption: "The admin audit from Chapter 2 of The Solo Admin Playbook. Score your tasks and fix the biggest one first. You can do it for free today; the formula's in the video."
+  tags: systems
+
+- id: P-V05
+  day: 5
+  phase: pre-launch
+  product: desk
+  concept: "Reminder stages in the spreadsheet"
+  hook: "My spreadsheet tells me which payment reminder to send. Here's how."
+  script: |
+    [VISUAL: Invoices & Follow-ups tab, sample rows]
+    This spreadsheet tells me which payment reminder to send. Sample data again.
+    For each invoice, it works out the due date, days overdue, and the reminder stage, A to E.
+    When I send one, I record the letter. The Action column then says "Send D" or "Up to date".
+    Every formula was tested against expected answers with an automated check before release.
+    You can change the timing on the Settings tab.
+  on_screen: "Stage due → Action → Send / Up to date"
+  cta: "Launching next week"
+  link: /bundle/
+  caption: "How The Client Desk works out which payment reminder is due (A–E) and whether you've sent it. Formulas tested before release; timing adjustable in Settings. Launching next week."
+  tags: paid
+
+- id: P-V06
+  day: 6
+  phase: pre-launch
+  product: prompts
+  concept: "3 free prompts from the library"
+  hook: "Three prompts from the library you can use today, free."
+  script: |
+    [VISUAL: the three prompt cards]
+    Three prompts from the library you can use today, free.
+    One: the business brief builder. The AI interviews you and writes a one-page context doc.
+    Two: reply to a new inquiry. It references one detail from their message and asks your qualifying questions.
+    Three: call notes to summary. A same-day follow-up email, plus a list of what to clarify.
+    All three are in the free starter kit, with seven more.
+  on_screen: "SET-01 · LEAD-01 · DISC-05"
+  cta: "Free starter kit: link in bio"
+  link: /newsletter/
+  caption: "Three prompts from The Band of One Prompt Library you can use free today: business brief builder, new-inquiry reply, call notes → summary. All in the free starter kit (link in bio)."
+  tags: ai
+
+- id: P-V07
+  day: 7
+  phase: pre-launch
+  product: bundle
+  concept: "Launch tomorrow: what, price, how"
+  hook: "Tomorrow the Band of One products go on sale. Here's exactly what they cost."
+  script: |
+    [VISUAL: the three covers]
+    Tomorrow the Band of One products go on sale. Here's exactly what and how much.
+    The Solo Admin Playbook, twenty-four dollars. The Client Desk, twenty-nine. The Prompt Library, nineteen.
+    Or the bundle with all three for forty-nine.
+    For the first two weeks, the code FOUNDING takes money off. The launch price ends on [LAUNCH END DATE], and I mean it.
+    Fourteen-day refund if it isn't useful for you.
+  on_screen: "$24 · $29 · $19 · Bundle $49 · code FOUNDING until [LAUNCH END DATE]"
+  cta: "Opens tomorrow: link in bio"
+  link: /bundle/
+  caption: "Launching tomorrow: The Solo Admin Playbook ($24), The Client Desk ($29), The Prompt Library ($19) or all three for $49. Code FOUNDING until [LAUNCH END DATE]. 14-day refund policy."
+  tags: brand
+
+- id: P-V08
+  day: 8
+  phase: launch
+  product: bundle
+  concept: "It's live"
+  hook: "The Band of One bundle is live."
+  script: |
+    [VISUAL: you to camera, or flip through all three products]
+    The Band of One bundle is live.
+    One: the playbook. How to set up an AI-assisted admin system, one workflow at a time.
+    Two: The Client Desk. Clients, projects, invoices and reminders in one spreadsheet.
+    Three: the Prompt Library. A hundred prompts that do one job each.
+    They're built to work together. The prompt IDs, the reminder stages and the weekly review are the same across all three.
+    Code FOUNDING until [LAUNCH END DATE].
+  on_screen: "Live now · code FOUNDING"
+  cta: "Link in bio"
+  link: /bundle/
+  caption: "It's live: The Band of One Complete Bundle, with the playbook, The Client Desk workbook and the 100-prompt library, built to work together. Code FOUNDING until [LAUNCH END DATE]."
+  tags: brand
+
+- id: P-V09
+  day: 9
+  phase: launch
+  product: playbook
+  concept: "Inside the playbook in 45 seconds"
+  hook: "Thirty-eight pages, flipped through in forty-five seconds."
+  script: |
+    [VISUAL: fast flip through the playbook PDF; pause on key pages]
+    The Solo Admin Playbook, flipped through in forty-five seconds.
+    The admin audit. Setting up AI safely: what to paste, what to redact.
+    The client lifecycle, then six workflows: inquiries, proposals, onboarding, delivery, getting paid, offboarding.
+    Each with steps, templates, prompts and a review checklist.
+    SOPs, light automation, the weekly review, and your next seven days.
+    Plus an editable Word version of everything.
+  on_screen: "38 pages · 6 workflows · worksheets · DOCX"
+  cta: "Link in bio"
+  link: /bundle/
+  caption: "The Solo Admin Playbook in 45 seconds: admin audit, safe AI setup, six client workflows with templates and prompts, SOPs and the weekly review. PDF + editable DOCX."
+  tags: systems
+
+- id: P-V10
+  day: 10
+  phase: launch
+  product: prompts
+  concept: "Search the library by keyword"
+  hook: "I typed 'scope' and found the right prompt in two seconds."
+  script: |
+    [VISUAL: screen recording of the Search tab, typing "scope"]
+    I typed "scope" and found the right prompt in two seconds.
+    The Prompt Library comes as a PDF and as a spreadsheet with a search tab.
+    Type any word, like invoice, testimonial or delay, and you get the matching prompts.
+    Filter by category. Mark favorites. Keep your own notes next to each one.
+    There's a CSV for Notion or Airtable too.
+  on_screen: "Search tab · favorites · notes · CSV"
+  cta: "Link in bio"
+  link: /bundle/
+  caption: "The Prompt Library's spreadsheet version has a Search tab: type 'scope', 'invoice' or 'delay' and get the matching prompts. Plus favorites, notes and a Notion-ready CSV."
+  tags: ai
+
+- id: P-V11
+  day: 11
+  phase: launch
+  product: desk
+  concept: "Setting up The Client Desk in 10 minutes"
+  hook: "From download to your first client in about ten minutes."
+  script: |
+    [VISUAL: screen recording, sped up]
+    From download to your first real client in about ten minutes.
+    Open it in Excel, or upload to Google Drive and save it as a Google Sheet.
+    Fill in Settings: business name, payment terms, currency, review day.
+    Look around the sample business, then clear the yellow cells of the SAMPLE rows. Don't delete whole rows.
+    Add a client and an invoice. The dashboard updates straight away.
+  on_screen: "Settings → clear SAMPLE → add client"
+  cta: "Link in bio"
+  link: /bundle/
+  caption: "Setting up The Client Desk: open, fill in Settings, clear the sample rows, add a client. About ten minutes, and there's a 13-page user guide if you get stuck."
+  tags: paid
+
+- id: P-V12
+  day: 12
+  phase: launch
+  product: prompts
+  concept: "Prompt demo: discount request"
+  hook: "A client asks, 'Can you do it cheaper?' Here's the prompt I use."
+  script: |
+    [VISUAL: prompt HARD-01, then an example draft with placeholders]
+    A client asks, "Can you do it cheaper?" Here's the prompt from the Tough Conversations section.
+    You paste their request and the options you're willing to offer: maybe reduced scope, maybe a phased start.
+    It drafts a reply that acknowledges their budget, restates the value, and offers only your options.
+    And if you've decided not to lower the price, it says so kindly and clearly.
+    No apology spiral. You choose the options. The AI only handles the wording.
+  on_screen: "HARD-01 · Responding to a discount request"
+  cta: "It's in the library: link in bio"
+  link: /bundle/
+  caption: "'Can you do it cheaper?' Prompt HARD-01 drafts a confident reply that offers only the options you choose. From the Tough Conversations section of The Band of One Prompt Library."
+  tags: ai
+
+- id: P-V13
+  day: 13
+  phase: launch
+  product: bundle
+  concept: "How the three connect"
+  hook: "Why these three products share the same IDs."
+  script: |
+    [VISUAL: playbook page citing PROP-01 → prompt card PROP-01 → Prompt Log tab]
+    Why these three products share the same IDs.
+    The playbook's proposal workflow says "use PROP-01". That's a prompt in the library.
+    The Client Desk has a prompt log with the same IDs, so you can track which ones you use.
+    The reminder stages in the playbook are the stages the spreadsheet calculates.
+    And the weekly review is in all three: the agenda, the live numbers and the review prompt.
+    One system, not three random downloads.
+  on_screen: "Same IDs · same stages · same weekly review"
+  cta: "Bundle: link in bio"
+  link: /bundle/
+  caption: "The playbook, The Client Desk and the Prompt Library share prompt IDs, reminder stages and the weekly review. One system, not three random downloads."
+  tags: brand
+
+- id: P-V14
+  day: 14
+  phase: launch
+  product: playbook
+  concept: "Safe AI setup chapter"
+  hook: "The chapter I'd make every freelancer read before using AI with clients."
+  script: |
+    [VISUAL: the safe AI setup chapter pages]
+    The chapter I'd make every freelancer read before using AI with client work.
+    What AI's good at: drafts, summaries, structure. What it's bad at: facts, prices, promises, anything confidential.
+    The redaction habit: placeholders for names and details, every time.
+    The data settings to check in your assistant.
+    And the rule the whole playbook runs on: AI drafts, you decide.
+    It's chapter three of the Solo Admin Playbook.
+  on_screen: "AI drafts. You decide."
+  cta: "Link in bio"
+  link: /bundle/
+  caption: "Chapter 3 of The Solo Admin Playbook: using AI safely with client work. What it's good and bad at, the redaction habit, and the settings to check. AI drafts; you decide."
+  tags: ai
+
+- id: P-V15
+  day: 15
+  phase: launch
+  product: desk
+  concept: "Admin Audit tab"
+  hook: "The spreadsheet ranks your admin tasks for you."
+  script: |
+    [VISUAL: Admin Audit tab with sample tasks]
+    The Client Desk ranks your admin tasks for you.
+    Type each recurring task, how often, how long, how repeatable, how risky.
+    It calculates the priority score and ranks them, so your top task is always at the top.
+    Then pick a decision: eliminate, template, AI draft, automate or keep human.
+    It's the playbook's audit, turned into a tab.
+  on_screen: "Admin Audit: ranked automatically"
+  cta: "Link in bio"
+  link: /bundle/
+  caption: "The Admin Audit tab in The Client Desk scores and ranks your recurring admin tasks, then you choose: eliminate, template, AI draft, automate or keep human."
+  tags: systems
+
+- id: P-V16
+  day: 16
+  phase: launch
+  product: bundle
+  concept: "Who it's NOT for"
+  hook: "Who shouldn't buy this."
+  script: |
+    [VISUAL: you to camera]
+    Who shouldn't buy the Band of One bundle.
+    If you need a multi-user CRM with automatic invoicing and bank feeds, use dedicated software.
+    If you want legal, tax or accounting advice, talk to a professional. This isn't that.
+    If you want prompts for images, code or social media growth, this is about client admin.
+    But if you run a service business on your own and want one simple system for the admin, it's built for you.
+  on_screen: "Not for: teams needing a CRM · legal/tax advice · image prompts"
+  cta: "Details: link in bio"
+  link: /bundle/
+  caption: "Who the Band of One bundle is NOT for: teams needing a full CRM, anyone after legal/tax advice, or people looking for image/code prompts. Who it IS for: solo service businesses that want one simple admin system."
+  tags: brand
+
+- id: P-V17
+  day: 17
+  phase: launch
+  product: prompts
+  concept: "Prompt demo: delay notification"
+  hook: "The hardest client email to write, drafted in thirty seconds."
+  script: |
+    [VISUAL: prompt DEL-02 with placeholders; the output draft]
+    The hardest client email to write: telling them it's late.
+    Prompt DEL-02. You fill in the milestone, the original and new date, the reason, and what you're doing about it.
+    It structures it: the news first, one sentence of context, the plan, the impact on later milestones, whether they need to do anything.
+    It takes responsibility where it's yours, with no excessive apology.
+    You still read it before sending. Always.
+  on_screen: "DEL-02 · Delay notification"
+  cta: "Link in bio"
+  link: /bundle/
+  caption: "Prompt DEL-02 drafts the hardest client email (the delay) with the news first, one line of context, the plan and the impact. From The Band of One Prompt Library. You still read it before sending."
+  tags: ai
+
+- id: P-V18
+  day: 18
+  phase: launch
+  product: playbook
+  concept: "Your next seven days"
+  hook: "The last chapter of the playbook is a seven-day plan. Here it is."
+  script: |
+    [VISUAL: the seven-day table]
+    The last chapter of the playbook is a seven-day plan. Here's the shape of it.
+    Day one: the admin audit. Day two: privacy settings, your business brief and voice profile.
+    Day three: onboarding checklist and welcome email. Day four: the weekly update template.
+    Day five: payment terms and reminder templates. Day six: inquiry replies and proposal structure.
+    Day seven: your first SOP and your first weekly review.
+    One small step a day. By next week, the system exists.
+  on_screen: "7 days · 1 step a day"
+  cta: "Link in bio"
+  link: /bundle/
+  caption: "The Solo Admin Playbook ends with a 7-day plan: one small step a day, from the admin audit to your first weekly review."
+  tags: systems
+
+- id: P-V19
+  day: 19
+  phase: launch
+  product: bundle
+  concept: "FAQ: Google Sheets, AI plans, refunds"
+  hook: "The three questions people ask before buying."
+  script: |
+    [VISUAL: you to camera, questions on screen]
+    The three questions people ask before buying.
+    Does The Client Desk work in Google Sheets? Yes. Upload it and save it as a Google Sheet. Excel and LibreOffice work too.
+    Do I need a paid AI plan? No. The prompts work in free tiers. Paid plans handle longer inputs.
+    What if it's not useful? Email within fourteen days for a full refund.
+    Launch price ends on [LAUNCH END DATE].
+  on_screen: "Google Sheets ✓ · Free AI plans ✓ · 14-day refund"
+  cta: "Link in bio"
+  link: /bundle/
+  caption: "Pre-purchase FAQ: The Client Desk works in Google Sheets and Excel; the prompts work in free AI plans; 14-day refund if it isn't useful. Launch price until [LAUNCH END DATE]."
+  tags: brand
+
+- id: P-V20
+  day: 20
+  phase: launch
+  product: bundle
+  concept: "Last full day of launch price"
+  hook: "Tomorrow's the last day of the launch price."
+  script: |
+    [VISUAL: you to camera]
+    Tomorrow's the last day of the launch price for the Band of One products.
+    The code FOUNDING stops working after [LAUNCH END DATE]. After that, it's the regular price. No extension.
+    If you've been following this month, you've seen what's inside. If it fits how you work, now's the cheapest it'll be.
+    If it doesn't fit, that's fine. The free articles and starter kit aren't going anywhere.
+  on_screen: "FOUNDING ends [LAUNCH END DATE]"
+  cta: "Link in bio"
+  link: /bundle/
+  caption: "The launch price (code FOUNDING) ends on [LAUNCH END DATE]. After that it's the regular price, with no extension. If it isn't for you, the free articles and starter kit are still there."
+  tags: brand
+
+- id: P-V21
+  day: 21
+  phase: launch
+  product: bundle
+  concept: "Final day"
+  hook: "Launch price ends tonight."
+  script: |
+    [VISUAL: the three covers]
+    Launch price ends tonight.
+    Playbook, Client Desk, Prompt Library, or all three in the bundle.
+    Code FOUNDING until the end of [LAUNCH END DATE].
+    Thanks to everyone who's been following along. Tomorrow we're back to free admin systems.
+  on_screen: "Ends tonight · FOUNDING"
+  cta: "Link in bio"
+  link: /bundle/
+  caption: "Last day: code FOUNDING ends tonight ([LAUNCH END DATE]). Tomorrow we're back to free admin systems. Thanks for following the launch."
+  tags: brand
+
+- id: P-V22
+  day: 22
+  phase: post-launch
+  product: prompts
+  concept: "Prompt: testimonial request"
+  hook: "How to ask for a testimonial without making it awkward."
+  script: |
+    [VISUAL: prompt RET-02]
+    How to ask for a testimonial without making it awkward.
+    Three optional questions. Say two or three sentences is plenty. Ask permission to use their name, or anonymous if they prefer.
+    And promise to send the final wording for approval before it appears anywhere.
+    That's prompt RET-02, free in the starter kit.
+    One rule: never write it for them.
+  on_screen: "RET-02 · free in the starter kit"
+  cta: "Starter kit: link in bio"
+  link: /newsletter/
+  caption: "Asking for testimonials without awkwardness: 3 optional questions, clear permission, client approves the wording. Prompt RET-02 is free in the starter kit (link in bio)."
+  tags: ai
+
+- id: P-V23
+  day: 23
+  phase: post-launch
+  product: desk
+  concept: "Spreadsheet tip: next action dates"
+  hook: "One column prevents most dropped balls in a solo business."
+  script: |
+    [VISUAL: Clients & Pipeline tab, "Next action date" column]
+    One column prevents most dropped balls in a solo business: next action date.
+    Every client and every lead gets one. No exceptions.
+    Once a week, sort by it. Anything due gets done or rescheduled.
+    The Client Desk puts these on the dashboard automatically. But a plain spreadsheet with this one column already works.
+  on_screen: "Every client: next action + date"
+  cta: "Free guide: link in bio"
+  link: /blog/spreadsheet-vs-notion-vs-crm/
+  caption: "The one column that prevents most dropped balls: next action date. Every client, every lead, reviewed weekly. Works in any spreadsheet."
+  tags: systems
+
+- id: P-V24
+  day: 24
+  phase: post-launch
+  product: playbook
+  concept: "Offboarding checklist"
+  hook: "How you end a project decides whether you get referred."
+  script: |
+    [VISUAL: offboarding workflow page]
+    How you end a project decides whether you get the referral.
+    Send the final deliverables with a short handover document. Transfer or remove access.
+    Send the final invoice. A thank-you email that says what to do if they need help later.
+    A testimonial request, with permission to publish. A referral ask, only if the project went well.
+    Archive the files, and add a ninety-day check-in date to your tracker.
+    It's the offboarding checklist from workflow six in the playbook.
+  on_screen: "Handover · access · invoice · thanks · testimonial · 90-day check-in"
+  cta: "Link in bio"
+  link: /bundle/
+  caption: "The offboarding checklist: handover document, access changes, final invoice, thank-you, testimonial request (with permission), optional referral ask and a 90-day check-in. Workflow 6 in The Solo Admin Playbook."
+  tags: workflows
+
+- id: P-V25
+  day: 25
+  phase: post-launch
+  product: prompts
+  concept: "Prompt: SOP from rough notes"
+  hook: "Turn rough notes into an SOP without the AI inventing steps."
+  script: |
+    [VISUAL: prompt OPS-01 and an SOP output with a [CHECK] marker]
+    Turn rough notes into an SOP without the AI inventing steps.
+    Prompt OPS-01 uses a fixed template: purpose, trigger, time, tools, verb-first steps, done when, common mistakes.
+    And one instruction: where a step is unclear, add CHECK plus a question instead of guessing.
+    So you get a finished SOP and a short list of gaps to fill.
+  on_screen: "OPS-01 · [CHECK: question] instead of guessing"
+  cta: "Free SOP guide: link in bio"
+  link: /blog/sop-template-one-person-business/
+  caption: "Prompt OPS-01 turns rough notes into an SOP and flags gaps with [CHECK] instead of inventing steps. The template is free in our SOP guide (link in bio)."
+  tags: systems
+
+- id: P-V26
+  day: 26
+  phase: post-launch
+  product: desk
+  concept: "Weekly Review tab"
+  hook: "My weekly admin review takes forty-five minutes because of this tab."
+  script: |
+    [VISUAL: Weekly Review tab]
+    This tab keeps the weekly admin review to forty-five minutes.
+    The agenda is on the left. Next to it, live numbers: overdue invoices, reminders to send now, client follow-ups due.
+    Below, a weekly log.
+    The log records admin hours, overdue invoices, reply time, proposals and the improvement you made.
+    After a few weeks, it tells you whether the system's working. Real numbers, not promises.
+  on_screen: "Agenda · live numbers · weekly log"
+  cta: "Link in bio"
+  link: /bundle/
+  caption: "The Weekly Review tab in The Client Desk: the 45-minute agenda, live numbers from your data, and a log that shows over time whether your system works."
+  tags: systems
+
+- id: P-V27
+  day: 27
+  phase: post-launch
+  product: bundle
+  concept: "Upgrade path for single-product buyers"
+  hook: "Bought one product and want the bundle? Here's how."
+  script: |
+    [VISUAL: you to camera]
+    If you bought one of the Band of One products and now want the bundle, you don't pay twice.
+    Reply to your receipt email and I'll send you a code worth what you paid.
+    That's it. No form.
+  on_screen: "Upgrade: reply to your receipt"
+  cta: "Link in bio"
+  link: /bundle/
+  caption: "Bought one Band of One product and want the bundle? Reply to your receipt email for a code worth what you paid. You don't pay twice."
+  tags: brand
+
+- id: P-V28
+  day: 28
+  phase: post-launch
+  product: prompts
+  concept: "Prompt: quarterly planning"
+  hook: "A quarterly plan for a one-person business, in one prompt."
+  script: |
+    [VISUAL: prompt OPS-07]
+    A quarterly plan for a one-person business, in one prompt.
+    You paste last quarter's results, your capacity in hours, and your goals.
+    It asks clarifying questions first. Then it proposes three priorities, each with a measurable outcome, a first step and the weekly time it needs.
+    And a stop-or-pause list, because fewer priorities get finished.
+  on_screen: "OPS-07 · max 3 priorities + a stop list"
+  cta: "Link in bio"
+  link: /bundle/
+  caption: "Prompt OPS-07 runs a quarterly planning session: clarifying questions first, then at most 3 priorities and a stop/pause list. From The Band of One Prompt Library."
+  tags: systems
+
+- id: P-V29
+  day: 29
+  phase: post-launch
+  product: bundle
+  concept: "What's next + feedback request"
+  hook: "What should Band of One build next? I'm asking."
+  script: |
+    [VISUAL: you to camera]
+    What should Band of One build next? I'm asking, genuinely.
+    If you've used the products, what's missing? What confused you? What would make it easier?
+    If you haven't, what's the admin task you'd most like a system for?
+    Reply in the comments or by email. Updates to the products are free for everyone who's bought them.
+  on_screen: "What should we build next?"
+  cta: "Comment or email"
+  link: /contact/
+  caption: "What should Band of One build next? If you've used the products: what's missing or confusing? If not: which admin task needs a system? Comment or email. Product updates are free for buyers."
+  tags: brand
+
+- id: P-V30
+  day: 30
+  phase: post-launch
+  product: starter
+  concept: "Back to basics: the free starter kit"
+  hook: "If you're not ready for the full system, start here. It's free."
+  script: |
+    [VISUAL: starter kit pages]
+    If you're not ready for the full system, start here. It's free.
+    Ten prompts for the admin you do every week, and a thirty-minute weekly review checklist.
+    Use them for a month. If they help, you'll know whether you want the rest.
+    If they don't, you've lost nothing.
+  on_screen: "Free: 10 prompts + weekly checklist"
+  cta: "Link in bio"
+  link: /newsletter/
+  caption: "Not ready for the full system? Start with the free Client Admin Starter Kit: 10 prompts + a 30-minute weekly review checklist. Link in bio."
+  tags: brand

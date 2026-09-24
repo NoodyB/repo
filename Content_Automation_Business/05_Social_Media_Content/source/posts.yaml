@@ -1,0 +1,446 @@
+# Month 1: educational posts (15), promotional posts (10), hashtag sets.
+# Platforms: LinkedIn (text/document posts) and Instagram (carousels). Adapt length for other platforms.
+# Promotional = promotes Band of One's free resources, articles and newsletter (not paid products; see the products launch month).
+
+hashtags:
+  # Relevance-based sets (no volume data available; none claimed). Use 3–5 per post; rotate.
+  workflows: ["#freelancetips", "#clientexperience", "#smallbusinesstips", "#solopreneur", "#consultantlife"]
+  paid: ["#freelancebusiness", "#invoicing", "#smallbusinessowner", "#getpaid", "#solopreneur"]
+  ai: ["#AItools", "#ChatGPTtips", "#AIforBusiness", "#promptengineering", "#freelancetips"]
+  systems: ["#systemsthinking", "#SOP", "#productivitytips", "#solopreneur", "#businesssystems"]
+  tools: ["#nocode", "#automation", "#smallbusinesstools", "#freelancetools", "#solopreneur"]
+  brand: ["#bandofone", "#solopreneur", "#freelancer", "#virtualassistant", "#consultant"]
+
+educational:
+  - id: C-E01
+    day: 1
+    platform: LinkedIn
+    format: text
+    title: "The onboarding checklist"
+    link: /blog/client-onboarding-checklist/
+    tags: workflows
+    text: |
+      Most client problems start in week one, not week ten.
+
+      A 7-step onboarding checklist that prevents most of them:
+
+      1. Proposal accepted in writing
+      2. Agreement signed (scope, exclusions, payment terms, revisions)
+      3. Deposit invoice sent. Work starts when it clears
+      4. Welcome email with numbered next steps
+      5. Intake form instead of 20 questions by email
+      6. Communication norms agreed: where, when, how fast
+      7. Kickoff call with an agenda, plus a written summary the same day
+
+      Same steps, same order, every client. After three clients you'll know which questions to add to your form.
+
+      Full checklist + free tools: [link]
+
+  - id: C-E02
+    day: 3
+    platform: Instagram
+    format: carousel
+    title: "5 things never to paste into AI"
+    link: /blog/client-data-privacy-ai/
+    tags: ai
+    slides:
+      - "5 things never to paste into ChatGPT (even for client work)"
+      - "1. Passwords, API keys, links with access tokens"
+      - "2. Bank or card details"
+      - "3. Government ID numbers"
+      - "4. Health, legal or HR details about real people"
+      - "5. Anything a client marked confidential"
+      - "Everything else: swap names & details for [PLACEHOLDERS] before pasting"
+      - "Then check your assistant's data settings. Where they are → link in bio"
+    text: |
+      Save this for the next time you're about to paste an email thread into an AI chat. The redaction habit takes five seconds, and the full privacy routine (with where to find the ChatGPT, Claude and Gemini settings) is at the link in bio.
+
+  - id: C-E03
+    day: 5
+    platform: LinkedIn
+    format: text
+    title: "Payment reminders, decided once"
+    link: /blog/payment-reminder-schedule/
+    tags: paid
+    text: |
+      Chasing invoices feels personal because most of us decide what to do each time.
+
+      Decide once:
+
+      A: 3 days before due: friendly heads-up (catches wrong-inbox problems)
+      B: due date: short reminder
+      C: +7 days: "anything holding it up?"
+      D: +14 days: ask for a payment date in writing
+      E: +30 days: final notice, stating only what's in your agreement
+
+      It matters: in Bonsai's data from 100,000+ freelancers, 29% of invoices were paid at least a day late (Bonsai, updated Jan 2026).
+
+      Templates for all five stages: [link]
+
+  - id: C-E04
+    day: 7
+    platform: Instagram
+    format: carousel
+    title: "The weekly client update"
+    link: /blog/weekly-client-update-template/
+    tags: workflows
+    slides:
+      - "The 5-minute weekly client update"
+      - "Done this week → what's finished, in plain language"
+      - "Next week → what you're working on + upcoming dates"
+      - "Needed from you (by DATE) → the line that ends 'waiting on the client'"
+      - "Risks or changes → delays stated plainly, with the new date"
+      - "Same day every week. Clients stop chasing."
+    text: |
+      Four headings, same day every week. The 'Needed from you' line turns vague delays into specific requests with dates. Template + AI prompt at the link in bio.
+
+  - id: C-E05
+    day: 9
+    platform: LinkedIn
+    format: text
+    title: "Why AI drafts sound generic"
+    link: /blog/ai-business-brief/
+    tags: ai
+    text: |
+      If your AI drafts sound generic, the problem usually isn't the prompt. It's missing context.
+
+      The assistant doesn't know your services, your terms, or the promises you never make. So it fills the gaps with the average of everything it's read.
+
+      Fix it once with a one-page business brief:
+      → Who I am
+      → Services
+      → Ideal clients
+      → How I work
+      → Policies
+      → Tone and words to avoid
+
+      Let the AI interview you to build it (about 20 minutes), then reuse it everywhere.
+
+      The interview prompt: [link]
+
+  - id: C-E06
+    day: 11
+    platform: Instagram
+    format: carousel
+    title: "Score your admin before you automate"
+    link: /blog/what-to-automate-first/
+    tags: systems
+    slides:
+      - "Don't automate your admin yet. Score it first."
+      - "For each task: times/month × minutes"
+      - "× repeatability (1–3)"
+      - "÷ risk (1–3)"
+      - "Highest score = fix first"
+      - "Then choose: eliminate · template · AI draft · automate · keep human"
+      - "Usually the first fix is a template, not a robot"
+    text: |
+      The scoring method that stops you spending a weekend automating a task you do twice a month. Worked example at the link in bio.
+
+  - id: C-E07
+    day: 13
+    platform: LinkedIn
+    format: text
+    title: "Scope creep in one email"
+    link: /blog/scope-creep-email-templates/
+    tags: workflows
+    text: |
+      Scope creep rarely arrives as a big request. It's "while you're in there…"
+
+      The goal isn't to say no. It's to make the change visible:
+
+      "Thanks for the idea. It's outside the current scope, so two options:
+      1) Add it now: [price], and launch moves to [date]
+      2) Keep the launch date and do it as a follow-up phase
+      I'll hold off on this piece until I hear which you prefer."
+
+      That last line matters most. Starting "just to be helpful" makes it very hard to charge for later.
+
+      Four templates (including the "quick favor"): [link]
+
+  - id: C-E08
+    day: 15
+    platform: Instagram
+    format: carousel
+    title: "What every invoice needs"
+    link: /blog/what-to-include-on-an-invoice/
+    tags: paid
+    slides:
+      - "Your invoice might be why you're paid late"
+      - "Unique number (2026-014, never reused)"
+      - "A description they'll recognize (not 'Services')"
+      - "An actual due date (not just 'Net 14')"
+      - "How to pay: link or bank details + reference"
+      - "PO number if required, sent to the person who pays"
+      - "Requirements vary by country: check your tax authority"
+    text: |
+      Remove every reason for your invoice to be set aside. Full checklist, plus the UK government's list as an example baseline, at the link in bio.
+
+  - id: C-E09
+    day: 17
+    platform: LinkedIn
+    format: text
+    title: "Voice profile"
+    link: /blog/make-ai-sound-like-you/
+    tags: ai
+    text: |
+      "I hope this email finds you well."
+      "I'm thrilled to…"
+      "Please don't hesitate to reach out."
+
+      Clients can spot AI emails from the first line.
+
+      A voice profile fixes most of it. Paste 3–5 emails you actually wrote (names removed) and ask the AI to describe:
+      • typical sentence length
+      • greeting and sign-off habits
+      • formality (1–5)
+      • things you never do
+      • how you deliver bad news
+      • 3 "do this / not that" examples
+
+      Key instruction: "Don't invent traits that aren't in the samples."
+
+      Prompt + example: [link]
+
+  - id: C-E10
+    day: 19
+    platform: Instagram
+    format: carousel
+    title: "The 45-minute weekly admin review"
+    link: /blog/weekly-admin-review/
+    tags: systems
+    slides:
+      - "The 45-minute weekly admin review"
+      - "10 min: clear the decks (inbox → tasks)"
+      - "10 min: pipeline (every client has a next action + date)"
+      - "10 min: money (invoice, remind, record)"
+      - "10 min: next week (block time, prep updates)"
+      - "5 min: improve one thing (template, SOP or prompt)"
+    text: |
+      Give admin one appointment a week and it stops leaking into every day. Agenda + an AI prompt that pre-sorts it at the link in bio.
+
+  - id: C-E11
+    day: 21
+    platform: LinkedIn
+    format: text
+    title: "Deposits and milestones"
+    link: /blog/deposits-and-payment-terms/
+    tags: paid
+    text: |
+      Payment problems are usually decided before the project starts.
+
+      Three decisions to make once and put in every proposal:
+
+      1. Deposit: "Work starts once the deposit has cleared." (Then stick to it.)
+      2. Milestones clients can see: "design approved", not "50% complete"
+      3. Terms with a real date on every invoice: "Due 14 October", not just "Net 14"
+
+      Why: in Bonsai's data, invoices over $20,000 were 3× more likely to be late than invoices under $100. Smaller, earlier payments mean less at risk at any moment.
+
+      Wording + a full example (general info, not legal advice): [link]
+
+  - id: C-E12
+    day: 23
+    platform: Instagram
+    format: carousel
+    title: "SOP template for solo businesses"
+    link: /blog/sop-template-one-person-business/
+    tags: systems
+    slides:
+      - "An SOP for a one-person business (1 page)"
+      - "Name · Purpose · Trigger"
+      - "Time · Tools & templates"
+      - "Steps: verb-first, max 12"
+      - "Done when: the finish line"
+      - "Common mistakes: last month's mistake, prevented"
+      - "Start with onboarding and invoicing"
+    text: |
+      SOPs aren't just for teams. When you work alone, you're the one who has to remember everything. Template + AI prompt at the link in bio.
+
+  - id: C-E13
+    day: 25
+    platform: LinkedIn
+    format: text
+    title: "Guardrail lines for AI prompts"
+    link: /blog/ai-prompts-for-client-emails/
+    tags: ai
+    text: |
+      Four lines I'd add to every AI assistant used for client work:
+
+      1. "Never invent prices, dates or facts about clients."
+      2. "If information is missing, write [NEED INFO] instead of guessing."
+      3. "Keep client emails under 200 words unless I ask otherwise."
+      4. "If my request is ambiguous, ask one clarifying question."
+
+      Save them as custom instructions and they apply to every chat.
+
+      AI drafts, you decide. 12 client-email prompts built this way: [link]
+
+  - id: C-E14
+    day: 27
+    platform: Instagram
+    format: carousel
+    title: "Inquiry form: 7 fields"
+    link: /blog/client-intake-form-tools/
+    tags: tools
+    slides:
+      - "Your inquiry form needs 7 fields (max)"
+      - "Name · Email"
+      - "Business + website"
+      - "What do you need help with?"
+      - "Timeline"
+      - "Budget range (incl. 'Not sure yet')"
+      - "Anything else? → then say when they'll hear back"
+    text: |
+      Every extra required field is a reason not to submit. The questions to ask, plus a researched comparison of Tally, Google Forms and Jotform, at the link in bio.
+
+  - id: C-E15
+    day: 29
+    platform: LinkedIn
+    format: text
+    title: "Four numbers to track"
+    link: /blog/weekly-admin-review/
+    tags: systems
+    text: |
+      You don't need a dashboard to know if your admin system works. Four numbers, once a month:
+
+      1. Hours on admin (a rough estimate is fine)
+      2. Overdue invoices (count and total)
+      3. Average time to first reply on new inquiries
+      4. Proposals sent vs accepted
+
+      Watch them for 2–3 months. Measure, don't assume, including anything we tell you.
+
+      The weekly review that feeds them: [link]
+
+promotional:
+  - id: C-P01
+    day: 2
+    platform: LinkedIn + Instagram
+    title: "Free starter kit launch"
+    link: /newsletter/
+    tags: brand
+    text: |
+      New and free: the Client Admin Starter Kit.
+
+      10 AI prompts for the admin you do every week (inquiry replies, call summaries, proposals, welcome emails, weekly updates, scope changes, payment reminders, testimonial requests), plus a printable 30-minute weekly review checklist.
+
+      Works with free AI plans. Get it here: [link]
+
+  - id: C-P02
+    day: 6
+    platform: LinkedIn + Instagram
+    title: "Free invoice tracker"
+    link: /blog/track-invoices-in-a-spreadsheet/
+    tags: paid
+    text: |
+      Free download: a small spreadsheet that tells you which payment reminder to send (A–E) for every invoice.
+
+      Tested against eight scenarios before we published it. Works in Google Sheets and Excel. No sign-up needed.
+
+      Formulas explained + download: [link]
+
+  - id: C-P03
+    day: 10
+    platform: LinkedIn
+    title: "Why we label tested vs researched"
+    link: /editorial-policy/
+    tags: brand
+    text: |
+      A small promise from Band of One: every tool article is labeled.
+
+      Tested = we used it for the job described, and we say how.
+      Researched = based on official docs and pricing pages, with the date checked.
+
+      No "we tested 50 tools". No income claims. No fake testimonials.
+
+      Our editorial policy: [link]
+
+  - id: C-P04
+    day: 12
+    platform: Instagram
+    title: "Newsletter: one idea a week"
+    link: /newsletter/
+    tags: brand
+    text: |
+      One practical admin-system idea a week, by email. Short, useful, no hype. Plus the free starter kit when you sign up. Unsubscribe any time. Link in bio.
+
+  - id: C-P05
+    day: 14
+    platform: LinkedIn + Instagram
+    title: "Series: Getting Paid"
+    link: /category/getting-paid/
+    tags: paid
+    text: |
+      This month's Getting Paid series, all free:
+
+      → The 5-stage payment reminder schedule
+      → Deposits, milestones and payment terms
+      → What every invoice should include
+      → Tracking invoices in a spreadsheet (tested formulas)
+
+      Start here: [link]
+
+  - id: C-P06
+    day: 16
+    platform: LinkedIn
+    title: "AI, Done Right series"
+    link: /category/ai-done-right/
+    tags: ai
+    text: |
+      Using AI for client work without the generic emails or the privacy worries. Four free guides:
+
+      → Keep client data private (ChatGPT, Claude, Gemini settings)
+      → The one-page AI business brief
+      → Make AI drafts sound like you
+      → 12 client-email prompts with guardrails
+
+      [link]
+
+  - id: C-P07
+    day: 20
+    platform: Instagram
+    title: "Save this: prompt guardrails"
+    link: /blog/ai-prompts-for-client-emails/
+    tags: ai
+    text: |
+      Save this post: 4 guardrail lines for any AI assistant used for client work → never invent prices/dates/facts · write [NEED INFO] instead of guessing · under 200 words · ask one question if unclear. 12 prompts built on them at the link in bio.
+
+  - id: C-P08
+    day: 22
+    platform: LinkedIn + Instagram
+    title: "Honest tool comparisons"
+    link: /category/tools-honestly/
+    tags: tools
+    text: |
+      Tools, Honestly: researched comparisons for solo service businesses, with free-plan limits checked on official pricing pages (Sept 2026):
+
+      → Make vs Zapier vs n8n
+      → MailerLite vs Kit vs beehiiv
+      → Tally vs Google Forms vs Jotform
+      → Spreadsheet vs Notion vs CRM
+
+      No affiliate links. [link]
+
+  - id: C-P09
+    day: 26
+    platform: LinkedIn
+    title: "Ask me anything: admin systems"
+    link: /contact/
+    tags: brand
+    text: |
+      What's the one admin task that eats most of your week as a solo business owner?
+
+      Reply in the comments. I'll turn the most common answers into next month's articles and templates (free).
+
+  - id: C-P10
+    day: 30
+    platform: LinkedIn + Instagram
+    title: "Month recap + starter kit"
+    link: /newsletter/
+    tags: brand
+    text: |
+      30 days, 20 free guides for the admin side of a one-person business: onboarding, proposals, weekly updates, getting paid, AI privacy, SOPs and honest tool comparisons.
+
+      If you only take one thing: book a 45-minute weekly admin review, starting this week.
+
+      Free starter kit (10 prompts + checklist): [link]

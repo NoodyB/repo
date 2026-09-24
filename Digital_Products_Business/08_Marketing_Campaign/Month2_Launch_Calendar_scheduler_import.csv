@@ -1,0 +1,167 @@
+﻿Day,Campaign month,Channel,Type,ID,Title / concept,Hook,Link,CTA,Caption / post text,Hashtags,Graphic,Status
+31,Month 2: Product launch,LinkedIn,Educational post,P-E01,Why prompt packs disappoint,,,,"Why do big prompt packs disappoint?
+
+Because a one-line prompt can't know:
+→ what you're asking it to do (objective)
+→ when it applies (use case)
+→ what you'll paste in (inputs)
+→ what ""good"" looks like (output format)
+→ what it must never do (guardrails)
+
+A useful prompt specifies all five. It's longer, but you use it again and again.
+
+I'm launching a 100-prompt library built this way next week. Here's one of them for free, the business brief builder: [link to starter kit]",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,,Draft
+31,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V01,"Behind the build: why a system, not a prompt pack","I could have made a 10,000-prompt pack. Here's why I didn't.",/bundle/,Follow for the build,"Why the Band of One products are a system, not a 10,000-prompt pack. Launching next week. I'll show you what's inside every day until then.",#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/video_covers/P-V01.png,Draft
+32,Month 2: Product launch,Instagram,Educational post (carousel),P-E02,Anatomy of a prompt card,,,,Every prompt in The Band of One Prompt Library follows this format. The library launches next week; 10 prompts are free in the starter kit now (link in bio).,#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,graphics/carousels/P-E02_01.png,Draft
+32,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V02,The Client Desk dashboard tour,This is what my Monday morning admin check looks like: one screen.,/bundle/,Launching next week,"A tour of The Client Desk dashboard (fictional sample data): next actions, invoices needing a reminder, pipeline, weekly numbers. Excel + Google Sheets, no macros. Launching next week.",#freelancebusiness #invoicing #smallbusinessowner #getpaid #solopreneur,graphics/video_covers/P-V02.png,Draft
+33,Month 2: Product launch,LinkedIn,Educational post,P-E03,The one-screen admin check,,,,"A solo business needs one screen that answers:
+
+1. Who needs a follow-up this week?
+2. Which invoices need a reminder, and which one?
+3. What's in the pipeline, by stage?
+4. How did this week go?
+
+You can build this in any spreadsheet with a few formulas (our free invoice tracker shows how).
+
+The Client Desk, launching next week, has it built and tested: a Dashboard tab calculated from your client, project and invoice tabs. It works in Excel and Google Sheets, with no macros.",#freelancebusiness #invoicing #smallbusinessowner #getpaid #solopreneur,,Draft
+33,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V03,Anatomy of one prompt card,Here's what a fully specified AI prompt looks like.,/bundle/,Launching next week,"Anatomy of a prompt card from The Band of One Prompt Library: objective, when to use, inputs, guardrails, output format. That's one of 100. Launching next week.",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,graphics/video_covers/P-V03.png,Draft
+34,Month 2: Product launch,Instagram,Educational post (carousel),P-E04,The admin audit in 5 steps,,,,This is Chapter 2 of The Solo Admin Playbook. You can do it on paper today for free.,#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,graphics/carousels/P-E04_01.png,Draft
+34,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V04,The admin audit worksheet,"Before you fix your admin, find out where the time actually goes.",/blog/what-to-automate-first/,"Try it free, then the playbook launches next week",The admin audit from Chapter 2 of The Solo Admin Playbook. Score your tasks and fix the biggest one first. You can do it for free today; the formula's in the video.,#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,graphics/video_covers/P-V04.png,Draft
+35,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V05,Reminder stages in the spreadsheet,My spreadsheet tells me which payment reminder to send. Here's how.,/bundle/,Launching next week,How The Client Desk works out which payment reminder is due (A–E) and whether you've sent it. Formulas tested before release; timing adjustable in Settings. Launching next week.,#freelancebusiness #invoicing #smallbusinessowner #getpaid #solopreneur,graphics/video_covers/P-V05.png,Draft
+36,Month 2: Product launch,LinkedIn,Educational post,P-E05,Five decisions for every admin task,,,,"Every recurring admin task gets one of five decisions:
+
+ELIMINATE: nobody would notice if you stopped
+TEMPLATE: it's nearly identical every time
+AI DRAFT: the structure repeats, the content changes
+AUTOMATE: rule-based, frequent, low-risk and already templated
+KEEP HUMAN: high risk, high judgment or relationship-critical
+
+Notice automation comes after templating. If you can't write it as a checklist, you're not ready to automate it.
+
+(From The Solo Admin Playbook, Chapter 2.)",#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,,Draft
+36,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V06,3 free prompts from the library,"Three prompts from the library you can use today, free.",/newsletter/,Free starter kit: link in bio,"Three prompts from The Band of One Prompt Library you can use free today: business brief builder, new-inquiry reply, call notes → summary. All in the free starter kit (link in bio).",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,graphics/video_covers/P-V06.png,Draft
+37,Month 2: Product launch,LinkedIn + Instagram,Promotional post,P-P01,Launching tomorrow,,,,"Tomorrow: the Band of One products go on sale.
+
+• The Solo Admin Playbook: $24
+• The Client Desk: $29
+• The Band of One Prompt Library: $19
+• All three (Complete Bundle): $49
+
+Launch code FOUNDING takes $10 off the bundle ($5 off the playbook or desk, $4 off the library) until [LAUNCH END DATE]. 14-day refund policy.",#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/promo_cards/P-P01.png,Draft
+37,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V07,"Launch tomorrow: what, price, how",Tomorrow the Band of One products go on sale. Here's exactly what they cost.,/bundle/,Opens tomorrow: link in bio,"Launching tomorrow: The Solo Admin Playbook ($24), The Client Desk ($29), The Prompt Library ($19) or all three for $49. Code FOUNDING until [LAUNCH END DATE]. 14-day refund policy.",#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/video_covers/P-V07.png,Draft
+38,Month 2: Product launch,LinkedIn + Instagram,Promotional post,P-P02,It's live,,,,"It's live.
+
+The Band of One Complete Bundle: the playbook (how), The Client Desk (where) and 100 prompts (what to say), built as one admin system for a business of one.
+
+$49 ($72 separately). Code FOUNDING until [LAUNCH END DATE]. 14-day refund policy.
+
+[STORE LINK]",#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/promo_cards/P-P02.png,Draft
+38,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V08,It's live,The Band of One bundle is live.,/bundle/,Link in bio,"It's live: The Band of One Complete Bundle, with the playbook, The Client Desk workbook and the 100-prompt library, built to work together. Code FOUNDING until [LAUNCH END DATE].",#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/video_covers/P-V08.png,Draft
+39,Month 2: Product launch,Instagram,Educational post (carousel),P-E06,What AI is good and bad at (client work),,,,From Chapter 3 of The Solo Admin Playbook: using AI safely with client work.,#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,graphics/carousels/P-E06_01.png,Draft
+39,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V09,Inside the playbook in 45 seconds,"Thirty-eight pages, flipped through in forty-five seconds.",/bundle/,Link in bio,"The Solo Admin Playbook in 45 seconds: admin audit, safe AI setup, six client workflows with templates and prompts, SOPs and the weekly review. PDF + editable DOCX.",#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,graphics/video_covers/P-V09.png,Draft
+40,Month 2: Product launch,Instagram,Promotional post,P-P03,Prompt Library spotlight,,,,"100 prompts, each doing one job: objective, inputs, guardrails, output format. PDF + searchable spreadsheet + Notion-ready CSV. $19 (code FOUNDING until [LAUNCH END DATE]). Link in bio.",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,graphics/promo_cards/P-P03.png,Draft
+40,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V10,Search the library by keyword,I typed 'scope' and found the right prompt in two seconds.,/bundle/,Link in bio,"The Prompt Library's spreadsheet version has a Search tab: type 'scope', 'invoice' or 'delay' and get the matching prompts. Plus favorites, notes and a Notion-ready CSV.",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,graphics/video_covers/P-V10.png,Draft
+41,Month 2: Product launch,LinkedIn,Educational post,P-E07,Prompt: responding to a discount request,,,,"""Can you do it cheaper?""
+
+A prompt for replying without an apology spiral:
+
+""A client asked for a lower price: [REQUEST]. Draft a reply that acknowledges their budget, restates the value tied to their goals, and offers these options only: [MY OPTIONS]. If I've chosen not to reduce the price, say so kindly and clearly. Under 150 words, confident, no apology spiral, in my voice [VOICE PROFILE].""
+
+You decide the options (smaller scope? phased start?). The AI only handles the wording.
+
+(HARD-01, from the Tough Conversations section of The Band of One Prompt Library.)",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,,Draft
+41,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V11,Setting up The Client Desk in 10 minutes,From download to your first client in about ten minutes.,/bundle/,Link in bio,"Setting up The Client Desk: open, fill in Settings, clear the sample rows, add a client. About ten minutes, and there's a 13-page user guide if you get stuck.",#freelancebusiness #invoicing #smallbusinessowner #getpaid #solopreneur,graphics/video_covers/P-V11.png,Draft
+42,Month 2: Product launch,LinkedIn,Promotional post,P-P04,Client Desk spotlight,,,,"The Client Desk: one spreadsheet for clients, projects, invoices and payment reminders, with a dashboard of what needs attention this week.
+
+✓ Excel, Google Sheets, LibreOffice (no macros)
+✓ Reminder stages A–E calculated for every invoice
+✓ Formulas tested before release
+✓ Sample business + 13-page guide
+
+$29 (code FOUNDING until [LAUNCH END DATE]). [STORE LINK]",#freelancebusiness #invoicing #smallbusinessowner #getpaid #solopreneur,graphics/promo_cards/P-P04.png,Draft
+42,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V12,Prompt demo: discount request,"A client asks, 'Can you do it cheaper?' Here's the prompt I use.",/bundle/,It's in the library: link in bio,'Can you do it cheaper?' Prompt HARD-01 drafts a confident reply that offers only the options you choose. From the Tough Conversations section of The Band of One Prompt Library.,#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,graphics/video_covers/P-V12.png,Draft
+43,Month 2: Product launch,Instagram,Educational post (carousel),P-E08,"One system, three tools",,,,Designed as one system. Buy one or all three. Details at the link in bio.,#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/carousels/P-E08_01.png,Draft
+43,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V13,How the three connect,Why these three products share the same IDs.,/bundle/,Bundle: link in bio,"The playbook, The Client Desk and the Prompt Library share prompt IDs, reminder stages and the weekly review. One system, not three random downloads.",#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/video_covers/P-V13.png,Draft
+44,Month 2: Product launch,Instagram,Promotional post,P-P05,Playbook spotlight,,,,"The Solo Admin Playbook: 38 pages, 6 client workflows, worksheets, templates and 17 prompts. PDF + editable DOCX. $24 (code FOUNDING until [LAUNCH END DATE]). Link in bio.",#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,graphics/promo_cards/P-P05.png,Draft
+44,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V14,Safe AI setup chapter,The chapter I'd make every freelancer read before using AI with clients.,/bundle/,Link in bio,"Chapter 3 of The Solo Admin Playbook: using AI safely with client work. What it's good and bad at, the redaction habit, and the settings to check. AI drafts; you decide.",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,graphics/video_covers/P-V14.png,Draft
+45,Month 2: Product launch,LinkedIn,Educational post,P-E09,Reminder stages you can steal,,,,"The payment reminder stages built into The Client Desk (and free to steal):
+
+A: 3 days before due: heads-up
+B: due date: reminder
+C: +7: ""anything holding it up?""
+D: +14: ask for a payment date in writing
+E: +30: final notice (only consequences in your agreement)
+
+The spreadsheet works out which stage each invoice is at and whether you've sent it. You can change the timing in Settings.
+
+Templates for every stage are free on the blog: [link]",#freelancebusiness #invoicing #smallbusinessowner #getpaid #solopreneur,,Draft
+45,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V15,Admin Audit tab,The spreadsheet ranks your admin tasks for you.,/bundle/,Link in bio,"The Admin Audit tab in The Client Desk scores and ranks your recurring admin tasks, then you choose: eliminate, template, AI draft, automate or keep human.",#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,graphics/video_covers/P-V15.png,Draft
+46,Month 2: Product launch,LinkedIn + Instagram,Promotional post,P-P06,Who it's for / not for,,,,"The Band of One bundle IS for you if you run a one-person service business and handle your own inquiries, proposals and invoices.
+
+It's NOT for you if you need a multi-user CRM, legal or tax advice, or prompts for images and code.
+
+Honest fit beats a refund. Details: [STORE LINK]",#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/promo_cards/P-P06.png,Draft
+46,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V16,Who it's NOT for,Who shouldn't buy this.,/bundle/,Details: link in bio,"Who the Band of One bundle is NOT for: teams needing a full CRM, anyone after legal/tax advice, or people looking for image/code prompts. Who it IS for: solo service businesses that want one simple admin system.",#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/video_covers/P-V16.png,Draft
+47,Month 2: Product launch,Instagram,Educational post (carousel),P-E10,"The delay email, structured",,,,The structure behind prompt DEL-02 in The Band of One Prompt Library.,#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,graphics/carousels/P-E10_01.png,Draft
+47,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V17,Prompt demo: delay notification,"The hardest client email to write, drafted in thirty seconds.",/bundle/,Link in bio,"Prompt DEL-02 drafts the hardest client email (the delay) with the news first, one line of context, the plan and the impact. From The Band of One Prompt Library. You still read it before sending.",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,graphics/video_covers/P-V17.png,Draft
+48,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V18,Your next seven days,The last chapter of the playbook is a seven-day plan. Here it is.,/bundle/,Link in bio,"The Solo Admin Playbook ends with a 7-day plan: one small step a day, from the admin audit to your first weekly review.",#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,graphics/video_covers/P-V18.png,Draft
+49,Month 2: Product launch,LinkedIn,Educational post,P-E11,7 days to an admin system,,,,"A 7-day plan for an admin system (from the last chapter of The Solo Admin Playbook):
+
+Day 1: Admin audit → your top three tasks to fix
+Day 2: Privacy settings, business brief, voice profile
+Day 3: Onboarding checklist + welcome email
+Day 4: Weekly update template + meeting-summary prompt
+Day 5: Payment terms + reminder templates
+Day 6: Inquiry reply + proposal structure
+Day 7: First SOP + first weekly review
+
+One step a day. You can start today with just a spreadsheet and a free AI plan.",#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,,Draft
+49,Month 2: Product launch,LinkedIn + Instagram,Promotional post,P-P07,FAQ post,,,,"Before you buy:
+
+Does The Client Desk work in Google Sheets? Yes.
+Do I need a paid AI plan? No, free tiers work.
+Is it legal or tax advice? No, it's communication templates and systems.
+What if it isn't useful? Email within 14 days for a full refund.
+
+Launch price until [LAUNCH END DATE]. [STORE LINK]",#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/promo_cards/P-P07.png,Draft
+49,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V19,"FAQ: Google Sheets, AI plans, refunds",The three questions people ask before buying.,/bundle/,Link in bio,Pre-purchase FAQ: The Client Desk works in Google Sheets and Excel; the prompts work in free AI plans; 14-day refund if it isn't useful. Launch price until [LAUNCH END DATE].,#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/video_covers/P-V19.png,Draft
+50,Month 2: Product launch,LinkedIn + Instagram,Promotional post,P-P08,Launch price ends tomorrow,,,,"The launch code FOUNDING ends tomorrow, [LAUNCH END DATE]. After that, regular prices with no extension.
+
+If it fits how you work, now's the cheapest it'll be. If not, the free guides and starter kit aren't going anywhere.
+
+[STORE LINK]",#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/promo_cards/P-P08.png,Draft
+50,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V20,Last full day of launch price,Tomorrow's the last day of the launch price.,/bundle/,Link in bio,"The launch price (code FOUNDING) ends on [LAUNCH END DATE]. After that it's the regular price, with no extension. If it isn't for you, the free articles and starter kit are still there.",#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/video_covers/P-V20.png,Draft
+51,Month 2: Product launch,LinkedIn + Instagram,Promotional post,P-P09,Last day,,,,"Last day of launch pricing: code FOUNDING ends tonight.
+
+Thank you for following along this month. Tomorrow: back to free admin systems.
+
+[STORE LINK]",#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/promo_cards/P-P09.png,Draft
+51,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V21,Final day,Launch price ends tonight.,/bundle/,Link in bio,Last day: code FOUNDING ends tonight ([LAUNCH END DATE]). Tomorrow we're back to free admin systems. Thanks for following the launch.,#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/video_covers/P-V21.png,Draft
+52,Month 2: Product launch,Instagram,Educational post (carousel),P-E12,Offboarding checklist,,,,How you finish decides whether they come back and refer you. Workflow 6 of The Solo Admin Playbook.,#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,graphics/carousels/P-E12_01.png,Draft
+52,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V22,Prompt: testimonial request,How to ask for a testimonial without making it awkward.,/newsletter/,Starter kit: link in bio,"Asking for testimonials without awkwardness: 3 optional questions, clear permission, client approves the wording. Prompt RET-02 is free in the starter kit (link in bio).",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,graphics/video_covers/P-V22.png,Draft
+53,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V23,Spreadsheet tip: next action dates,One column prevents most dropped balls in a solo business.,/blog/spreadsheet-vs-notion-vs-crm/,Free guide: link in bio,"The one column that prevents most dropped balls: next action date. Every client, every lead, reviewed weekly. Works in any spreadsheet.",#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,graphics/video_covers/P-V23.png,Draft
+54,Month 2: Product launch,LinkedIn,Educational post,P-E13,"Testimonials, honestly",,,,"Three rules for testimonials:
+
+1. Ask with specific, optional questions: situation before, working together, what changed.
+2. Get permission to publish (name or anonymous, their choice) and let them approve the final wording.
+3. Never write one for them, and never edit one in a way that changes its meaning.
+
+In the U.S., the FTC's Endorsement Guides require endorsements to reflect the honest opinions of the endorser.
+
+The request prompt (RET-02) is free in our starter kit: [link]",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,,Draft
+54,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V24,Offboarding checklist,How you end a project decides whether you get referred.,/bundle/,Link in bio,"The offboarding checklist: handover document, access changes, final invoice, thank-you, testimonial request (with permission), optional referral ask and a 90-day check-in. Workflow 6 in The Solo Admin Playbook.",#freelancetips #clientexperience #smallbusinesstips #solopreneur #consultantlife,graphics/video_covers/P-V24.png,Draft
+55,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V25,Prompt: SOP from rough notes,Turn rough notes into an SOP without the AI inventing steps.,/blog/sop-template-one-person-business/,Free SOP guide: link in bio,Prompt OPS-01 turns rough notes into an SOP and flags gaps with [CHECK] instead of inventing steps. The template is free in our SOP guide (link in bio).,#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,graphics/video_covers/P-V25.png,Draft
+56,Month 2: Product launch,Instagram,Educational post (carousel),P-E14,The Weekly Review tab,,,,The Weekly Review tab in The Client Desk. Real numbers over a few weeks show whether your system works.,#freelancebusiness #invoicing #smallbusinessowner #getpaid #solopreneur,graphics/carousels/P-E14_01.png,Draft
+56,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V26,Weekly Review tab,My weekly admin review takes forty-five minutes because of this tab.,/bundle/,Link in bio,"The Weekly Review tab in The Client Desk: the 45-minute agenda, live numbers from your data, and a log that shows over time whether your system works.",#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,graphics/video_covers/P-V26.png,Draft
+57,Month 2: Product launch,LinkedIn,Promotional post,P-P10,Upgrade path,,,,Bought one Band of One product and now want the bundle? You don't pay twice. Reply to your receipt email and I'll send a code worth what you paid.,#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/promo_cards/P-P10.png,Draft
+57,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V27,Upgrade path for single-product buyers,Bought one product and want the bundle? Here's how.,/bundle/,Link in bio,Bought one Band of One product and want the bundle? Reply to your receipt email for a code worth what you paid. You don't pay twice.,#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/video_covers/P-V27.png,Draft
+58,Month 2: Product launch,LinkedIn,Educational post,P-E15,Quarterly planning prompt,,,,"A quarterly planning prompt for a one-person business:
+
+""Facilitate a quarterly planning session. Last quarter: [RESULTS]. Capacity: [HOURS/WEEK]. Goals: [GOALS]. Ask me up to 5 clarifying questions first. Then propose: max 3 priorities, each with a measurable outcome, the first step and the weekly time it needs; what I should stop or pause; and a simple monthly checkpoint.""
+
+Fewer priorities, finished, beat many half-done.
+
+(OPS-07, The Band of One Prompt Library.)",#AItools #ChatGPTtips #AIforBusiness #promptengineering #freelancetips,,Draft
+58,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V28,Prompt: quarterly planning,"A quarterly plan for a one-person business, in one prompt.",/bundle/,Link in bio,"Prompt OPS-07 runs a quarterly planning session: clarifying questions first, then at most 3 priorities and a stop/pause list. From The Band of One Prompt Library.",#systemsthinking #SOP #productivitytips #solopreneur #businesssystems,graphics/video_covers/P-V28.png,Draft
+59,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V29,What's next + feedback request,What should Band of One build next? I'm asking.,/contact/,Comment or email,What should Band of One build next? If you've used the products: what's missing or confusing? If not: which admin task needs a system? Comment or email. Product updates are free for buyers.,#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/video_covers/P-V29.png,Draft
+60,Month 2: Product launch,TikTok / Reels / Shorts (+ LinkedIn native),Short video,P-V30,Back to basics: the free starter kit,"If you're not ready for the full system, start here. It's free.",/newsletter/,Link in bio,Not ready for the full system? Start with the free Client Admin Starter Kit: 10 prompts + a 30-minute weekly review checklist. Link in bio.,#bandofone #solopreneur #freelancer #virtualassistant #consultant,graphics/video_covers/P-V30.png,Draft

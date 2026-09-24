@@ -1,0 +1,2 @@
+email,name,last_name,signup_source,consent_given,consent_date,consent_method,consent_wording_version,groups
+example.person@example.com,Example,Person,website-newsletter-form,yes,2026-10-01,double-opt-in,signup-v1,Newsletter;Starter Kit

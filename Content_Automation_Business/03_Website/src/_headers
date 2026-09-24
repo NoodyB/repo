@@ -10,3 +10,7 @@
 
 /assets/*
   Cache-Control: public, max-age=86400
+
+# The free starter kit is delivered by email; keep the file out of search results.
+/downloads/BandOfOne_Client-Admin-Starter-Kit_FREE.pdf
+  X-Robots-Tag: noindex
